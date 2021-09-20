@@ -37,7 +37,7 @@ INTERSPEECH, 2020
 
 ### Conformer encoder model architecture
 
-<img src="https://user-images.githubusercontent.com/42150335/105320076-16af9980-5c09-11eb-86ec-b5146ac65812.png">   
+<img src="https://user-images.githubusercontent.com/42150335/105320076-16af9980-5c09-11eb-86ec-b5146ac65812.png" width="500">   
   
 기존 트랜스포머 인코더 블록은 `Multi Head Self Attention (MHSA) → LayerNorm → Feed Forward Network (FFN) → LayerNorm` 구조에서 `FFN Module → MHSA Module → Conv Module → FFN Module → LayerNorm` 구조로 변경  
   
@@ -57,7 +57,7 @@ INTERSPEECH, 2020
 
 ### Convolution Module
   
-<img src="https://user-images.githubusercontent.com/42150335/105454437-30aeb200-5cc5-11eb-8624-1ea49b71c8cd.png">
+<img src="https://user-images.githubusercontent.com/42150335/105454437-30aeb200-5cc5-11eb-8624-1ea49b71c8cd.png" width="500">
   
 - Pointwise Conv  
   
@@ -88,7 +88,7 @@ INTERSPEECH, 2020
   
 ### Feed Forward Module
   
-<img src="https://user-images.githubusercontent.com/1694368/103190710-1b847480-490d-11eb-8ea5-280749a32a24.png">
+<img src="https://user-images.githubusercontent.com/1694368/103190710-1b847480-490d-11eb-8ea5-280749a32a24.png" width="500">
   
 > Pre-norm 적용  
 > Swish activation : regularizing에 도움
@@ -139,15 +139,15 @@ FFN 모듈에 half-step residual connection 적용
   
 ***
 
-<img src="https://user-images.githubusercontent.com/42150335/105328196-2338ef80-5c13-11eb-9e8a-50ff45bad7b5.png">
+<img src="https://user-images.githubusercontent.com/42150335/105328196-2338ef80-5c13-11eb-9e8a-50ff45bad7b5.png" width="500">
   
 ***
   
-<img src="https://user-images.githubusercontent.com/42150335/105328376-54b1bb00-5c13-11eb-9059-38bc7361ba6d.png">
+<img src="https://user-images.githubusercontent.com/42150335/105328376-54b1bb00-5c13-11eb-9059-38bc7361ba6d.png" width="500">
 
 ***
   
-<img src="https://user-images.githubusercontent.com/42150335/105328408-5aa79c00-5c13-11eb-94b2-8ee455c8daca.png">
+<img src="https://user-images.githubusercontent.com/42150335/105328408-5aa79c00-5c13-11eb-94b2-8ee455c8daca.png" width="500">
   
 ## Conclusion
   
