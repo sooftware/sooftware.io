@@ -43,7 +43,7 @@ draft: false
 
 ## Model
   
-<img src="https://scontent-gmp1-1.xx.fbcdn.net/v/t39.2365-6/241347514_376678770759983_4717648868496710483_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=igZvOorsx80AX9BQc0l&_nc_ht=scontent-gmp1-1.xx&oh=896c0d14d6c8709f6c3d81963268db1d&oe=6147AD53" width=600>  
+<img src="https://user-images.githubusercontent.com/42150335/134018698-f46507a0-c375-4f6f-a67f-63e6ca2a9240.png" width=600>  
   
 - Encoder (S2u)
   - Speech를 인풋으로 받아서 discrete unit(pseudo-text라고 부름)으로 인코딩
