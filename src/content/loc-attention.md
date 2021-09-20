@@ -9,7 +9,7 @@ draft: false
 
 # Attention-Based Models for Speech Recognition Paper Review  
 
-![title](https://postfiles.pstatic.net/MjAyMDAyMTdfMjAw/MDAxNTgxODY4NTQ4MDYw.h3fmR1DnirrDCC-wkSrHptgHrlPX2GPQsnIhI1ulGecg.bIlam2xHjyx9Fdet1be9FvurzHMMNIfxLa2_cY2hapsg.PNG.sooftware/image.png?type=w773)  
+![title](https://user-images.githubusercontent.com/42150335/134008551-c7b29862-1cf1-4ffc-98d0-36186a61dd39.png)  
   
 http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.pdf
 
@@ -22,14 +22,14 @@ http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.p
    
  본 논문은 이러한 음성 인식 분야의 특성에 맞게 새로운 어텐션 매커니즘을 제안한다.  
    #
-![2paper](https://postfiles.pstatic.net/MjAyMDAyMTdfMjAz/MDAxNTgxODY5MjE1NTMx.xNh4qwldRqCtKonZGRH8c1E0yk22yEvYOHIlwAPNbzcg.nZZBOnwPrdlpsKWSqnqVqXslTHfw8noeqGN59MPh2Rwg.PNG.sooftware/image.png?type=w773)  
+![2paper](https://user-images.githubusercontent.com/42150335/134008561-29ab5819-3617-4fa6-8502-c0c61b2874d1.png)  
   
 참고로 본 논문은 2015년 당시 음성 인식 분야에서 "Listen, Attend and Spell" 논문과 함께 Innovation이라고 불릴만큼 큰 파장을 준 논문이였다. 
  기존 CTC 방식이 압도적이였던 당시에, End-to-End 방식의 포문을 열어준 논문이였기 때문이다.  
    #
 ## General Framework
   
-![base_attention](https://postfiles.pstatic.net/MjAyMDAyMTdfNiAg/MDAxNTgxODY4NTU3Nzg4.YCElS0j5R6lXK_ryX4m_jkAzjFrZPsEekbDna6LCr4Qg.RxewbBWd3eAVDFcasyCT8VafU2oDZqo_yIyh6RNosbIg.PNG.sooftware/image.png?type=w773)  
+![base_attention](https://user-images.githubusercontent.com/42150335/134008574-b70ac298-d51f-4588-9777-d2362600815f.png)  
   
 기본적인 어텐션에 대한 큰 그림이다.  
  (본 논문에서는 α는 alignment, g는 glimpse라고 칭함 )  
@@ -40,7 +40,7 @@ http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.p
 
 본 논문에서는 나와 있지 않지만 간단하게 개념을 정리하고 가자면, "alignment는 어떤 인코더를 고려해야 할까?"를 수치화해준 벡터이고, glimpse는 수치화 된 alignment와 인코더의 아웃풋들을 각각 곱해서 현재 디코딩에 필요한 인코더의 정보를 압축한 벡터이다. 그리고 glimpse와 디코더의 아웃풋을 고려해서 현재 스텝의 값을 예측한다.  
 #
-![alignment](https://postfiles.pstatic.net/MjAyMDAyMTdfMTIw/MDAxNTgxODY4NTY1MDcy.94IsqEbUQd9q_A2RBdgwWIzrN2ngrPqGdAJAaUVOQDog.ScXnpprsxqBELeteJFikGmXv3RoH2DcxECcDxSkoRe8g.PNG.sooftware/image.png?type=w773)  
+![alignment](https://user-images.githubusercontent.com/42150335/134008583-eff08f57-d0d3-4241-b5cd-39aa3b407a3c.png)  
   
 그럼 alignment는 어떻게 구하지?  
 란 물음에 답해주는 부분이다.  
@@ -50,7 +50,7 @@ http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.p
   
 그럼 Score를 구하는 특정 방식은 무엇이냐?? 
   
-![score_func](https://postfiles.pstatic.net/MjAyMDAyMTdfODUg/MDAxNTgxODY4NTY5Mzgy.Nbp_BKh56TwrUeOA9GuBNny_OwX2ZfRzbHYz-Oag4dYg.BGNBoYP9qwvFL26yr5AZhQ3RlE17GAER9pBnA7dblhEg.PNG.sooftware/image.png?type=w773)  
+![score_func](https://user-images.githubusercontent.com/42150335/134008595-d555ad41-1e2d-4aa3-bf30-54a1d6ce45ed.png)  
   
 어텐션 스코어를 구하는 방법은 위와 같이 다양하다. 사실 위는 정말 몇 개만 뽑아온 것이다.  
   
@@ -65,7 +65,7 @@ http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.p
   
 ## Content-Based Attention  
   
-![content-based](https://postfiles.pstatic.net/MjAyMDAyMTdfNjEg/MDAxNTgxODY4NTkxNzY4.pP5KJnqRAe0qT2fp90t59QJnh7q1cRjETJhDhEdxr4Mg.wK2gs1u_poWfTkwxjPPStLauOB_jVN6Itkz6wrGQHnYg.PNG.sooftware/image.png?type=w773)
+![content-based](https://user-images.githubusercontent.com/42150335/134008607-25acb65f-6277-4cb1-868a-151c70f3ab18.png)
 
 
 아마 어텐션을 처음 공부할 때에 대부분 Dot-Product Attention으로 배웠을 것이다.  
@@ -83,7 +83,7 @@ Dot-Product Attention에 비해서는 진보된 방법이지만, Content-Based �
   
 ## Location-Based Attention 
   
-![location-based](https://postfiles.pstatic.net/MjAyMDAyMTdfMTcg/MDAxNTgxODY4NjAyMzU5.csBoosFKJVgVBeHsRCD3fSHokS4MYajHh4lssnQ2bHMg.9P1RL402Y4qyMp6Vfex01uiBTWmUxgAu9zpEArFFvi8g.PNG.sooftware/image.png?type=w773)
+![location-based](https://user-images.githubusercontent.com/42150335/134008621-a79409c0-e98e-4d2e-8af9-7728cfdb867a.png)
   
  그럼 이번에는 Location-Based 방식을 살펴보자.  
  이 방식은 alignment 계산시, 해당 스텝 디코어의 출력과, 이전 alignment를 고려해줌으로써, 현재 시퀀스에서 어느 위치인지를 알 수 있게끔 해주는 방식이다.  
@@ -92,13 +92,13 @@ Dot-Product Attention에 비해서는 진보된 방법이지만, Content-Based �
 
 ## Hybrid Attention 
   
-![hybrid](https://postfiles.pstatic.net/MjAyMDAyMTdfMTQz/MDAxNTgxODY4NjE1Mzc3.SoD_ilkO_r7XfC-kNb36iNq7wR78iAGl7_HBfznB0VIg.czrqHp7DSqJfOuccfHUq91HPXcdpu2MouEDDg4jWfVog.PNG.sooftware/image.png?type=w773)  
+![hybrid](https://user-images.githubusercontent.com/42150335/134008627-84e04a75-7ebe-43df-ba03-ba3133215c53.png)  
   
  본 논문은 이러한 2 방식의 어텐션을 적절히 결합한 음성 인식용 어텐션을 제안한다.  
    
 ( 해당 어텐션을 Hybrid, Location-Aware, Location-Sensitive 등 여러 이름으로 불린다 )  
   
-![hybrid-attention](https://postfiles.pstatic.net/MjAyMDAyMTdfMjg2/MDAxNTgxODY4NjI5MzA4.IHXwfdQs3EC_YQ4mafpM0XLYbDtcPTg2eGjFDjQnTX8g.Dl63xBYsbahH4MyrwGjmbQgI57WTAbXXsAFjFgHhEJ0g.PNG.sooftware/image.png?type=w773)  
+![hybrid-attention](https://user-images.githubusercontent.com/42150335/134008637-9fbf2912-0ad8-4814-85af-ce79d71b9dbe.png)  
   
 기존 Content-Based 방식에서 약간의 수식만이 추가됐을 뿐이다.    
    
@@ -110,7 +110,7 @@ Dot-Product Attention에 비해서는 진보된 방법이지만, Content-Based �
   
 ## 3 Potential Issue  
   
-![Eq6](https://postfiles.pstatic.net/MjAyMDAyMTdfMTI0/MDAxNTgxODcxNTc5MzU0.9AzhrTq5SoHmgIIrCcmYBB837p3yL8K09QVH3P6gDrkg.YWKb3qLysPBy6oGkm4MBQa1ty9u7-ktEmPgyjRbee7gg.PNG.sooftware/image.png?type=w773)  
+![Eq6](https://user-images.githubusercontent.com/42150335/134008657-11650c58-d6a0-49e1-b91d-20fae065606c.png)  
   
 앞에서 살펴봤던 위의 수식에는 3가지의 이슈가 있다.
   
@@ -129,7 +129,7 @@ Dot-Product Attention에 비해서는 진보된 방법이지만, Content-Based �
 ### **Sharpening** & **Windowing**
    
 본 논문은 위의 문제를 간단하게 해결하기 위해 "Sharpening"이라는 개념의 제안했다. Softmax 수식을 약간 수정하는 것이다.  
-![sharpening](https://postfiles.pstatic.net/MjAyMDAyMTdfMjMz/MDAxNTgxODcyNDMyNjU0.drdyx8zV1DOSV-6rezOYqgDQmcFpiqe4U04da8kcvWcg.w_vqXCxu1nd-uCZ-VW395v4AX76Z5hNuK1HYh15c8iMg.PNG.sooftware/image.png?type=w773)  
+![sharpening](https://user-images.githubusercontent.com/42150335/134008662-bffb507a-d196-4742-ae3f-474e707e042c.png)  
 when, β > 1  
   
 본 논문에서는 inverse temperature를 걸어준다고 표현했다.  
@@ -148,7 +148,7 @@ Sharpening은 long-utterance (긴 발화)에서의 퍼포먼스는 개선했지�
 ### **Smoothing**
   
 그래서 나오게 된 방법이 Smoothing 방법이다.  
-![smoothing](https://postfiles.pstatic.net/MjAyMDAyMTdfNjIg/MDAxNTgxODY4NjM0ODMz.jYTFOEd93R5-IagaKWOyTg3i07Pk7Rwdl1LxsbZAPS8g.r7A0IGeNFdXeSUUl9EB_QWM6EOzb_6N1eHuDGz8_JrIg.PNG.sooftware/image.png?type=w773)  
+![smoothing](https://user-images.githubusercontent.com/42150335/134008674-f43e28a6-18ee-4ea4-aa4a-59e5ca666ef9.png)  
   
 위의 식처럼 기존 Softmax 식에 Sigmoid를 추가해준 방식이다.  
 Sigmoid로 Top-k frame과 아닌 frame들을 구분해주는 방식이라고 나는 이해했다.  
@@ -156,7 +156,7 @@ Sigmoid로 Top-k frame과 아닌 frame들을 구분해주는 방식이라고 나
   
 ## Result
   
-![result](https://postfiles.pstatic.net/MjAyMDAyMTdfMjkw/MDAxNTgxODY4NjcwNDM4.hknmkkv3qrF8llD9vB2AUALkhuYkUHcuNewXoHv-R-gg.vPQyt_knw2_429fP4jUbdUFU4aMsyexsNCQ7iJi4xb0g.PNG.sooftware/image.png?type=w773)  
+![result](https://user-images.githubusercontent.com/42150335/134008689-030fae61-b92c-4a5b-8bb9-61b7a29e097b.png)  
    
 본 논문에서 진행한 실험의 결과이다.  
 기본 모델보다는 Convolution을 적용한 모델이 더 좋은 결과를 내었고,  

@@ -10,7 +10,7 @@ draft: false
 # SpecAugment:
 ## 「A Simple Data Augmentation Method for Automatic Speech Recognition」  Review
   
-![title](https://postfiles.pstatic.net/MjAyMDAzMTBfMTgw/MDAxNTgzODQ1NTM5MjI3.U9mG8Tl8fKXJU38N7nlTtTKjnZSrXRxUmEPkL7091xgg.Z_56cPISeZT234kYVSOZFChSH32sURm3NE6FVDJCu0Eg.PNG.sooftware/image.png?type=w773)  
+![title](https://user-images.githubusercontent.com/42150335/134007258-2d041cd9-e68c-4339-8417-bb0defcfa33c.png)  
 https://arxiv.org/abs/1904.08779  
   
 ## Abstract
@@ -29,7 +29,7 @@ https://arxiv.org/abs/1904.08779
   
 자세히 들어가기 앞서, Data-Augmentation이 뭔지 부터 살펴봅시다.  
   
-![Augmentation](https://postfiles.pstatic.net/MjAyMDAzMTBfMzYg/MDAxNTgzODQ2NjA2MzUy.B4mA43yYLqG_oUSRy1djtBTGUYAI1X4GUFScWfkKsmog.g0SLMSyoMnfneosZJyvJbDiVj7AjiosFxwvs6QRGMdAg.PNG.sooftware/image.png?type=w773)
+![Augmentation](https://user-images.githubusercontent.com/42150335/134007275-48e3b310-5faa-41f7-9979-d824c669bc8e.png)
   
 Augmentation이란, 데이터를 부풀려서 모델의 성능을 향상시키는 기법입니다.  
 이미지 인식 분야에서 많이 쓰이는 방법으로, 좌우 반전, 사진의 일부 발췌, 밝기 조절 등을 적용하여 한정된 데이터를 조금씩 변형시켜 새로운 데이터처럼 활용하는 방법입니다.  
@@ -56,25 +56,25 @@ Augmentation이란, 데이터를 부풀려서 모델의 성능을 향상시키�
   
 #### Noise injection  
   
-![noise-ingection](https://postfiles.pstatic.net/MjAyMDAzMTFfMTky/MDAxNTgzODYyMTgxNjEz.4-taA67o4zYethS2nkXI7mmgsWVFpBTWGsFSB4eDTNsg.E0EYGEG6zzK9zJ4n7pXLrVu1zYD5ZnGnU14b4NQtnOcg.PNG.sooftware/image.png?type=w773)  
+![noise-ingection](https://user-images.githubusercontent.com/42150335/134007294-65cd737e-71b8-4217-bb84-c406493dbe18.png)  
   
 기존 데이터에 임의의 난수를 더하여 Noise를 추가해주는 방법입니다.  
   
 #### Shifting Time  
   
-![shiftting-time](https://postfiles.pstatic.net/MjAyMDAzMTFfODYg/MDAxNTgzODYyMjA2ODU3.cdo4B6N7B_3ut6Cg-fB2XhKnXRyM7t_inYtCJ_11PYQg.LRzvVgjn3bKR-maieujxTC-XF5BVTNb8LdZcJzamkqQg.PNG.sooftware/image.png?type=w773)  
+![shiftting-time](https://user-images.githubusercontent.com/42150335/134007299-10b640b0-be3c-4c3a-98bc-beadd3a43667.png)  
   
 임의의 값만큼 음성 신호를 좌/우로 shift하고 빈 공간은 0으로 채우는 방법입니다.  
   
 #### Changing Pitch
   
-![changing-pitch](https://postfiles.pstatic.net/MjAyMDAzMTFfMjI3/MDAxNTgzODYyMjI2Mzk2.ebxn9cuq8oDWMfWZTaDH-oncrBjRr4A-SWVYB9ozbtQg.OtYDyy_sMrgTgDl3-6b-_TW61Nq80NEYzPfdEGf6oR4g.PNG.sooftware/image.png?type=w773)    
+![changing-pitch](https://user-images.githubusercontent.com/42150335/134007316-d3b9da34-6d41-479c-9f92-48cbfe843717.png)    
   
 기존 음성 신호의 Pitch(음높이, 주파수)를 랜덤하게 변경해주는 방법입니다.  
   
 #### Changing Speed
   
-![changing-speed](https://postfiles.pstatic.net/MjAyMDAzMTFfMTEg/MDAxNTgzODYyMjQ0ODU3.3UCMz-mY72XLLtQOuKn5_RmR_W7aB2o827b73Qa1i20g.ltl5l-7WVHOba5HsxSuU1QXjJ2Pcoyymh4blItMZb5Ig.PNG.sooftware/image.png?type=w773)
+![changing-speed](https://user-images.githubusercontent.com/42150335/134007324-d7fb0123-999c-4645-8c61-a80babcdc882.png)
 
 기존 음성 신호의 속도를 빠르게 / 느리게 바꿔주는 방법입니다.  
 
@@ -103,14 +103,14 @@ log mel spectrogram을 이미지처럼 다루는 겁니다. 이렇게 계산 비
   
 ### Time Warping
   
-![time-warping](https://postfiles.pstatic.net/MjAyMDAzMTFfOTIg/MDAxNTgzODYzOTk4NTc5.aKgX-flYzAN8VNF5lmJc7NntL8DjJpch06p0Ut7JqnMg.ds3DwlQ4tkTsQBXGigU2galWpbF4ViVZeNOBGr3DUoYg.PNG.sooftware/image.png?type=w773)    
+![time-warping](https://user-images.githubusercontent.com/42150335/134007533-9e5ceea1-5c82-4a57-96bb-f6aeefb52d66.png)    
   
 Computer Vision에서 사용되는 Image Warping을 응용한 방법입니다.  
 축의 중심을 이동한다(?)라고 생각하시면 되는데 아마 감이 잘 안오실 겁니다.  
   
 쉽게 생각해보자면 다음과 같습니다.  
   
-![cloth-warp](https://postfiles.pstatic.net/MjAyMDAzMTFfMTc5/MDAxNTgzODY0Mzk3Mzky.3pC-fk4QAM6wsnU4g7vlnAsFt35N7OF1y_YCHeTYztEg.Yq9RrVZ8kGKhZ01ct1Hw0EBrcVHn-I1Bdgo8av0jZiYg.PNG.sooftware/image.png?type=w773)
+![cloth-warp](https://user-images.githubusercontent.com/42150335/134007547-012b55df-2837-4d12-a872-acb90f67428a.png)
   
 위와 같이 보자기의 중심에 손가락을 가져다가 한쪽으로 밀게되면 우측의 이미지와 같이 보자기가 꾸겨지게 됩니다.   
 (보자기가 없어 수건으로 사진을 찍었습니다 ㅎㅎ..)    
@@ -120,7 +120,7 @@ Computer Vision에서 사용되는 Image Warping을 응용한 방법입니다.
   
 ### Frequency Masking
   
-![freq-mask](https://postfiles.pstatic.net/MjAyMDAzMTFfMTAg/MDAxNTgzODY1MzI0MzA4.oTiZPL3trPDPxFtY5AUqHtZ6k84rgbHoxT2zasWh-xog.AvXKw4UbnQULe6SAxIp9x56HmyQUOhVhG29GqFcESIgg.PNG.sooftware/image.png?type=w773)  
+![freq-mask](https://user-images.githubusercontent.com/42150335/134007557-fbc56570-8b0c-4563-a6af-f3f8583c4752.png)  
   
 굉장히 간단한 방법입니다.  
 주파수와 시간 축으로 이루어진 Spectrogram의 주파수 축을 따라 일정 영역을 0으로 마스킹해버립니다.  
@@ -143,7 +143,7 @@ def freq_masking(feat, F = 20, freq_mask_num = 2):
 
 ### Time Masking
   
-![time-mask](https://postfiles.pstatic.net/MjAyMDAzMTFfMjgz/MDAxNTgzODY1MzQ5Mjg1.QTTK1udl7K0Pj6CmZIIKBxGOWF9EGN4uLotWePBzwUgg.NN_pxzM6tsxuVOD0NtItMf0LcLPnK891uCT_kfyXyikg.PNG.sooftware/image.png?type=w773)  
+![time-mask](https://user-images.githubusercontent.com/42150335/134007573-e5fcec5d-1ca8-451f-8677-6b1146b70fc6.png)  
   
 Frequency Masking과 똑같습니다.  
 다만, 주파수 축기 아닌, 시간 축에 대해서 일정 영역을 0으로 마스킹해버립니다.  
@@ -167,17 +167,17 @@ def time_masking(feat, T = 70, time_mask_num = 2):
 Frequency Masking과 Time Masking 적용 시 주의점은, 마스킹하는 영역의 범위를 적당하게 지정해주어야 합니다.  
 너무 많이 / 적게 적용한다면 Augmentation의 효과가 덜하거나 심한 경우 Noise가 될 수 있습니다.  
 
-![single-apply](https://postfiles.pstatic.net/MjAyMDAzMTFfMjQ0/MDAxNTgzOTI5MTczODMw.h_LZ2BHfuKenmYoYm03R39JkHzkwb5pwJFr5Anevk94g.3z7LCzVNzqyvP5RbyJy6CLJgvSr6JiIm2v-Q3qBg3K0g.PNG.sooftware/image.png?type=w773)  
+![single-apply](https://user-images.githubusercontent.com/42150335/134007673-cd8aa64b-d5d2-4afb-b117-b0dfc6deae52.png)  
   
 Figure 1은 위에서 아래 방향으로 기존 Spectrogram, Time Warp, Frequency Mask, Time Mask가 각각 적용된 Spectrogram입니다.  
   
-![double-apply](https://postfiles.pstatic.net/MjAyMDAzMTFfMTMx/MDAxNTgzOTI5MTg0MTM4.U2ewywMqX-5_QiZhBSzjqiaDCbbN2htdwSKqy4hBiPgg.NKf6UT6SZdaj6ChHloytSNkvIDvmaUgdy-ZgH-QDvbgg.PNG.sooftware/image.png?type=w773)
+![double-apply](https://user-images.githubusercontent.com/42150335/134007699-fc2e4ea2-c01c-4a73-b166-205a59e2cb82.png)
 
 본 논문은 Frequency Masking과 Time Masking을 동시에 적용하는 것을 고려했다고 합니다. 2 마스킹을 동시에 적용하게 되면 Figure 2와 같은 Spectrogram이 나오게 됩니다. 
   
 본 논문은 각각 적용하는 것과 동시에 적용하는 실험을 진행했고, 결과로 나온 파라미터는 다음과 같습니다.  
   
-![experiment-table1](https://postfiles.pstatic.net/MjAyMDAzMTBfMTcg/MDAxNTgzODQ1NTc2OTA0.oSNOpjK3E4FZxkQrBwq6g9b_2fhCrgOlZ8P14vj48Vog.bVBDzCGI5z10AI5BfjSkLaEzaWW-sFFM8WGq0zla-EUg.PNG.sooftware/image.png?type=w773)  
+![experiment-table1](https://user-images.githubusercontent.com/42150335/134007708-75d7d338-42bf-44df-9237-2c6fc72475cf.png)  
 
   
 * LB : LibriSpeech Basic
@@ -221,7 +221,7 @@ def spec_augment(feat, T = 70, F = 20, time_mask_num = 2, freq_mask_num = 2):
   
 본 논문은 LAS Network 중 [「Model Unit Exploration for Sequence-to-Sequence Speech Recognition」](https://arxiv.org/abs/1902.01955)에서 사용된 구조를 사용했다고 밝힙니다. ( 제가 진행하고 있는 한국어 음성인식 프로젝트도 역시 LAS Network를 사용하기 때문에 해당 논문도 읽고 리뷰를 쓸 예정입니다. )  
   
-<img src="https://user-images.githubusercontent.com/7529838/33699263-69206498-db55-11e7-8295-029e0b012f32.png" width=500>  
+<img src="https://user-images.githubusercontent.com/42150335/134007720-e516809f-96e7-44f5-85d7-178d340d04ad.png" width=500>  
 
   
 해당 논문은 log mel spectrogram을 입력으로 받아, 2-Layer의 maxpooling이 적용된 CNN을 거칩니다. (stride = 2) 그리고 이렇게 CNN을 거쳐서 나온 아웃풋을 인코더의 stacked Bi-LSTM의 입력으로 넣습니다. 그리고 인코딩을 거친 아웃풋을 어텐션 기반의 디코더에 넣어 예측 시퀀스를 뽑아냅니다. (디코더 레이어 사이즈 = 2)
@@ -232,7 +232,7 @@ def spec_augment(feat, T = 70, F = 20, time_mask_num = 2, freq_mask_num = 2):
 
 다음 그림으로 보시면 이해가 조금 더 쉬울 겁니다.  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAzMTFfMjc5/MDAxNTgzOTMxNTM4ODE1.MwAId31eYiiH2o8B4F_JB4alld4r_h2EbkX9I6LJzZsg.enwL-u3ws1Y3Xz9hJRPqLGsJ3h9uX-lSSsB1WCpNR1Ig.PNG.sooftware/image.png?type=w773" width = 500>  
+<img src="https://user-images.githubusercontent.com/42150335/134007891-a3957747-762c-4b07-8090-eaea381b10d0.png" width = 500>  
   
 좌측의 lr의 특정 값은 제가 진행하고 있는 프로젝트에서 적용한 값이므로 무시하셔도 좋습니다.   
   
@@ -289,7 +289,7 @@ class LabelSmoothingLoss(nn.Module):
   
 Augmentation만으로도 State-Of-The-Art를 달성했지만, 조금 더 개선하기 위해 Language Model과 Shallow Fusion을 진행했다고 합니다.  
   
-![shallow-fusion](https://postfiles.pstatic.net/MjAyMDAzMTFfMTM2/MDAxNTgzOTMzMjUyMzE5.OeKVkHOPDc8bAkcPAWfKnzdZTrlBgN_YyFmMJC2OcpYg.rX6CAAKNiOA0wE4koc2p7dlArfXJ2iqbElNHmP_Zf6Ug.PNG.sooftware/image.png?type=w773)  
+![shallow-fusion](https://user-images.githubusercontent.com/42150335/134007910-3607daa9-cbea-4b37-934f-6fe2dd3af251.png)  
   
 ASR 모델에서 나온 log-probability와 LM 모델에서 나온 log-probability를 적절히 고려해주어서 y_hat을 결정하게 됩니다. 앞에서 언급했었던 성능향상을 위해 적용하는 기법 중 하나인 Ensemble과 비슷한 효과를 내는 방법이라고 합니다.  
   
@@ -298,11 +298,11 @@ ASR 모델에서 나온 log-probability와 LM 모델에서 나온 log-probabilit
 실험 결과에 대한 자세한 설명은 생략하겠습니다.  
 아래 표를 참고 혹은 [본 논문](https://arxiv.org/abs/1904.08779)을 참고하시면 자세한 결과를 보실 수 있습니다.  
   
-![table-2](https://postfiles.pstatic.net/MjAyMDAzMTBfMTcx/MDAxNTgzODQ1NTk4MzE2.tMzhyDck9DbiCaujYGfjzqKPD7gmqqtbFqiYSw5zQIIg.q-FVlIQo_F3F1iDPPECf2SHlczIV9KO-tK5oOQhI5RIg.PNG.sooftware/image.png?type=w773)  
+![table-2](https://user-images.githubusercontent.com/42150335/134007927-856a82af-9c96-4c69-897e-16eed90830e4.png)  
   
-![table-3](https://postfiles.pstatic.net/MjAyMDAzMTBfMjYw/MDAxNTgzODQ1NjEyODgw.-45_JNKhgLATY6TdLVOpdSNWbWf4KURTYQWT1np7oY4g.DjX7ThjfaXDKEareVgQ0J_A0X_rlcSN8C39l3fxnBM4g.PNG.sooftware/image.png?type=w773)  
+![table-3](https://user-images.githubusercontent.com/42150335/134007944-7c2756ed-10d2-422e-91a7-96ed6afd539a.png)  
   
-![table-4](https://postfiles.pstatic.net/MjAyMDAzMTBfMjgg/MDAxNTgzODQ1NjU0NzU0.8NOTM44yvEVFRPGaoG0XLUSUkDFaHWhhryHoPgloVYgg.kmqtc_t6koHaA16c8ji-1X2VSev0pbprlrlAlcT-AXMg.PNG.sooftware/image.png?type=w773)  
+![table-4](https://user-images.githubusercontent.com/42150335/134007962-b57d1f9b-7b5a-4b86-93a2-ed5aebd3fd1c.png)  
   
 ## Discussion
 

@@ -37,7 +37,7 @@ INTERSPEECH, 2020
 
 ### Conformer encoder model architecture
 
-<img src="https://user-images.githubusercontent.com/42150335/105320076-16af9980-5c09-11eb-86ec-b5146ac65812.png" height=500>   
+<img src="https://user-images.githubusercontent.com/42150335/105320076-16af9980-5c09-11eb-86ec-b5146ac65812.png">   
   
 기존 트랜스포머 인코더 블록은 `Multi Head Self Attention (MHSA) → LayerNorm → Feed Forward Network (FFN) → LayerNorm` 구조에서 `FFN Module → MHSA Module → Conv Module → FFN Module → LayerNorm` 구조로 변경  
   
@@ -61,16 +61,16 @@ INTERSPEECH, 2020
   
 - Pointwise Conv  
   
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb8hxuL%2Fbtqw5f6QxMM%2Fk4gn4DUTEqPkqbJXusPAKk%2Fimg.png">  
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb8hxuL%2Fbtqw5f6QxMM%2Fk4gn4DUTEqPkqbJXusPAKk%2Fimg.png" width="400">  
   
 > kernel size가 1x1로 고정된 convolution
 > dimension을 맞출 때 자주 쓰임  
   
 - GLU Activation  
   
-<img src="https://miro.medium.com/max/1400/1*EwUvi3ATcVoa9Lm-2FwNUA.png" height=50>  
+<img src="https://miro.medium.com/max/1400/1*EwUvi3ATcVoa9Lm-2FwNUA.png" width=500>  
   
-<img src="https://miro.medium.com/max/1400/1*4UZTVLQZSDV7gCsw2cn16Q.png" height=200>
+<img src="https://miro.medium.com/max/1400/1*4UZTVLQZSDV7gCsw2cn16Q.png" width=500>
   
 - Depthwise Conv  
   
@@ -84,7 +84,7 @@ INTERSPEECH, 2020
   
 - Swish activation
 
-<img src="https://blog.kakaocdn.net/dn/QbxpI/btqEHxducIg/hrmYfDLHDT4N1oqCtt74CK/img.png">
+<img src="https://blog.kakaocdn.net/dn/QbxpI/btqEHxducIg/hrmYfDLHDT4N1oqCtt74CK/img.png" width="400">
   
 ### Feed Forward Module
   
@@ -100,7 +100,7 @@ INTERSPEECH, 2020
 [Macaron-Net](https://arxiv.org/pdf/1906.02762.pdf)에 영감을 받아서 2개의 FFN에 쌓인 Sandwich 구조로 구성.  
 FFN 모듈에 half-step residual connection 적용  
   
-<img src="https://user-images.githubusercontent.com/42150335/105326425-13b8a700-5c11-11eb-804c-bd8efef6060b.png" height=200>  
+<img src="https://user-images.githubusercontent.com/42150335/105326425-13b8a700-5c11-11eb-804c-bd8efef6060b.png" width=400>  
   
 > 뒤의 Ablation study에서 Macaron-net FFN과 half-step residual connection이 성능 향상에 많은 기여를 했다고 함  
   
@@ -123,19 +123,19 @@ FFN 모듈에 half-step residual connection 적용
 
 ### Results on LibriSpeech
   
-<img src="https://user-images.githubusercontent.com/42150335/105327556-5cbd2b00-5c12-11eb-8714-2c0ce2c7a1b0.png">  
+<img src="https://user-images.githubusercontent.com/42150335/105327556-5cbd2b00-5c12-11eb-8714-2c0ce2c7a1b0.png" width="500">  
   
 ***
 
-<img src="https://user-images.githubusercontent.com/42150335/105327620-752d4580-5c12-11eb-9091-433ce8700141.png">
+<img src="https://user-images.githubusercontent.com/42150335/105327620-752d4580-5c12-11eb-9091-433ce8700141.png" width="500">
   
 - Conformer Block vs Transformer Block (without external LM)
   
-<img src="https://user-images.githubusercontent.com/42150335/105327876-c9d0c080-5c12-11eb-8b02-948f87c5f47d.png">
+<img src="https://user-images.githubusercontent.com/42150335/105327876-c9d0c080-5c12-11eb-8b02-948f87c5f47d.png" width="500">
   
 ***
 
-<img src="https://user-images.githubusercontent.com/42150335/105328157-1916f100-5c13-11eb-9473-69ac0c658e15.png">  
+<img src="https://user-images.githubusercontent.com/42150335/105328157-1916f100-5c13-11eb-9473-69ac0c658e15.png" width="500">  
   
 ***
 
