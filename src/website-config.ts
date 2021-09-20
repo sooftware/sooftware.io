@@ -63,7 +63,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'SOOFTWARE',
-  description: 'Welcome to Soohwan Kim\'s blog',
+  description: 'Toward human-like A.I.',
   coverImage: 'img/blog-cover.png',
   logo: 'img/img.png',
   lang: 'en',
