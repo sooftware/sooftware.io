@@ -63,8 +63,8 @@ const About: React.FC = () => (
 
                 <p>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  Hi, I'm Soohwan Kim. I am the co-founder and A.I. engineer of <i><a href="http://www.tunib.ai">TUNiB</a></i>.
-                  On this page, I would like to introduce myself in a free format, not in a hard format like resume. If you want to see my resume, check <a href="https://github.com/sooftware/sooftware/blob/master/Awesome_CV.pdf">here</a>.
+                  Hi, I'm Soohwan Kim. I am the co-founder and A.I. engineer of <a href="http://www.tunib.ai">TUNiB</a>.
+                  On this page, I would like to introduce myself in a free format, not in a hard format like resume. If you want to see my resume, check <a href="https://sites.google.com/view/sooftware">here</a>.
                 </p>
 
                 <h2>
@@ -105,6 +105,7 @@ const About: React.FC = () => (
                   <li>The most representative thing I did on Kakao Brain was participating in the development of the NLP library named <a href="https://github.com/kakaobrain/pororo">pororo</a>. I developed the speech recognition and speech synthesis module of pororo.</li>
                   <li>Working at Kakao Brain was more than 100% satisfied. However, I and my team members left Kakao Brain to create a startup named TUNiB for a new challenge.</li>
                   <li>In March 2021, we founded a startup named TUNiB!</li>
+                  <li>Now I'm trying to make a global persona chatbot.</li>
                 </p>
 
                 <h2>I like</h2>
@@ -120,14 +121,16 @@ const About: React.FC = () => (
                   <li>Calm Down Man (Youtuber)</li>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
                   <li>Keyboard (I'm using *REAL FORCE* now.)</li>
+                  <li>Netflix</li>
                 </p>
 
                 <h2>Fun facts</h2>
 
                 <p>
-                  <li>The companies I worked use English names, not their original names.</li>
+                  <li>My company use English names, not their original names.</li>
                   <li>My English name is Kaki. My girlfriend named me that I look good in it.</li>
                   <li>Our startup name TUNiB was inspired by an <a href="https://octonauts.fandom.com/wiki/Tunip_the_Vegimal">animation character</a>.</li>
+                  <li>After we founded TUNiB, we went to Jeju Island for a month and stayed together.</li>
                 </p>
 
                 <h2>I dream of</h2>
@@ -135,6 +138,7 @@ const About: React.FC = () => (
                 <p>
                   <li>becoming an irreplaceable engineer.</li>
                   <li>creating a very high-quality artificial intelligence chatbot like Jarvis.</li>
+                  <li>presenting a very good house to my parents.</li>
                 </p>
 
               </div>
