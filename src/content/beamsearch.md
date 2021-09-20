@@ -19,7 +19,7 @@ draft: false
   
 기본적인 Sequence to sequence (이하 Seq2seq) 모델에서의 디코딩 과정은 보통 Greedy Decoding 방식을 따른다.
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMjg0/MDAxNTgxNjY1NzgwNzg4.TG6-jfv_Tv793_EYtqJHevn9DZZg8embzYlBRTIObKsg.33Qhj4V3zkzfExxAPhyQIJJ6ClCW2TqJvYzlYJXf0twg.PNG.sooftware/image.png?type=w773" width="500">
+<img src="https://user-images.githubusercontent.com/42150335/134004910-af0480cb-5256-4ede-a594-83b505e728c8.png" width="500">
   
 Greedy Decoding이란 단순하게 해당 시점에서 가장 확률이 높은 후보를 선택하는 것이다. 시간복잡도 면에서는 훌륭한 방법이지만, 최종 정확도 관점에서는 좋지 못한 방법이다.   
   
@@ -38,14 +38,14 @@ Greedy Decoding의 이러한 단점을 "어느 정도" 극복하기 위해 나�
   
 ### Start
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfNjMg/MDAxNTgxNjY2NzE2NTQx.yShOrDp-SSfiUO2CKJd9h1ksciZmVNjd4etx9AIfgdog.jjFWDg8KWGYt722EM2WWJbcUQ3BzOlnXcAKQZWMFoIIg.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134004999-c897db1b-f66b-46a9-b667-2e621bde023d.png" width="400">
 
   
 START 토큰이 입력된다.  
   
 ### Step 1
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMTY2/MDAxNTgxNjY3MTkzMjE5.rFhdDCVM3oDGNr_6FavFfwbLoJV74kG75VU7LGXQpZgg.pNFDGnIBASpX3CHDeVxYCh1aXZaTIU9SbE2SsDDSL9Eg.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134005032-03a5c5c2-d2bd-499d-ae50-50a0b7ba9947.png" width="400">
   
 START 입력을 바탕으로 나온 예측 값의 확률 분포 중 가장 높은 확률 K개를 고른다.  
   
@@ -53,7 +53,7 @@ START 입력을 바탕으로 나온 예측 값의 확률 분포 중 가장 높�
   
 ### Step 2
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfNDkg/MDAxNTgxNjY3NDQ1ODM4.h8B2A0x3gJDVE21S9_z-pjPlcpZEJHZ66iv2Tul8E6Mg.UUmVyhQryqimcNVUlf2RMSrBuOWsyEa4JNjejZKQglwg.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134005069-25f9cc15-e757-46c0-8867-426967a6fa35.png" width="400">
   
 K개의 빔에서 각각 다음 예측 값의 확률 분포 중 가장 높은 K개를 고른다.
   
@@ -61,7 +61,7 @@ K개의 빔에서 각각 다음 예측 값의 확률 분포 중 가장 높은 K�
   
 ### Step 3
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMTIg/MDAxNTgxNjY3ODgzNDM5.8AaXI7wrBVjkELlmUiJyN6GV9AUi9Ib_Ss_dZUlxI9Ug.ls3xjlWUo-jtuCBrVDIvE2S55m0HyWNU32SnLHflwokg.PNG.sooftware/image.png?type=w773" width="400">  
+<img src="https://user-images.githubusercontent.com/42150335/134005106-414f10f8-8649-41dd-a533-80c48b8edc4d.png" width="400">  
   
 총 K<sup>2</sup>개의 자식 노드 중 누적 확률 순으로 상위 K개를 뽑는다.  
   
@@ -72,7 +72,7 @@ K개의 빔에서 각각 다음 예측 값의 확률 분포 중 가장 높은 K�
     
 ### Step 4
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfNjcg/MDAxNTgxNjY4NTY5ODEz.1WZ8surW0FlC3cn5acjjHqAzGMtZp7v-OewyN0L0S-4g.FRdqpj6fGiQdOohqBef8GeRcytLejQZzooCf8UkDRrgg.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134005149-da8386b8-c05f-4a8e-ba40-25d8f5a8ce3f.png" width="400">
   
 뽑힌 상위 K개의 자식노드를 새로운 빔으로, 다시 상위 K개의 자식 노드를 만든다.
   
@@ -87,17 +87,17 @@ EOS를 만난 빔이 K개가 될 때까지 Step3 - Step4를 반복한다.
 위에서 살펴본 빔서치에서 각각의 빔은 EOS를 만날 때까지 Step1 ~ Step5의 과정을 진행한다.  
 그럼 어떠한 빔이 EOS를 만났을 때는 어떤 과정이 일어나는지를 살펴보자.
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMTMg/MDAxNTgxNjY5MDQ2ODcy.L2IgKv5RfUFwXcj2f6333vDAZ2K9UP7N6t5Nti8sqGIg.8nGwd0S3QV75lYqKIv3HGwvMx5aHIM7XplwouHYGCsog.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134005201-59df1183-5124-41e9-a4e9-f43fb4f28340.png" width="400">
   
 위의 그림처럼 어떤 빔이 EOS (or END) 를 만나게 되면 해당 빔은 최종 선택 후보에 오르게 된다.
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMzgg/MDAxNTgxNjY5MTYxMzgw.fWQKLCZcJgmWdhsSm7Jgrr7jGv1zXejbQHyaEm1tq6Ag.l1j4aRQXdtRAzYICeRLLipYwfqj1rn4KJLLbo8QdhjEg.PNG.sooftware/image.png?type=w773" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/134005249-5bf2e1e5-5ffe-4c56-a819-c5620f9ecf5d.png" width="300">
   
 그리고, 끝난 빔의 자리를 대신하여, 해당 시점에서 상위 K개에 밀려서 K+1위를 차지했던 빔이 활성화 되어서 이후 K개의 빔을 유지한다.  
   
 ( 어떤 시점에서 x개의 빔이 EOS를 만나서 종료된다면, 상위 K+1위 ~ K+x위의 빔이 활성화된다 )  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMjI3/MDAxNTgxNjY5Nzk1Nzc5.WcJRVuXVhGLArn1Z1pVC40t0sBg0dGNRrP9wTb1C2Isg.JVCS0pWZCZXk1G6and6Gnc8eO3X_dlCdCgzAehztsJ4g.PNG.sooftware/image.png?type=w773" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/134005264-b0d3c34e-db63-4509-b241-df2a7b272be1.png" width="300">
   
 그렇게 EOS를 만난 빔이 K개가 될 때까지 진행하고, EOS를 만난 빔이 K개가 된다면, 총 K개의 후보 중에서 가장 높은 누적 확률을 가진 빔을 최종적으로 선택한다.
   
@@ -107,13 +107,13 @@ EOS를 만난 빔이 K개가 될 때까지 Step3 - Step4를 반복한다.
   
 그렇다면, 당연히 빔의 길이가 길어질수록 누적 확률의 값이 작아지는 것은 당연할 것이다. 이러한 길이에 따른 불공평을 해소하기 위해 Length Penalty라는 개념이 나오게 된다.  
   
-<img src="https://wenchenli.github.io/assets/img/GNMT_lp_cp.png" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/134005336-6f1e2ae0-8174-48b8-b846-88f18ae0eb2f.png" width="300">
   
 간단한 공식으로 길이가 길어짐으로 인해 발생하는 불공평성을 해결해주는 것이다. 보통 알파는 1.2 정도의 값을 사용한다고 한다. 위의 공식에서는 바로 5로 들어가 있지만, minimum length로 이것 역시 설정 가능한 파라미터이다.  
   
 파이썬 코드로는 다음과 같이 간단하게 구현할 수 있다.  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAzMTBfNDcg/MDAxNTgzNzY3MTI0MTM2.KymToJM4wsR0_f0dGEr5ywplz7qrD9oKGiu4fpb_4lsg.OFZSBKDyEsT-RbF3ZuBiyqYVsc1S92UToSv_ljEocR0g.PNG.sooftware/image.png?type=w773" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/134005384-f0bd82c7-155f-480b-bcbd-aee3dce45296.png" width="300">
     
 위의 코드로 나온 결과값으로 현재 빔의 누적 확률을 나눠주면 된다.  
   
@@ -127,7 +127,7 @@ Beam Search와 Greedy Decoding의 차이점은 단지 Greedy Decoding은 K=1인 
   
 그러므로 당연히 더 많은 경우의 수를 고려해주므로, 예측 결과 역시 좋아지는 경우가 많다.  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAyMTRfMjM3/MDAxNTgxNjcwNDAyOTMz.HYN1116EYI3BnarJyufB2u57VIE-xbvpLylzblO5Ctkg.1ka-o6UfTNXrID5p6NvdXgJbuUDE4t1VOdJ8Pl894oUg.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/134005420-622d9a66-4a1c-4630-aba0-78e5d2468a17.png" width="400">
   
 위는 빔 크기가 커짐에 따라 표현이 더욱 풍부해진 것을 확인할 수 있는 표이다. 실제로 빔서치를 적용하면 기계 번역에서 BLEU 성능이 2 가량 올라간다고 한다.  
   
