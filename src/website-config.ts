@@ -62,9 +62,9 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'SOOFTWARE',
-  description: 'Toward human-like A.I.',
-  coverImage: 'img/blog-cover.png',
+  title: 'sooftware',
+  description: 'All records of one A.I. engineer.',
+  coverImage: 'img/pororo.png',
   logo: 'img/img.png',
   lang: 'en',
   siteUrl: 'https://sooftware.io',
@@ -72,8 +72,7 @@ const config: WebsiteConfig = {
   github: 'https://www.github.com/sooftware',
   linkedin: 'https://www.linkedin.com/in/Soo-hwan/',
   showSubscribe: true,
-  mailchimpAction:
-    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
+  mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',

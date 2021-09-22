@@ -111,6 +111,7 @@ const About: React.FC = () => (
                 <h2>I like</h2>
 
                 <p>
+                  <li>Coffee (Especially americano & einspanner)</li>
                   <li>Walking</li>
                   <li>Webtoon</li>
                   <li>Singing (Rock & Rap)</li>

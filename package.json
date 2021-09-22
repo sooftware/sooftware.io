@@ -3,7 +3,7 @@
   "description": "Soohwan Kim's Personal Blog",
   "version": "0.0.0",
   "private": false,
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "author": "Soohwan Kim <sh951011@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
