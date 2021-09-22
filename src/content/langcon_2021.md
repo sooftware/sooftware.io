@@ -1,5 +1,5 @@
 ---
-title: '2021 LangCon 발표 - \"한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지\"'
+title: '2021 LangCon 발표 - "한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지"'
 author: [Soohwan Kim]
 tags: [presentation]
 image: img/langcon.png
@@ -7,7 +7,7 @@ date: '2021-08-28T10:00:00.000Z'
 draft: false
 ---
 
-# 2021 LangCon 발표 - \"한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지\"
+# 2021 LangCon 발표 - "한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지"
   
 올해로 3회째를 맞는 LangCon에 발표자로 참석해 "한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지"라는 주제로 발표를 했습니다.  
   
