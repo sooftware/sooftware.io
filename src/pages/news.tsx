@@ -77,8 +77,8 @@ const About: React.FC = () => (
                   <li><b>2019.10</b> I ranked 12th out of 100 people in <a href="https://campaign.naver.com/aihackathon_speech/">Naver AI Hackathon.</a></li>
                   <li><b>2019.05</b> I have a girlfriend!</li>
                   <li><b>2017.06</b> I was discharged from the <a href="http://www.rokmc.mil.kr/">Republic of Korean Marine Corps.</a></li>
-                  <li><b>2015.11</b> We came in <b>2nd</b> at the 2016 Marine 2nd Division Communications Competition!</li>
-                  <li><b>2015.11</b> We won <b>1st place</b> in the 2015 Marine Corps 2nd Division Communication Contest!</li>
+                  <li><b>2015.11</b> We placed <b>2nd</b> in the 2016 2nd Marine Division Communications Contest!</li>
+                  <li><b>2015.11</b> We won <b>1st place</b> in the 2015 2nd Marine Division Communication Contest!</li>
                   <li><b>2015.09</b> I joined the <a href="http://www.rokmc.mil.kr/">Republic of Korean Marine Corps.</a></li>
                   <li><b>2014.03</b> I entered <a href="https://www.kw.ac.kr/">Kwangwoon University</a>!</li>
                 </p>
