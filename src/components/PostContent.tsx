@@ -86,7 +86,7 @@ export const PostFullContent = styled.section`
   }
 
   li {
-    word-break: break-word;
+    word-break: break-word;    
   }
 
   li p {
