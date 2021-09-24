@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
-import { PostFullContent } from '../components/PostContent';
+import { ResumeContent } from '../components/ResumeContent';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import {
@@ -55,11 +55,10 @@ const About: React.FC = () => (
               <PostFullTitle className="post-full-title">About</PostFullTitle>
             </PostFullHeader>
 
-            <PostFullContent className="post-full-content">
+            <ResumeContent className="post-full-content">
               <div className="post-content">
-                <h2>
-                  Intro
-                </h2>
+                <h4><span>Int</span>ro</h4>
+                <hr></hr>
 
                 <p>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -67,9 +66,9 @@ const About: React.FC = () => (
                   On this page, I would like to introduce myself in a free format, not in a hard format like resume. If you want to see my resume, check <a href="https://sooftware.io/resume">here</a>.
                 </p>
 
-                <h2>
-                  Currently
-                </h2>
+                <br></br>
+                <h4><span>Cur</span>rently</h4>
+                <hr></hr>
 
                 <p>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -78,7 +77,9 @@ const About: React.FC = () => (
                   Meanwhile, I am also working on open-source activities for the development of natural language processing in Korea. You can check my github (http://github.com/sooftware) to see what I've done and I'm doing.
                 </p>
 
-                <h2>Some history</h2>
+                <br></br>
+                <h4><span>Som</span>e history</h4>
+                <hr></hr>
 
                 <p>
                   <li>I was born on October 11, 1995, in Cheonan, South Korea.</li>
@@ -108,7 +109,9 @@ const About: React.FC = () => (
                   <li>Now I'm trying to make a global persona chatbot.</li>
                 </p>
 
-                <h2>I like</h2>
+                <br></br>
+                <h4><span>I li</span>ke</h4>
+                <hr></hr>
 
                 <p>
                   <li>Coffee (Especially americano & einspanner)</li>
@@ -125,7 +128,9 @@ const About: React.FC = () => (
                   <li>Netflix</li>
                 </p>
 
-                <h2>Fun facts</h2>
+                <br></br>
+                <h4><span>Fun</span> facts</h4>
+                <hr></hr>
 
                 <p>
                   <li>My company use English names, not their original names.</li>
@@ -134,7 +139,9 @@ const About: React.FC = () => (
                   <li>After we founded TUNiB, we went to Jeju Island for a month and stayed together.</li>
                 </p>
 
-                <h2>I dream of</h2>
+                <br></br>
+                <h4><span>I dr</span>eam of</h4>
+                <hr></hr>
 
                 <p>
                   <li>becoming an irreplaceable engineer.</li>
@@ -143,7 +150,7 @@ const About: React.FC = () => (
                 </p>
 
               </div>
-            </PostFullContent>
+            </ResumeContent>
           </article>
         </div>
       </main>

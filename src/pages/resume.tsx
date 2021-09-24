@@ -57,14 +57,14 @@ const About: React.FC = () => (
 
             <ResumeContent className="resume-content">
               <div className="post-content">
-                <h2><span>Pro</span>file</h2>
+                <h4><span>Pro</span>file</h4>
                 <hr></hr>
                   <p>
                   <ul>
                   <li><b>Basic Information</b>
                     <ul>
                       <li><b>Name</b> : Soohwan Kim</li>
-                      <li><b>Nation</b> : Republic of Korean</li>
+                      <li><b>Nation</b> : Republic of Korea</li>
                       <li><b>Birth</b> : 1995.10.11</li>
                     </ul>
                   </li>
@@ -96,9 +96,9 @@ const About: React.FC = () => (
 
                 <br></br>
 
-                <h2><span>Pro</span>fessional Experience</h2>
+                <h4><span>Pro</span>fessional Experience</h4>
                 <hr></hr>
-                <h4>TUNiB</h4>
+                <h5>TUNiB</h5>
                 <p>
                   <i>Co-founder, AI Engineer (2021.03 ~ Present) - <span>Gangnam, Republic of Korea</span></i>
                   <ul>
@@ -119,7 +119,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>Kakao Brain</h4>
+                <h5>Kakao Brain</h5>
                 <p>
                   <i>AI Engineer (2020.11 ~ 2021.02) - <span>Pangyo, Republic of Korea</span></i>
                   <ul>
@@ -143,10 +143,10 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Int</span>ernship</h2>
+                <h4><span>Int</span>ernship</h4>
                 <hr></hr>
 
-                <h4>Kakao Brain</h4>
+                <h5>Kakao Brain</h5>
                 <p>
                   <i>Research Intern (2020.08 ~ 2020.10) - <span>Pangyo, Republic of Korea</span></i>
                   <ul>
@@ -163,7 +163,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>Spoken Language Lab</h4>
+                <h5>Spoken Language Lab</h5>
                 <p>
                   <i>Undergraduate Researcher (2020.04 ~ 2020.08) - <span>Mapo, Republic of Korea</span></i>
                   <ul>
@@ -180,7 +180,7 @@ const About: React.FC = () => (
                   <li>Homepage: https://speech.sogang.ac.kr</li>
                 </p>
 
-                <h4>Samsung Multi-Campus</h4>
+                <h5>Samsung Multi-Campus</h5>
                 <p>
                   <i>Credit-linked short-term Internship (2018.07 ~ 2018.08) - <span>Gangnam, Republic of Korea</span></i>
                   <ul>
@@ -197,10 +197,10 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Edu</span>cation</h2>
+                <h4><span>Edu</span>cation</h4>
                 <hr></hr>
 
-                <h4>Kwangwoon University</h4>
+                <h5>Kwangwoon University</h5>
                 <p>
                   <i>Bachelor of Engineering - <span>Seoul, Republic of Korea</span></i>
                   <ul>
@@ -225,7 +225,7 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Awa</span>rds</h2>
+                <h4><span>Awa</span>rds</h4>
                 <hr></hr>
 
                 <h5>2021 AI Online Competition</h5>
@@ -266,7 +266,7 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Pre</span>sentation</h2>
+                <h4><span>Pre</span>sentation</h4>
                 <hr></hr>
 
                 <h5>[2021 LangCon] Korean Speech Recognition</h5>
@@ -280,10 +280,10 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Pro</span>ject</h2>
+                <h4><span>Pro</span>ject</h4>
                 <hr></hr>
 
-                <h4>TUNiB Electra</h4>
+                <h5>TUNiB Electra</h5>
                 <p>
                   <i>Team Leader (2021.08 ~ 2021.09) - <span>TUNiB</span></i>
                   <ul>
@@ -298,7 +298,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>OpenSpeech</h4>
+                <h5>OpenSpeech</h5>
                 <p>
                   <i>Team Leader (2021.05 ~ Present) - <span>OpenSpeech Team</span></i>
                   <ul>
@@ -308,7 +308,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>Pororo</h4>
+                <h5>Pororo</h5>
                 <p>
                   <i>Team Member (2020.08 ~ 2021.02) - <span>Kakao Brain</span></i>
                   <ul>
@@ -319,7 +319,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>Multilingual Text-To-Speech</h4>
+                <h5>Multilingual Text-To-Speech</h5>
                 <p>
                   <i>Lead Development (2020.11 ~ 2021.02) - <span>Kakao Brain</span></i>
                   <ul>
@@ -330,7 +330,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>Speech Recognition using Wav2vec 2.0</h4>
+                <h5>Speech Recognition using Wav2vec 2.0</h5>
                 <p>
                   <i>Lead Development (2020.08 ~ 2020.11) - <span>Kakao Brain</span></i>
                   <ul>
@@ -341,19 +341,19 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h4>KoSpeech</h4>
+                <h5>KoSpeech</h5>
                 <p>
                   <i>Team Leader (2020.01 ~ 2021.02) - <span>Personal</span></i>
                   <ul>
                     <li>Framework for making speech recognizers specialized in Korean easily.</li>
                     <li>Support models: Conformer, Transformer, Jasper, Listen Attend Spell, DeepSpeech2 etc.</li>
                     <li>Perform Wav2vec 2.0 pre-training, fine-tuning, etc.</li>
-                    <li><a href="https://github.com/sooftware/KoSpeech">[GitHub]</a>, <a href="https://sooftware.github.io/KoSpeech/">[Docs]</a></li>
+                    <li><a href="https://github.com/sooftware/kospeech">[GitHub]</a>, <a href="https://sooftware.github.io/kospeech/">[Docs]</a></li>
                   </ul>
                 </p>
 
                 <br></br>
-                <h2><span>Ext</span>racurricular Activity</h2>
+                <h4><span>Ext</span>racurricular Activity</h4>
                 <hr></hr>
 
                 <h5>Speech Paper Reading</h5>
@@ -371,21 +371,22 @@ const About: React.FC = () => (
                 <h5>Technical Blog</h5>
                 <p>
                   <li>Technical posting of deep learning, programming, signal processing, paper review etc.</li>
-                  <li>Blog: <a href="https://blog.naver.com/sooftware">[link]</a></li>
+                  <li>Blog: <a href="https://sooftware.io">[link]</a></li>
                 </p>
 
                 <br></br>
-                <h2><span>Ski</span>lls</h2>
+                <h4><span>Ski</span>lls</h4>
                 <hr></hr>
 
                 <p>
                   <li><b>Programming Language</b> : Python, Jave, C, Shell-Script, SQL, Android, HTML</li>
                   <li><b>Deep Learning Framework</b> : PyTorch, PyTorch-Lightning, Tensorflow2 (with Keras)</li>
-                  <li><b>Natural Language Processing Library</b> : Fairseq, Transformers, Tokenizers, Pororo, NLTK, SentencePiece, KoNLPy, Mecab</li>
+                  <li><b>NLP Library</b> : Fairseq, Transformers, Tokenizers, Pororo, NLTK, SentencePiece, re</li>
+                  <li><b>Python Library</b> : Numpy, Pandas, Ray, Streamlit, Hydra, Wandb</li>
                 </p>
 
                 <br></br>
-                <h2><span>Mil</span>itary Service</h2>
+                <h4><span>Mil</span>itary Service</h4>
                 <hr></hr>
 
                 <p>
@@ -394,7 +395,7 @@ const About: React.FC = () => (
                 </p>
 
                 <br></br>
-                <h2><span>Pub</span>lication</h2>
+                <h4><span>Pub</span>lication</h4>
                 <hr></hr>
 
                 <p>

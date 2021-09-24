@@ -74,8 +74,13 @@ const About: React.FC = () => (
                   <li><b>2020.08</b> I left <a href="https://speech.sogang.ac.kr/">spoken language lab of Sogang University</a>.</li>
                   <li><b>2020.04</b> I joined the <a href="https://speech.sogang.ac.kr/">spoken language lab of Sogang University</a> as an undergraduate researcher.</li>
                   <li><b>2020.03</b> I released a Korean speech recognition open-source named <a href="https://github.com/sooftware/kospeech">KoSpeech</a>.</li>
+                  <li><b>2020.02</b> I received a samsong scholarship!</li>
                   <li><b>2019.10</b> I ranked 12th out of 100 people in <a href="https://campaign.naver.com/aihackathon_speech/">Naver AI Hackathon.</a></li>
                   <li><b>2019.05</b> I have a girlfriend!</li>
+                  <li><b>2019.03</b> I received an excellent academic scholarship!</li>
+                  <li><b>2019.02</b> I received a samsong scholarship at university!</li>
+                  <li><b>2018.09</b> I received an excellent academic scholarship at university!</li>
+                  <li><b>2018.03</b> I received an excellent academic scholarship at university!</li>
                   <li><b>2017.06</b> I was discharged from the <a href="http://www.rokmc.mil.kr/">Republic of Korean Marine Corps.</a></li>
                   <li><b>2016.12</b> We placed <b>2nd</b> in the 2016 2nd Marine Division Communications Contest!</li>
                   <li><b>2015.12</b> We won <b>1st place</b> in the 2015 2nd Marine Division Communication Contest!</li>
