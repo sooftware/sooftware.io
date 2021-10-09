@@ -279,6 +279,11 @@ const About: React.FC = () => (
                   <li>Presentation video: <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=458s">[link]</a></li>
                 </p>
 
+                <h5>[2021 Pangyo AI Camp] Know-how to win the 2021 AI online competition</h5>
+                <p>
+                  <li>Homepage: <a href="https://www.aiconnect.kr/main/competition/detail/198/competitionInfo">[link]</a></li>
+                </p>
+
                 <h5>[2021 AI Online Competition] Know-how to win the AI online competition</h5>
                 <p>
                   <li>Presentation video: <a href="https://www.youtube.com/watch?time_continue=456&v=aKKDvdel5O4&feature=emb_logo">[link]</a></li>
