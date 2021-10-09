@@ -269,6 +269,11 @@ const About: React.FC = () => (
                 <h4><span>Pre</span>sentation</h4>
                 <hr></hr>
 
+                <h5>[2021 SSDC] The development process of the TUNiB Electra model.</h5>
+                <p>
+                  <li>Samsung Software Developer Conference: <a href="https://www.soscon.net/ssdc2021">[link]</a></li>
+                </p>
+
                 <h5>[2021 LangCon] Korean Speech Recognition</h5>
                 <p>
                   <li>Presentation video: <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=458s">[link]</a></li>
@@ -298,7 +303,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h5>OpenSpeech</h5>
+                <h5>OpenSpeech (200+ ⭐)️</h5>
                 <p>
                   <i>Team Leader (2021.05 ~ Present) - <span>OpenSpeech Team</span></i>
                   <ul>
@@ -308,7 +313,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h5>Pororo</h5>
+                <h5>Pororo (1k+ ⭐)</h5>
                 <p>
                   <i>Team Member (2020.08 ~ 2021.02) - <span>Kakao Brain</span></i>
                   <ul>
@@ -341,7 +346,7 @@ const About: React.FC = () => (
                   </ul>
                 </p>
 
-                <h5>KoSpeech</h5>
+                <h5>KoSpeech (300+ ⭐)</h5>
                 <p>
                   <i>Team Leader (2020.01 ~ 2021.02) - <span>Personal</span></i>
                   <ul>

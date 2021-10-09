@@ -114,7 +114,7 @@ const About: React.FC = () => (
                 <hr></hr>
 
                 <p>
-                  <li>Coffee (Especially americano & einspanner)</li>
+                  <li>Coffee (especially americano & einspanner)</li>
                   <li>Walking</li>
                   <li>Webtoon</li>
                   <li>Singing (Rock & Rap)</li>
@@ -146,7 +146,7 @@ const About: React.FC = () => (
                 <p>
                   <li>becoming an irreplaceable engineer.</li>
                   <li>creating a very high-quality artificial intelligence chatbot like Jarvis.</li>
-                  <li>presenting a very good house to my parents.</li>
+                  <li>TUNiB becoming a unicorn.</li>
                 </p>
 
               </div>
