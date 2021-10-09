@@ -1,8 +1,8 @@
 ---
 title: '한국어 Tacotron2'
 author: [Soohwan Kim]
-tags: [tool, open-source]
-image: img/tacotron2.png
+tags: [speech, open-source]
+image: img/ta.png
 date: '2021-10-10T10:00:00.000Z'
 draft: false
 ---
