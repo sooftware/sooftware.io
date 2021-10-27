@@ -107,6 +107,7 @@ const About: React.FC = () => (
                     <li>Topics on Natural Language Processing
                       <ul>
                         <li>Developing Large Scale Language Model for Korean</li>
+                        <li>Development of Korean Text-To-Speech model.</li>
                         <li>Development of Korean-English bilingual electra models <a href="https://github.com/tunib-ai/tunib-electra">[GitHub]</a>, <a href="https://tunib.notion.site/TECH-2021-09-18-TUNiB-Electra-3eba9f55859d4992a085a64c600dc150">[Tech Blog]</a></li>
                         <li>Establishment of Korean corpus in the tera-byte unit.</li>
                         <li>Developing Dialogue-Safety Module & Hate Speech Highlight Module.</li>
