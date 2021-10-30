@@ -58,8 +58,9 @@ const About: React.FC = () => (
             <NewsContent className="news-content">
               <div className="post-content">
                 <p>
+                  <li><b>2021.10</b> I attended <a href="https://www.soscon.net/">2021 SSDC (Samsung Software Developer Conference)</a> as a presenter and presented about TUNiB-Electa. <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=467s">[link]</a></li>
                   <li><b>2021.09</b> We released <a href="https://github.com/tunib-ai/tunib-electra">TUNiB Electra</a> model.</li>
-                  <li><b>2021.08</b> I attended <a href="https://github.com/songys/2021Langcon">2021 LangCon</a> as a presenter and presented Korean speech recognition. <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=467s">[link]</a></li>
+                  <li><b>2021.08</b> I attended <a href="https://github.com/songys/2021Langcon">2021 LangCon</a> as a presenter and presented about Korean speech recognition. <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=467s">[link]</a></li>
                   <li><b>2021.07</b> I presented the know-how of winning the 2021 AI online competition. <a href="https://www.youtube.com/watch?v=aKKDvdel5O4&t=382s">[link]</a></li>
                   <li><b>2021.07</b> I won <b>1st place</b> in the <a href="https://www.aiconnect.kr/main/competition/detail/194/competitionInfo">2021 AI Online Competition</a> - Conversation Sentiment Classification Track.</li>
                   <li><b>2021.06</b> I released a speech recognition open-source named <a href="https://github.com/openspeech-team/openspeech">openspeech</a>.</li>
