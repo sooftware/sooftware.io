@@ -16,8 +16,6 @@
   "dependencies": {
     "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
-    "@react-pdf-viewer/core": "^2.11.0",
-    "@react-pdf-viewer/default-layout": "^2.11.0",
     "cssnano": "5.0.8",
     "date-fns": "2.23.0",
     "emotion": "11.0.0",
