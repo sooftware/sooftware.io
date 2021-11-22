@@ -1,5 +1,5 @@
 ---
-title: 'Large Scale LM (1)'
+title: 'Large Scale LM (1) Background'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
 image: img/big-model1.png
@@ -7,9 +7,10 @@ date: '2021-11-22T10:00:00.000Z'
 draft: false
 ---
 
-# Large Scale LM (1)
+# Large Scale LM (1) Background
 
 이 자료는 [[해당 link]](https://github.com/tunib-ai/large-scale-lm-tutorials) 를 참고하며 제 언어로 재작성한 글입니다.  
+저의 추가적인 메모나 의견이 삽입되거나 삭제된 내용이 있습니다.  
 더 퀄리티가 좋은 자료는 위의 링크를 참고하시길 바랍니다.
   
 ## Motivation
