@@ -58,6 +58,7 @@ const About: React.FC = () => (
             <NewsContent className="news-content">
               <div className="post-content">
                 <p>
+                  <li><b>2021.11</b> I ranked 3rd place in the 2021 AI Grand Challenge - Speech Recognition Track</li>
                   <li><b>2021.11</b> TUNiB has raised a seed investment! <a href="https://platum.kr/archives/175048">[link]</a></li>
                   <li><b>2021.10</b> I attended <a href="https://www.soscon.net/">2021 SSDC (Samsung Software Developer Conference)</a> as a presenter and presented about TUNiB-Electa. <a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=467s">[link]</a></li>
                   <li><b>2021.09</b> We released <a href="https://github.com/tunib-ai/tunib-electra">TUNiB Electra</a> model.</li>
