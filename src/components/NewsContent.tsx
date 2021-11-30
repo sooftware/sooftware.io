@@ -97,7 +97,7 @@ export const NewsContent = styled.section`
 
   a {
     /* color: var(--darkgrey); */
-    color: #55AAFF;
+    color: #A9DEFF;
     word-break: break-word;
     /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
     transition: all 0.2s ease-in-out;

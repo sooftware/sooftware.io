@@ -121,7 +121,6 @@ const About: React.FC = () => (
                   <li>Spring/Fall</li>
                   <li>Spicy food</li>
                   <li>Beer</li>
-                  <li>Cap</li>
                   <li>Calm Down Man (Youtuber)</li>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
                   <li>Keyboard (I'm using *REAL FORCE* now.)</li>
@@ -146,7 +145,7 @@ const About: React.FC = () => (
                 <p>
                   <li>becoming an irreplaceable engineer.</li>
                   <li>creating a very high-quality artificial intelligence chatbot like Jarvis.</li>
-                  <li>TUNiB becoming a unicorn.</li>
+                  <li>TUNiB becoming an unicorn.</li>
                 </p>
 
               </div>
