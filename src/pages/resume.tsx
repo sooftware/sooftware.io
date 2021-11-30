@@ -55,6 +55,8 @@ const About: React.FC = () => (
               <PostFullTitle className="post-full-title">RESUME</PostFullTitle>
             </PostFullHeader>
 
+            <img src={ require('../content/resume/img.png') } />
+
             <ResumeContent className="resume-content">
               <div className="post-content">
                 <h4><span>Pro</span>file</h4>
