@@ -242,12 +242,12 @@ WHERE
 `filter`를 사용합니다.
 ```python
 db.session.query(Test).filter(Test.user_id == 'sooftware').all()
-db.session.query(Test).filter(Test.user_id == 'sooftware', Test.name == '환').all() 
+db.session.query(Test).filter(Test.user_id == 'sooftware', Test.name == 'Soohwan Kim').all() 
 ```
 
 INSERT
 ```python
-test = Test('sooftware', 'sooftware')
+test = Test('sooftware', 'Soohwan Kim')
 db.session.add(test)
 db.session.commit()
 ```
