@@ -57,7 +57,7 @@ const About: React.FC = () => (
 
             <ResumeContent className="resume-content">
               <div>
-                <img src="../content/resume/img.png" />
+                <img src="https://user-images.githubusercontent.com/42150335/144031994-c97a740f-1b4d-457e-8255-43f1ac077a8a.png" />
               </div>
 
               <div className="post-content">
