@@ -1,7 +1,7 @@
 ---
 title: 'React 기반 개인 웹페이지 배포하기 (gatsby)'
 author: [Soohwan Kim]
-tags: [react, web]
+tags: [toolkit, web]
 image: img/gatsby.png
 date: '2021-09-22T10:00:00.000Z'
 draft: false

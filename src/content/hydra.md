@@ -1,7 +1,7 @@
 ---
 title: 'Hydra'
 author: [Soohwan Kim]
-tags: [open-source]
+tags: [toolkit]
 image: img/hydra.png
 date: '2020-12-28T10:00:00.000Z'
 draft: false

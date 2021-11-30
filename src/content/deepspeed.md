@@ -1,7 +1,7 @@
 ---
 title: 'DeepSpeed Usage'
 author: [Soohwan Kim]
-tags: [big-model, train]
+tags: [nlp, parallelism, large-scale]
 image: img/deepspeed.png
 date: '2021-10-30T10:00:00.000Z'
 draft: false

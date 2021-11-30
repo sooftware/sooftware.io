@@ -1,7 +1,7 @@
 ---
 title: '튜닙, 30억 규모 시드투자 유치'
 author: [Soohwan Kim]
-tags: [tunib, seed, investment]
+tags: [record]
 image: img/tunib.png
 date: '2021-11-16T11:00:00.000Z'
 draft: false

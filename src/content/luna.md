@@ -2,7 +2,7 @@
 layout: post
 title: 'Luna: Linear Unified Nested Attention'
 author: [Soohwan Kim]
-tags: ['attention']
+tags: [nlp, paper]
 image: img/luna.png
 date: '2021-07-03T23:46:37.121Z'
 draft: false

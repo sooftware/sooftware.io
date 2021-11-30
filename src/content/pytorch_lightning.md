@@ -1,7 +1,7 @@
 ---
 title: 'PyTorch Lightning'
 author: [Soohwan Kim]
-tags: [deeplearning, framework]
+tags: [toolkit]
 image: img/pl.png
 date: '2021-09-17T10:00:00.000Z'
 draft: false

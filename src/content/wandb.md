@@ -1,7 +1,7 @@
 ---
 title: 'wandb (Weight & Bias)'
 author: [Soohwan Kim]
-tags: [tool]
+tags: [toolkit]
 image: img/wandb.png
 date: '2021-06-13T10:00:00.000Z'
 draft: false

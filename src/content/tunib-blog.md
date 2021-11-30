@@ -1,7 +1,7 @@
 ---
 title: '튜닙 블로그 개편'
 author: [Soohwan Kim]
-tags: [tunib, blog]
+tags: [record]
 image: img/tunib-tistory.png
 date: '2021-11-20T11:00:00.000Z'
 draft: false

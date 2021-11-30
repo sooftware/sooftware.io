@@ -1,7 +1,7 @@
 ---
 title: '판교 AI Camp 프로그램 발표'
 author: [Soohwan Kim]
-tags: [presentation]
+tags: [record, presentation]
 image: img/ai_camp.png
 date: '2021-08-28T10:00:00.000Z'
 draft: false

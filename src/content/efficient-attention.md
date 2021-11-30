@@ -1,7 +1,7 @@
 ---
 title: 'Efficient Attention Paper Review'
 author: [Soohwan Kim]
-tags: [attention, paper]
+tags: [nlp, paper]
 image: img/efficient_attention.png
 date: '2021-07-17T10:00:00.000Z'
 draft: false

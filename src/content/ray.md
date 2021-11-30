@@ -1,7 +1,7 @@
 ---
 title: 'Ray: multi-processing library'
 author: [Soohwan Kim]
-tags: [tool, open-source]
+tags: [toolkit]
 image: img/ray.png
 date: '2021-07-03T10:00:00.000Z'
 draft: false

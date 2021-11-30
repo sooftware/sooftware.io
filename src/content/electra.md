@@ -4,9 +4,7 @@ title: Electra Paper Review
 image: img/electra.png
 author: [Soohwan Kim]
 date: 2020-09-23T07:03:47.149Z
-tags:
-  - nlp
-  - paper
+tags: [nlp, paper]
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

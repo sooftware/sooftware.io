@@ -1,7 +1,7 @@
 ---
 title: 'Uniform Length Batching in PyTorch'
 author: [Soohwan Kim]
-tags: [pytorch]
+tags: [nlp]
 image: img/ulb.png
 date: '2021-09-28T10:00:00.000Z'
 draft: false

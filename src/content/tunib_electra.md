@@ -2,7 +2,7 @@
 layout: post
 title: 'TUNiB Electra 공개'
 author: [Soohwan Kim]
-tags: ['huggingface', 'nlp', 'open-source']
+tags: ['huggingface', 'nlp', 'record']
 image: img/electra.png
 date: '2021-09-18T15:11:55.000Z'
 draft: false

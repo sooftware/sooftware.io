@@ -1,7 +1,7 @@
 ---
 title: '카카오브레인 퇴사, 그리고 창업 (feat. 졸업)'
 author: [Soohwan Kim]
-tags: [about]
+tags: [record]
 image: img/new_start.png
 date: '2021-02-27T10:00:00.000Z'
 draft: false

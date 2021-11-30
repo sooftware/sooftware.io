@@ -1,7 +1,7 @@
 ---
 title: 'BentoML'
 author: [Soohwan Kim]
-tags: [tool]
+tags: [toolkit]
 image: img/bentoml.png
 date: '2021-09-28T10:00:00.000Z'
 draft: false

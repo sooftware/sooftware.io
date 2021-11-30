@@ -1,7 +1,7 @@
 ---
 title: 'EMNLP Paper Review: Speech'
 author: [Soohwan Kim]
-tags: [speech, nlp, paper]
+tags: [speech, paper]
 image: img/2020-emnlp.png
 date: '2020-12-08T10:00:00.000Z'
 draft: false

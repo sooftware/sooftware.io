@@ -1,7 +1,7 @@
 ---
 title: 'Pororo: A Deep Learning based Multilingual Natural Language Processing Library'
 author: [Soohwan Kim]
-tags: [nlp, open-source]
+tags: [nlp, toolkit, record]
 image: img/pororo.png
 date: '2021-02-02T10:00:00.000Z'
 draft: false

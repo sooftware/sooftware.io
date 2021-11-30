@@ -4,7 +4,7 @@ title: Streamlit
 image: img/streamlit.png
 author: [Soohwan Kim]
 date: 2021-08-30T10:00:00.000Z
-tags: [web, python, open-source]
+tags: [toolkit, web]
 excerpt: The fastest way to build data apps in Python
 ---
 

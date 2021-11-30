@@ -1,7 +1,7 @@
 ---
 title: 'Fairseq Hydra'
 author: [Soohwan Kim]
-tags: [open-source]
+tags: [toolkit, nlp]
 image: img/fairseq.png
 date: '2020-12-31T10:00:00.000Z'
 draft: false
