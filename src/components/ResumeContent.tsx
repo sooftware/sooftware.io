@@ -188,7 +188,7 @@ export const ResumeContent = styled.section`
   }
   
   span {
-    color: #2B7489;
+    color: #55AAFF;
   }
 
   pre {
