@@ -99,7 +99,7 @@ export const ResumeContent = styled.section`
 
   a {
     /* color: var(--darkgrey); */
-    color: #A9DEFF;
+    color: #0088FF;
     word-break: break-word;
     /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
     transition: all 0.2s ease-in-out;
@@ -188,7 +188,7 @@ export const ResumeContent = styled.section`
   }
   
   span {
-    color: #A9DEFF;
+    color: #0088FF;
   }
 
   pre {
