@@ -52,11 +52,14 @@ const About: React.FC = () => (
         <div css={inner}>
           <article className="post page" css={[PostFull, NoImage]}>
             <PostFullHeader className="post-full-header">
-              <PostFullTitle className="post-full-title">RESUME</PostFullTitle>
+              <PostFullTitle className="post-full-title">Résumé</PostFullTitle>
             </PostFullHeader>
 
             <div>
-              <img src="https://user-images.githubusercontent.com/42150335/144031994-c97a740f-1b4d-457e-8255-43f1ac077a8a.png" />
+              <img src="https://user-images.githubusercontent.com/42150335/144107591-b55a7cae-f43a-4c19-9064-95450e865335.png" />
+            </div>
+            <div>
+              <img src="https://user-images.githubusercontent.com/42150335/144107625-c11df3f1-e477-4a81-b2bc-d1b24ef2056b.png" />
             </div>
           </article>
         </div>
