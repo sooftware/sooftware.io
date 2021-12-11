@@ -19,9 +19,9 @@ draft: false
   
 ## Startups
   
-- [**`TUNiB (튜닙)`**](http://www.tunib.ai/) : 유명 깃허브 스타이자 자연어처리 리서쳐이신 **박규병**님을 필두로 **카카오브레인** 자연어처리 팀 출신들이 설립한 자연어처리 테크 스타트업. **글로벌 챗봇 서비스**를 개발하고 있으며 국내 경진대회에서의 좋은 성적들과 꾸준한 오픈소스 기여 등으로 자연어처리 기술력을 인정받고 있다. 최근 **30억 규모의 시드 투자**를 마무리했다. ***(Last Update: 2021.12.05)***  
+- [**`TUNiB (튜닙)`**](http://www.tunib.ai/) : 유명 깃허브 스타이자 자연어처리 리서쳐이신 **박규병**님을 필두로 **카카오브레인** 자연어처리 팀 출신들이 설립한 자연어처리 테크 스타트업. **글로벌 페르소나 챗봇 서비스**를 개발하고 있으며 2021 AI 온라인 경진대회 1위 등 국내 컴피티션에서의 좋은 성적들과 [**Parallelformers**](https://github.com/tunib-ai/parallelformers), [**TUNiB-Electra**](https://github.com/tunib-ai/tunib-electra) 등의 오픈소스 기여 등으로 자연어처리 기술력을 인정받고 있다. 특히 최근에는 **Large-Scale 언어 모델** 개발에 힘쓰고 있다. 21년 하반기에 **30억 규모의 시드 투자**를 마무리했다. ***(Last Update: 2021.12.07)***  
   
-- [**`Upstage (업스테이지)`**](https://www.upstage.ai/) : AI 분야의 세계적인 석학이신 홍콩과기대 **김성훈** 교수님(전 네이버 클로바 헤드)을 필두로 **네이버 클로바** 리더급 분들이 나오셔서 만든 인공지능 스타트업. 김성훈 교수님 외에도 전 클로바 OCR팀 리더 **이활석** 박사님, 네이버 파파고 모델팀 리더 **Lucy Park**님 등 AI 업계에서 유명하신 분들이 다수 포진되어 있다. 설립 1년만에 **300억 규모의 시리즈 A**를 받으며 이례적인 속도로 성장하고 있다. 매출뿐 아니라 [**KLUE**](https://github.com/KLUE-benchmark/KLUE) 등의 연구적 성과, Kaggle과 같은 세계적인 대회에서의 1위 등 여러 면에서 뛰어난 성과를 보이고 있다. ***(Last Update: 2021.12.05)***  
+- [**`Upstage (업스테이지)`**](https://www.upstage.ai/) : AI 분야의 세계적인 석학이신 홍콩과기대 **김성훈** 교수님(전 **네이버 클로바** 헤드)을 필두로 네이버, 카카오, 엔비디아 핵심 인력들이 나와 만든 인공지능 스타트업. 김성훈 교수님 외에도 전 클로바 OCR팀 리더 **이활석** 박사님, 파파고 AI 모델 리더이자 Github 에 있는 한국어 NLP 오픈소스 중 최다 추천을 받은 Konlpy 를 개발한 **Lucy Park**님, 캐글 세계 랭킹 6위 김상훈님 등 AI 업계에서 유명하신 분들이 다수 포진되어 있다. 설립 1년만에 **300억 규모의 시리즈 A**를 받으며 이례적인 속도로 성장하고 있다. 매출뿐 아니라 [**KLUE**](https://github.com/KLUE-benchmark/KLUE) 등의 연구적 성과, Kaggle과 같은 세계적인 대회에서의 1위 등 여러 면에서 뛰어난 성과를 보이고 있다. 현재 AI 기술을 쉽게 도입할 수 있게 도와주는 AI Pack 을 개발해 기업이 고유의 핵심 비즈니스에 집중할 수 있도록 도와주고 있다. ***(Last Update: 2021.12.07)***. 
   
 - [**`Hyperconnect (하이퍼커넥트)`**](https://career.hyperconnect.com/) : 영상 메신저 서비스 [**아자르(Azar)**](https://apps.apple.com/kr/app/%EC%95%84%EC%9E%90%EB%A5%B4-%EC%83%88-%EC%B9%9C%EA%B5%AC%EB%A1%9C-%EC%9D%BC%EC%83%81%EC%9D%84-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/id972558973)와 라이브 동영상 서비스 [**하쿠나 라이브**](https://play.google.com/store/apps/details?id=com.movefastcompany.bora&hl=ko&gl=US)로 유명한 한국의 스타트업. 2021년 상반기에 미국의 매치그룹에 2조에 인수됐다. CVPR, INTERSPEECH와 같은 세계적인 학회에 논문을 꾸준히 게재하는 등 연구적으로도 뛰어난 성과를 보이고 있다. ***(Last Update: 2021.12.05)***   
   
@@ -43,6 +43,10 @@ draft: false
   
 - [**`Return Zero (리턴제로)`**](https://www.rtzr.ai/) : 카카오 출신 엔지니어들이 설립한 스타트업이며, 통화 내용을 텍스트로 옮겨주는 서비스인 [**VITO**](https://www.vitoapp.io/)를 운영중이다. 핵심 기술은 음성 인식으로, 최근에 코리아 AI 스타트업 TOP 100에 선정될 정도로 유망성을 인정받았다. ***(Last Update: 2021.12.05)***     
   
+- [**`Sendbird (센드버드)`**](https://sendbird.com/ko) : 채팅 API를 판매하는 SaaS(Software-as-a-Service) B2B 스타트업이다. 21년 상반기에 1억달러 투자 유치를 하며 유니콘이 되었다. ***(Last Update: 2021.12.07)***   
+
+- [**`Superb AI (슈퍼브 AI)`**](https://www.superb-ai.com/) : SKT 연구원 출신들이 설립한 스타트업. 머신러닝 데이터 플랫폼인 **스위트(Suite)** 서비스를 운영중이다. ***(Last Update: 2021.12.07)*** 
+  
 - [**`Riiid (뤼이드)`**](https://riiid.com/ko/main) : 맞춤형 토익 공부 어플리케이션인 [**뤼이트 튜터 (구 산타토익)**](https://play.google.com/store/apps/details?id=co.riiid.vida&hl=ko&gl=US)를 운영중이다. **누적 투자 2,800억**으로 대형 스타트업이다. ***(Last Update: 2021.12.05)*** 
   
 - [**`SELECTSTAR (셀렉트스타)`**](https://selectstar.ai/?gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rA_N6dFN-Yih-DWF61TlO-IwlMgIHWwyHV_xSRKfr_JG4HMw0WuVyQaAiXSEALw_wcB) : 크라우드소싱으로 AI 학습에 필요한 데이터를 수집 및 가공해주는 서비스를 제공해주는 스타트업. 전 세계적으로 데이터 수집∙가공 분야의 기업들이 높은 가치를 인정받는 추세를 고려하면 앞으로의 성장가능성이 더욱 기대되는 스타트업이다. ***(Last Update: 2021.12.05)*** 
@@ -53,7 +57,7 @@ draft: false
  
 - [**`ART Lab (아트랩)`**](https://artlab.ai/) : 인공지능 기술로 사용자별로 특화된 스킨케어 서비스를 제공해주는 기술을 개발하는 스타트업. [**매니폴드**](https://manifold.fit/)라는 서비스를 운영하고 있다. ***(Last Update: 2021.12.05)***   
   
-- [**`Vorthru (보이스루)`**](https://voithru.com/) : 유튜버/스트리머들을 대상으로 하는 영상 번역 서비스 [**자메이크(JAMAKE)**](https://jamake.io/ko/)를 주 서비스로하는 스타트업. 자체적으로 **음성인식, 번역** 등의 기술을 보유하고 있으며 여러 인공지능 관련 대회에서 우수한 성적을 내며 기술력을 인정받고 있다. 음성인식, 번역 후에 전문 번역가가 마무리 번역을 함으로써 번역 성능 100%라는 타이틀을 내세우고 있다. ***(Last Update: 2021.12.05)***   
+- [**`Voithru (보이스루)`**](https://voithru.com/) : 유튜버/스트리머들을 대상으로 하는 영상 번역 서비스 [**자메이크(JAMAKE)**](https://jamake.io/ko/)를 주 서비스로하는 스타트업. 자체적으로 **음성인식, 번역** 등의 기술을 보유하고 있으며 여러 인공지능 관련 대회에서 우수한 성적을 내며 기술력을 인정받고 있다. 음성인식, 번역 후에 전문 번역가가 마무리 번역을 함으로써 번역 성능 100%라는 타이틀을 내세우고 있다. ***(Last Update: 2021.12.05)***   
   
 - [**`Atlas Labs (아틀라스랩스)`**](https://www.atlaslabs.ai/) : **음성인식** 기술을 메인으로 하는 스타트업. 자체 음성인식 엔진인 **ZEROTH**를 활용해서 AI 통화 서비스인 [**SWITCH**](https://www.getswitch.app/)를 운영하고 있다. ***(Last Update: 2021.12.05)***   
   
@@ -72,7 +76,7 @@ draft: false
   
 - [**`42 Maru (포티투마루)`**](https://www.42maru.ai/kr/) : **Semantic QA**를 연구하며 글로벌 기계독해 경진대회 **SQuAD**에서 우수한 성적을 거둔 이력이 있다. ***(Last Update: 2021.12.05)***    
   
-- [**`Lion Rocket (라이언로켓)`**](https://lionrocket.ai/) : **영상/음성 합성** 기술을 주력으로 하는 스타트업. ***(Last Update: 2021.12.05)***      
+- [**`Lion Rocket (라이언로켓)`**](https://lionrocket.ai/) : **영상/음성 합성** 기술을 주력으로 하는 스타트업. 은행들과 가상 인간 제작 프로젝트 협업 등 다양한 기업과 협업을 하고 있다. ***(Last Update: 2021.12.07)***      
   
 - [**`Pulse9 (펄스나인)`**](http://www.pulse9.net/) : 가상 아이돌 [**이터니티(ETERNITY)**](https://www.youtube.com/channel/UCSnQSjVVHs5bHKIpTJ7vqoA)를 만드는 스타트업. 21년 12월 기준 가장 많이본 영상은 200만 뷰를 기록했다. ***(Last Update: 2021.12.05)***    
   
@@ -80,9 +84,9 @@ draft: false
   
 - [**`Common Computer (커먼컴퓨터)`**](https://comcom.ai/) : 구글, 네이버 출신의 엔지니어들이 설립한 스타트업. 주요 서비스로는 블록체인 기반의 인공지능 관련 대규모 연산이 가능한 블록체인 [**AI Network**](https://ainetwork.ai/)와 OpenResource 플랫폼 [**아이나이즈(Ainize)**](https://ainize.ai/)가 있다. ***(Last Update: 2021.12.05)***    
   
-- [**`Silvia Health (실비아헬스)`**](https://silvia.io/) : 치매 예방과 조기 진단을 목표로 하는 두뇌건강 플랫폼을 시작으로, 디지털 헬스케어 시장에서 맞춤형 인지건강 관리를 선도한다는 목표를 가지고 있는 스타트업. 지난 1년 동안 실비아헬스는 삼성 C-lab Outside 선정, 정주영 창업경진대회 최우수상, 보건복지부 X 건강보험심사평가원 빅데이터 활용 경진대회 최우수상 등 수많은 대회에서 좋은 성적을 거두었다. ***(Last Update: 2021.12.05)***     
+- [**`Silvia Health (실비아헬스)`**](https://silvia.io/) : 치매 예방과 조기 진단을 목표로 하는 두뇌건강 플랫폼을 시작으로, 디지털 헬스케어 시장에서 맞춤형 인지건강 관리를 선도한다는 목표를 가지고 있는 스타트업. 삼성 C-lab Outside 선정, 정주영 창업경진대회 최우수상, 보건복지부 X 건강보험심사평가원 빅데이터 활용 경진대회 최우수상 등 여러 대회에서 좋은 성적을 거두었다. ***(Last Update: 2021.12.05)***  
   
-- [**`Beyond Honeycomb (비욘드허니컴)`**](https://www.beyondhoneycomb.com/) : 인공지능 기술을 활용해 균잉한 맛으로 셰프의 음식을 재현하는 AI 셰프 솔루션을 개발중인 스타트업. ***(Last Update: 2021.12.05)***      
+- [**`Beyond Honeycomb (비욘드허니컴)`**](https://www.beyondhoneycomb.com/) : 인공지능 기술을 활용해 균일한 맛으로 셰프의 음식을 재현하는 AI 셰프 솔루션을 개발중인 스타트업. ***(Last Update: 2021.12.05)***      
     
 - [**`Soundable Health (사운더블 헬스)`**](https://www.soundablehealth.com/) : 소리 기반의 헬스케어 서비스를 개발하는 스타트업. ***(Last Update: 2021.12.05)***         
   
@@ -112,11 +116,29 @@ draft: false
 
 - [**`BIGC (빅크)`**](https://www.bigc.studio/) : 엔터테이너, 뮤지션, 작가, 스페셜리스트 등 다양한 크리에이터들이 팬들과 소통하며 꾸준히 수익을 창출할 수 있는 플랫폼을 만드는 스타트업. 창업자인 김미희 대표는 2016년 모바일 회화 서비스 '튜터링'을 창업해, 300만 다운로드의 에듀테크 대표기업으로 성장시켜 인수합병을 이끈 이력이 있다. ***(Last Update: 2021.12.05)***   
   
-- [**`Thumb Technologies (썸 테크놀로지스)`**](https://www.thumb-technologies.com/) : **아마존, 애플, 인텔 등 해외 유명 기업 출신**들이 설립한 스타트업으로 자연어처리 기술을 기반으로 온·오프라인 회의내용을 자동으로 기록하고 요약하는 기술을 보유하고 있다. 최근 약 **16억원 규모의 프리 시드 투자 유치**를 마무리했다. ***(Last Update: 2021.12.05)***  
+- [**`Thumb Technologies (썸 테크놀로지스)`**](https://www.thumb-technologies.com/) : **아마존, 애플, 인텔 등 해외 유명 기업 출신**들이 설립한 스타트업으로 자연어처리 기술을 기반으로 온·오프라인 회의내용을 자동으로 기록하고 요약하는 기술을 보유하고 있다. CEO는 한국 분이시며 나머지 멤버들은 외국인으로 이루어져 있다. 영어 의사소통이 되면서 자연어처리 기술을 보유한 인재를 찾고 있다고 한다. 최근 약 **16억원 규모의 프리 시드 투자 유치**를 마무리했다. ***(Last Update: 2021.12.05)***  
 
 - [**`zezedu (제제듀)`**](https://zezedu.com/) : AI 기술을 이용해 수학 교육의 개인화를 목표로 하는 스타트업. ***(Last Update: 2021.12.05)***  
 
 - [**`GAUDIO Lab (가우디오랩)`**](https://gaudiolab.com/about-us/?lang=ko) : 오디오테크 스타트업으로, 다양한 콘텐츠 환경에서 **몰입감 높은 오디오 경험**을 구현하는 기술을 개발한다. 네이버와 긴밀하게 협력하고 있으며 높은 수준의 기술력을 인정받고 있다. 최근 **113억원 규모의 시리즈 B 투자**를 유치했다. ***(Last Update: 2021.12.05)***  
+  
+- [**`VUNO (뷰노)`**](https://www.vuno.co/) : **의료분야**에 인공지능 기술을 적용해 X-ray·CT·MRI 등 의료영상 데이터부터 생체신호까지 광범위한 의료데이터를 분석하고 진단을 돕는 의료 AI 솔루션 개발 스타트업. ***(Last Update: 2021.12.07)***  
+  
+- [**`Humelo (휴멜로)`**](http://www.humelo.com/) : 단순한 음성 합성 기술을 넘어 음성의 감정 및 운율(음정, 속도)을 조절 가능하도록 하는 기술을 개발하는 스타트업. ***(Last Update: 2021.12.07)***    
+
+- [**`MindLogic (마인드로직)`**](https://mindlogic.ai/) : 인공지능 가상 연인 서비스 [**가상남녀**](http://ai-boyfriend-girlfriend.mindlogic.ai/) 서비스를 운영중인 스타트업. 21년 상반기에 50억 규모의 시리즈 A 투자를 유치했다. ***(Last Update: 2021.12.07)***  
+
+- [**`Petpeotalk (펫페오톡)`**](https://www.notion.so/608470c23d124915806d04378cc012d1) : 집에 남은 반려동물의 행동을 기록하고 AI 기반 기술로 행동을 분석해주는 반려동물 CCTV 서비스인 [**도기보기**](https://dogibogi.co.kr/)를 운영중이다. ***(Last Update: 2021.12.08)***  
+  
+- [**`Intellius (인텔리어스)`**](http://www.intellius.ai/) : 자연어처리 기술을 기반으로 의도 분류, 대화, 감성 분석 등의 기술을 서비스로 제공하는 스타트업. ***(Last Update: 2021.12.07)***   
+
+- [**`Atommerce (아토머스)`**](http://www.atommerce.com/) : 비대면 전문 정신건강 서비스 [**마인드카페**](http://www.atommerce.com/)를 운영하는 스타트업. ***(Last Update: 2021.12.07)***   
+  
+- [**`VUERON (뷰런)`**](http://vueron.org/) : **LiDAR 센서**를 **자율주행** 산업에 적용하는 기술을 개발하고 있는 스타트업. ***(Last Update: 2021.12.07)***     
+  
+- [**`elice (엘리스)`**](https://elice.io/home) : AI 기술 기반으로 학생들의 행동 패턴을 파악하는 등 코딩 교육 플랫폼에 AI 기술을 적용하고 있는 스타트업. 최근에는 대기업쪽 코딩 교육에 많이 사용되고 있다. ***(Last Update: 2021.12.08)***
+
+- [**`Wellxecon (웰시콘)`**](https://wellxecon.com/) : 서울대 경제학부 홍석철 교수님이 설립한 스타트업으로, 금융과 건강이라는 두 도메인의 데이터를 활용해서 건강 분석에 금융 데이터를, 금융 분석에 건강 데이터를 활용하는 서비스를 제공하고 있다. 현재는 보험사 등과 협업하고 있다. ***(Last Update: 2021.12.08)***
   
 ## Author
 
