@@ -16,12 +16,16 @@ draft: false
 - Code: https://github.com/hanjanghoon/BERT_FP
   
 NAACL 2021에 억셉된 논문이다. 서강대 NLP 연구실, LG AI Research 팀에서 작성했다. Dialogue Retrieval 관련 논문인데, 
-방법이 심플하면서도 효과가 좋다. (Ubuntu Dialogue 등 몇 데이터셋에서 SOTA를 찍었다)  
+방법이 심플하면서도 성능 좋다. (Ubuntu Dialogue 등 몇 데이터셋에서 SOTA를 찍었다)  
   
-**Utterance Relevance Classification (URC)** 이 핵심인데, 기존 retrieval 방식의 경우 주어진 *context*와 *response*가 
-적합한지 (Positive), 부적합한지 (Negative) 를 binary classification으로 분류한다. 이 방법을 조금 더 스마트하게 바꿨다고 보면 되는데 방식은 다음과 같다.  
+**Utterance Relevance Classification (URC)** 이 핵심인데, pre-training 된 모델을 가져와서 추가적으로 post-training을 시키는데, 
+MLM (Masked Language Modeling) + NSP (Next Sentence Prediction) 중 NSP를 dialogue 태스크에 맞게 조금 변형한다.  
   
 [Context + <|sep|> +  Response] 형식의 입력을 주고, 이 Response가 1. Correct Response 2. Random Utterance 3. Random Utterance in the same dialogue 중 
-어느 클래스에 속하는지 3개로 분류하는 식으로 학습함으로써 주어진 대화 데이터를 더 스마트하게 활용하는 방법이다.  
-  
+어느 클래스에 속하는지 3개로 분류하는 식으로 학습한다. 이렇게 하면 기존의 Context - Response를 두고 적합한지 (Positive), 
+부적합한지 (Negative) 를 판단하는 binary classification 태스크로 문제를 풀 때보다 
+주어진 대화 데이터를 더 효과적으 활용한다는 면에서 데이터 오그멘테이션의 효과도 있게 된다. 
+
+이 post-training은 MLM Loss (dynamic masking) + URC Loss로 학습이 되며, 
+이후 기존 response selection 태스크로 파인튜닝해서 사용 가능하다.  
 
