@@ -19,7 +19,7 @@ draft: false
   
 ## Seq2seq의 한계
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfNjYg/MDAxNTc5ODgxOTA0NjE2.2BPx9oSCgEAMbcME4A2c6C8Ec0HMyRi3LbZz-b0EQJ0g.t8Td_8UoWeZmQ4GSxn2XritAUcSaLsrwa1jKQN1PLCYg.PNG.sooftware/image.png?type=w773" width="500">
+<img src="https://user-images.githubusercontent.com/42150335/147275988-a5eca2d8-18d0-4a23-b7f0-79ccf4c4a416.png" width="500">
   
 기본적인 Seq2seq 모델은 간단한 구조라는 장점이 있었지만, 크게 2가지의 문제점이 존재한다.  
   
@@ -30,7 +30,7 @@ draft: false
   
 ## Seq2seq의 문제점  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMjU2/MDAxNTc5ODg2NDgyNjA2.o6DT0V6bI64MummaMWBnNcLi9-kDFq0TjNTHv7IO3u0g.ncd7RVr-CAEuyjlMyxZYVWAD7DgiHwsDzUKpkaxW53Eg.PNG.sooftware/image.png?type=w773" width="500">  
+<img src="https://user-images.githubusercontent.com/42150335/147275994-360a8692-5525-41f3-b110-d3a0b2572271.png" width="500">  
   
 그렇다면 Seq2seq 구조에서 어떤 부분이 문제였는지를 살펴보자. Seq2seq의 구조를 살펴보면, Encoder에서 계산한 여러 Hidden State 중 마지막 Hidden State만을 Decoder에서 사용하게 된다.
   
@@ -46,17 +46,17 @@ draft: false
   
 그렇다면 이 Attention Mechanism이 왜 효과가 있을지를 먼저 생각해보자.  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMTcg/MDAxNTc5ODg3MDQyMTg5.QGEJw399HA87H8xbRsPl3bR_ToIjBwgdEEf4cRuyMs4g._kpizuqZFWAdqPRGrf7lbvPMJ6AZRmJeRYaAMXXX9GAg.PNG.sooftware/image.png?type=w773" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/147276029-26d22b53-0045-4794-ae20-fd8d907e81dc.png" width="300">
 
 위와 같은 영어 문제가 있다고 해보자. 우리는 위의 영어 문제를 해석할 때, 처음부터 끝까지 혹은, 처음부터 한 문장이 끝날 때까지 모두 읽고 해석한다면 해석하기 쉽지 않을 것이다.  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfNTYg/MDAxNTc5ODg3MTIxOTY1.0IFhxUc6t2ensEzwojZq9uY5c1O2rXuvoVdfEPLvm0wg.dY1v57L5Nv-3iSSm2FOqw8S-AwB7BFrya3igjhOJE0Ag.PNG.sooftware/image.png?type=w773" width="400">  
+<img src="https://user-images.githubusercontent.com/42150335/147276036-a69e28bd-c039-4c0f-a9e6-1abf10dd0e9e.png" width="400">  
   
 이 보다는 위의 □ 부분과 같이 부분부분 끊어서 해석하는 편이 더 나은 결과를 도출할 것이다.  
   
 ### Encoder of Seq2seq
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfOTQg/MDAxNTc5ODgwMjY0MTk1.QC29iJp0w-leYozv3QEZbhs0rKiasDWstmcxXb6KcQEg.plqEV3IkwWR-196Vq_3kB-zz9cKpSMHscQ1anGMlBI4g.PNG.sooftware/image.png?type=w773" width="400">  
+<img src="https://user-images.githubusercontent.com/42150335/147276041-b9831d3b-2971-4bd8-89b6-343372b566b6.png" width="400">  
   
 그럼 다시 Seq2seq의 Encoder에 주목해보자. 시각별 RNN 셀의 Hidden State에는 당연히 직전에 입력된 단어에 대한 정보가 많이 포함되어 있을 것이다.  
   
@@ -66,13 +66,13 @@ draft: false
   
 ## Attention Mechanism
 
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMTE5/MDAxNTc5ODg3ODE3MjE2.qoAGM2HdLouYzpNv8zjR9tjKAatY1h_MyOh6KLWCN70g.XhC_2dkTliEKeD4DiDAe6HqBV_rVnjqhQbXs3pYxf2wg.PNG.sooftware/image.png?type=w773" width="500">  
+<img src="https://user-images.githubusercontent.com/42150335/147276107-8d3b8047-82be-42be-aebd-a6f1690cf050.png" width="500">  
   
 위 그림은 디코더의 세 번째 RNN 셀에서 출력 단어를 예측할 때, 어텐션 매커니즘을 사용하는 모습이다. 그럼 어텐션 매커니즘이 어떻게 적용되는지를 살펴보자.  
   
 ### Attention Score
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfODYg/MDAxNTc5ODg3OTY2MjI2.Z7Lu2gOy8dU_B143Iyzs-yvQVIknQyHpfAwfXJYrsLEg.hZle2mnoLTKWAhapEiE9nCQisfUe4PbzxRhODi8Vdtsg.PNG.sooftware/image.png?type=w773" width="500">  
+<img src="https://user-images.githubusercontent.com/42150335/147276113-12444d0c-c63f-486d-a1de-c1bbea208a5b.png" width="500">  
   
 어텐션 매커니즘은 디코더에서 출력 결과를 예측할 때, 인코더의 Hidden State들을 다시 한 번 참고해주는 방법이라고 했다.  
   
@@ -86,7 +86,7 @@ draft: false
   
 ### Attention Distribution
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMTIg/MDAxNTc5ODg4NDkxMDQz.miNLNdmdj0t3Ll12purypbOIE6PWRFijlxAF4ci5K28g.c-UT98v0QJumGmehmlwGkQ0bQxxV_jCKOCjOVH17ZcYg.PNG.sooftware/image.png?type=w773" width="400">  
+<img src="https://user-images.githubusercontent.com/42150335/147276123-ad9bf1a0-60fa-4fab-a32e-dedd08e132a2.png" width="400">  
   
 앞에서 각 인코더와 디코더의 현재 Hidden State를 내적한 값은 스칼라로 나오기 때문에 이를 소프트맥스 함수를 적용해서 어텐션 분포를 구한다.  
   
@@ -96,13 +96,13 @@ draft: false
   
 ### Attention Distribution X Encoder Hidden State  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMjkx/MDAxNTc5ODg4ODQ4NDAx.Q2XvPApKbSLvKBybpXr3oZTxkY4DMYvWkPgrLi5Z6f0g.1KE44Qf5LKpCPp99BZXaqJcVOFDgEJ_qskOKLNvzzdUg.PNG.sooftware/image.png?type=w773" width="500">  
+<img src="https://user-images.githubusercontent.com/42150335/147276182-aa176c23-bd20-4c99-81b0-88c65f244752.png" width="500">  
   
 소프트맥스를 통해 얻은 어텐션 분포를 각 인코더 Hidden State와 곱해준다.(Broadcasing)  
   
 ### Weight Sum  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfOTkg/MDAxNTc5ODg4OTI4NDA3.YYUwUxOlaFee0L9Efl19yTNtFXOKtGknOl2_ZaiSkGgg.bv-Ol43R2kznuP2fMNvzRNqYRPTeclDu5FrajBh1kv0g.PNG.sooftware/image.png?type=w773" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/147276190-edfc16a9-4f0d-4a2e-927d-4aac3175c025.png" width="400">
   
 각 어텐션 분포와의 곱을 통해 얻어진 Hidden State들을 전부 더해준다. (element-wise)  
   
@@ -111,15 +111,15 @@ draft: false
   
 - ※ 이해를 돕기 위한 예시 ※  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMjAy/MDAxNTc5ODg5MDU0ODE0.4Xwd762CrmUZ6sWY_IFoddKsPOrDm4v55c-b0JU-PXEg.cFn2Pmagh6s_lLgfXbkPdY2_O4gCOLqSKQf3yHwds6Mg.PNG.sooftware/image.png?type=w773" width="500">
+<img src="https://user-images.githubusercontent.com/42150335/147276201-1a35def6-66a3-4911-8e7e-45aa9da2121e.png" width="500">
   
 ### Concatenating to s<sub>t</sub>
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMTAg/MDAxNTc5ODg5MjI5MTM1.-98GKA8K8agIRoqaEnInJ5k7xK6HIHGBZZoS1lQ5vrcg.G63aj-l1hJdgDcBs-B5q_SmdIVFtn_G_X3UEGgUFT-og.PNG.sooftware/image.png?type=w773" width="500">
+<img src="https://user-images.githubusercontent.com/42150335/147276294-abdbad76-1890-440e-b605-b815225e508a.png" width="500">
   
 그렇게 구한 컨텍스트 벡터와 현 시점의 디코더 셀의 Hidden State와 연결해준다. (여기서는 concatenate라는 방법을 사용했지만 평균을 내서 사용하는 방법도 있다)  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMTE5/MDAxNTc5ODg3ODE3MjE2.qoAGM2HdLouYzpNv8zjR9tjKAatY1h_MyOh6KLWCN70g.XhC_2dkTliEKeD4DiDAe6HqBV_rVnjqhQbXs3pYxf2wg.PNG.sooftware/image.png?type=w773" width="500">  
+<img src="https://user-images.githubusercontent.com/42150335/147276300-463fb022-c9ab-4903-8217-3b4c1218b47b.png" width="500">  
   
 그리고 이렇게 구한 벡터를 이용해서 최종 예측 값을 구하게 된다.  
   
@@ -129,7 +129,7 @@ draft: false
   
 ## 다양한 종류의 어텐션  
   
-<img src="https://postfiles.pstatic.net/MjAyMDAxMjVfMjM2/MDAxNTc5ODg5NjkzMjAy.-nH6VxdzQQU4ZSQY-09AVaq_8WKfy2Ox1LhpsQeuQ0Ag.jTicYxSxPvM6AeN1AGEHjuPCc5uOAOP-tp7qS18isoog.PNG.sooftware/image.png?type=w773" width="450">  
+<img src="https://user-images.githubusercontent.com/42150335/147276306-65d644fc-f2a2-4a43-a10c-e79679738f6b.png" width="450">  
   
 어텐션은 그 효과가 검증된 만큼, 많은 종류의 기법이 존재한다. 하지만 다른 어텐션들과의 차이는 어텐션 스코어를 구하는 중간 수식의 차이일 뿐이지, 크게 개념을 벗어나지 않는다.  
   
