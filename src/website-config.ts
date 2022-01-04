@@ -63,7 +63,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'sooftware',
-  description: 'Research engineer in NLP and Speech fields.',
+  description: 'Today I Learned..',
   coverImage: 'img/blog-cover.png',
   logo: 'img/img.png',
   lang: 'en',
