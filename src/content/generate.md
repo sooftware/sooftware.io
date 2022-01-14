@@ -42,7 +42,7 @@ Greedy Search 방법에서 시간복잡도를 조금 포기하고 정확도를 �
 언어모델의 고질적인 문제점 중 하나는 동일한 말을 계속 반복한다는 것입니다. 이러한 현상을 줄여주기 위해 n-gram 패널티를 줄 수 있습니다. 
 n-gram 단위의 시퀀스가 두 번 이상 등장할 일이 없도록 확률을 0으로 만드는 전략입니다. 
   
-<img src="https://user-images.githubusercontent.com/42150335/149546126-59292e15-cfe9-4ed4-855c-f0a0f54e4fa0.png" width="300">
+<img src="https://user-images.githubusercontent.com/42150335/149546126-59292e15-cfe9-4ed4-855c-f0a0f54e4fa0.png" width="450">
   
 이 전략을 사용하게 되면 동일한 말을 반복하는 현상을 줄일 수 있지만, n-gram으로 설정한 시퀀스가 두 번 이상 등장할 수 없기 때문에 
 주의해서 사용해야 합니다.  
@@ -60,7 +60,7 @@ n-gram 단위의 시퀀스가 두 번 이상 등장할 일이 없도록 확률�
 open ended 태스크에서는 치명적인 단점입니다. 예측 가능하고 뻔한 문장이 생성된다는 것은 재미라는 점에서 많은 마이너스 포인트를 가져가게 됩니다. 
 아래 그래프가 이러한 경향성에 대해서 아주 잘 보여주고 있습니다.  
   
-<img src="https://user-images.githubusercontent.com/42150335/149557583-d636cdf1-5711-4fcb-bb2c-9ae5e844e6b1.png" width="350">
+<img src="https://user-images.githubusercontent.com/42150335/149557583-d636cdf1-5711-4fcb-bb2c-9ae5e844e6b1.png" width="50">
   
 그래서 이러한 **지루한** 디코딩을 조금이나마 재밌게 만들기 위해서는 어느 정도의 **랜덤성**이 추가되면 개선이 될 수도 있습니다.
   
@@ -79,7 +79,7 @@ nice는 0.5, dog은 0.4, car는 0.1 입니다. greedy search라면 바로 nice�
   
 Top-k Sampling은 Sampling 방법을 약간 개조한 전략입니다. 다음 토큰 선택시, 확률이 높은 K개의 토큰들만으로 한정해서 Sampling을 진행하는 방식입니다.  
   
-<img src="https://user-images.githubusercontent.com/42150335/149559141-aca96ef5-58a0-4a7b-979d-3972ca234bd9.png" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/149559141-aca96ef5-58a0-4a7b-979d-3972ca234bd9.png" width="500">
   
 GPT-2 논문에서 이 전략으로 스토리 생성에서 큰 효과를 봤으나, 이 방법은 모델의 창의성을 저하할 수 있다는 단점을 가지고 있습니다.  
   
@@ -88,7 +88,7 @@ GPT-2 논문에서 이 전략으로 스토리 생성에서 큰 효과를 봤으�
 Top-k Sampling의 문제점을 개선하기 위해 제안된 방법으로, 확률이 높은 K개의 토큰으로부터 샘플링을 하지만, 
 **누적 확률이 p 이상이 되는 최소한의 집합**으로부터 샘플링을 하게 하는 전략입니다.
   
-<img src="https://user-images.githubusercontent.com/42150335/149561365-545447c8-bed5-4495-ba99-d4e5e85d801a.png" width="400">
+<img src="https://user-images.githubusercontent.com/42150335/149561365-545447c8-bed5-4495-ba99-d4e5e85d801a.png" width="500">
   
 이론 상으로는 top-p 샘플링이 top-k보다 좋아보이지만, 항상 그렇듯 경우에 따라 더 좋을 때도 아닐때도 있습니다. 
 두 전략 모두 꽤 잘 작동하므로 두 전략 모두 사용해보면서 결과를 비교해보는게 가장 좋습니다.  
