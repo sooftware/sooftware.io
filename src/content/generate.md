@@ -60,7 +60,7 @@ n-gram 단위의 시퀀스가 두 번 이상 등장할 일이 없도록 확률�
 open ended 태스크에서는 치명적인 단점입니다. 예측 가능하고 뻔한 문장이 생성된다는 것은 재미라는 점에서 많은 마이너스 포인트를 가져가게 됩니다. 
 아래 그래프가 이러한 경향성에 대해서 아주 잘 보여주고 있습니다.  
   
-<img src="https://user-images.githubusercontent.com/42150335/149557583-d636cdf1-5711-4fcb-bb2c-9ae5e844e6b1.png" width="50">
+<img src="https://user-images.githubusercontent.com/42150335/149557583-d636cdf1-5711-4fcb-bb2c-9ae5e844e6b1.png" width="500">
   
 그래서 이러한 **지루한** 디코딩을 조금이나마 재밌게 만들기 위해서는 어느 정도의 **랜덤성**이 추가되면 개선이 될 수도 있습니다.
   
