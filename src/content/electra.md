@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Sooftware NLP] Electra Paper Review
+title: \[Sooftware NLP\] Electra Paper Review
 image: img/electra.png
 author: [Soohwan Kim]
 date: 2020-09-23T07:03:47.149Z

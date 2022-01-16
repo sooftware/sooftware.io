@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Decoding Strategy (디코딩 전략)'
+title: '\[Sooftware NLP\] Decoding Strategy (디코딩 전략)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/decoding.png

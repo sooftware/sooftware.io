@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] RNN (Recurrent Neural Network)'
+title: '\[Sooftware NLP\] RNN (Recurrent Neural Network)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/rnn.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] AI & Speech Processing: Application-2'
+title: '\[Sooftware Speech\] AI & Speech Processing: Application-2'
 author: [Soohwan Kim]
 tags: [speech]
 image: img/audio_app2.png

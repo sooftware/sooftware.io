@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] GPT (Generative Pre-trained Transformer)'
+title: '\[Sooftware NLP\] GPT (Generative Pre-trained Transformer)'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
 image: img/gpt.png

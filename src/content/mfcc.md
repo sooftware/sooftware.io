@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] MFCC (Mel-Frequency Cepstral Coefficient)'
+title: '\[Sooftware Speech\] MFCC (Mel-Frequency Cepstral Coefficient)'
 author: [Soohwan Kim]
 tags: [dsp, speech]
 image: img/mfcc.png

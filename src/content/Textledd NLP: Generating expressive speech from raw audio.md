@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Textless NLP'
+title: '\[Sooftware NLP\] Textless NLP'
 author: [Soohwan Kim]
 tags: [speech, nlp, paper]
 image: img/gslm.png
