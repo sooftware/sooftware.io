@@ -1,5 +1,5 @@
 ---
-title: 'Generation with Retrieval'
+title: '[Sooftware NLP] Generation with Retrieval'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/fid.png
