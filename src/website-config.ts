@@ -62,8 +62,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'sooftware',
-  description: 'Records of what I learned today.',
+  title: 'SOOFTWARE.IO',
+  description: 'Soohwan\'s software knowledge warehouse.',
   coverImage: 'img/blog-cover.png',
   logo: 'img/img.png',
   lang: 'en',
@@ -76,7 +76,7 @@ const config: WebsiteConfig = {
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+  footer: 'All Rights Reserved.',
   showAllTags: true,
 };
 
