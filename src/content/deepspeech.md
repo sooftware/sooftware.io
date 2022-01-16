@@ -1,5 +1,5 @@
 ---
-title: 'DeepSpeech Paper Review'
+title: '[Sooftware Speech] DeepSpeech Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/deepspeech.png

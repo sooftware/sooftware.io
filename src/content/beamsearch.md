@@ -1,5 +1,5 @@
 ---
-title: 'Beam Search (빔서치)'
+title: '[Sooftware NLP] Beam Search (빔서치)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/beamsearch.png
