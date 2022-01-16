@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] Efficient Attention Paper Review'
+title: 'Efficient Attention Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/efficient_attention.png

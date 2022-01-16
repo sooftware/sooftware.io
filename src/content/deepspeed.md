@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] DeepSpeed Usage'
+title: 'DeepSpeed Usage'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale]
 image: img/deepspeed.png

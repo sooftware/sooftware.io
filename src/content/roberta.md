@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] RoBERTa Paper Review'
+title: 'RoBERTa Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/roberta.png

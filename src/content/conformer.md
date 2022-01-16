@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware Speech\] Conformer Paper Review'
+title: 'Conformer Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/conformer.png

@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] NLP Metrics'
+title: 'NLP Metrics'
 author: [Soohwan Kim]
 tags: [nlp, metric]
 image: img/cm.png

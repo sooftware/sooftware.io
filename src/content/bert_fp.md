@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] Fine-grained Post-training for Improving Retrieval-based Dialogue Systems Paper Review'
+title: 'Fine-grained Post-training for Improving Retrieval-based Dialogue Systems Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/bert_fp.png

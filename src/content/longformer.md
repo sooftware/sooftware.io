@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '\[Sooftware NLP\] Longformer Paper Review'
+title: 'Longformer Paper Review'
 author: [Soohwan Kim]
 tags: ['nlp', 'paper']
 image: img/longformer.png

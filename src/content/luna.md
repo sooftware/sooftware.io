@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '\[Sooftware NLP\] Luna: Linear Unified Nested Attention'
+title: 'Luna: Linear Unified Nested Attention'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/luna.png

@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware Speech\] One Model, Many Languages: Meta-learning for Multilingual Text-to-Speech Paper Review'
+title: 'One Model, Many Languages: Meta-learning for Multilingual Text-to-Speech Paper Review'
 author: [Soohwan Kim]
 tags: [speech, tts, paper]
 image: img/multilingual-tts.png

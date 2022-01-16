@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] Megatron LM Paper Review'
+title: 'Megatron LM Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, paper]
 image: img/megatron.png

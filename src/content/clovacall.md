@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware Speech\] ClovaCall Paper Review'
+title: 'ClovaCall Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/clovacall.png

@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware Speech\] Listen, Attend and Spell Paper Review'
+title: 'Listen, Attend and Spell Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/las.png

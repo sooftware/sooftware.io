@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] Teacher Forcing'
+title: 'Teacher Forcing'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/teacher_forcing.png

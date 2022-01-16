@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware Speech\] Pushing the Limits of Semi-Supervised Learning for Automatic Speech Recognition Paper Review'
+title: 'Pushing the Limits of Semi-Supervised Learning for Automatic Speech Recognition Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/pushing.png

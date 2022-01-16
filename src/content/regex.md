@@ -1,5 +1,5 @@
 ---
-title: '\[Sooftware NLP\] 정규표현식 (regex)'
+title: '정규표현식 (regex)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/regex.png
