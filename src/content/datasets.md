@@ -1,7 +1,7 @@
 ---
 title: 'Huggingface Datasets Methods'
 author: [Soohwan Kim]
-tags: [record]
+tags: [nlp]
 image: img/huggingface.png
 date: '2022-02-17T10:00:00.000Z'
 draft: false
