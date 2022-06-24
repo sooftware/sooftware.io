@@ -1,5 +1,5 @@
 ---
-title: '2022 AI 온라인 경진대회 2위'
+title: '2022 AI 온라인 경진대회 1위'
 author: [Soohwan Kim]
 tags: [record]
 image: img/2022-ai-compete.png
@@ -7,7 +7,7 @@ date: '2022-06-24T10:00:00.000Z'
 draft: false
 ---
 
-# 2022 AI 온라인 경진대회 2위  
+# 2022 AI 온라인 경진대회 1위  
   
 <img src="https://cdn.eachj.co.kr/news/photo/202205/6129_10631_1030.png" width=400>
    
