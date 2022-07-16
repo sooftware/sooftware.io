@@ -9,9 +9,7 @@ draft: false
 
 # 2021 AI 온라인 경진대회 1위 노하우 발
   
-<a href="https://www.youtube.com/watch?v=aKKDvdel5O4&t=787s">
-  <img src="https://i.ytimg.com/an_webp/aKKDvdel5O4/mqdefault_6s.webp?du=3000&sqp=CPi53pAG&rs=AOn4CLDkai60yXcwAWXzh_u7DjgYstK01w" width="500">
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aKKDvdel5O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 이번에 참가한 2021 AI 온라인 경진대회 - 노인 대화 감성 분석 트랙 1위 노하우에 대해 구글밋으로 발표했습니다.
   
