@@ -9,9 +9,7 @@ draft: false
 
 # 2021 LangCon 발표 - "한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지"
   
-<a href="https://www.youtube.com/watch?v=OglqDo44zpQ&t=466s">
-  <img src="https://i.ytimg.com/vi/OglqDo44zpQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrdt7DjTnHfwrxblys8q-cnYnzew" width="500">
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OglqDo44zpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 올해로 3회째를 맞는 LangCon에 발표자로 참석해 "한국어 음성 인식: KoSpeech 개발기부터 OpenSpeech 개발기까지"라는 주제로 발표를 했습니다.  
   
