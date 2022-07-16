@@ -1,5 +1,5 @@
 ---
-title: 'Huggingface Datasets Methods'
+title: '[Sooftware NLP] Huggingface Datasets Methods'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/huggingface.png

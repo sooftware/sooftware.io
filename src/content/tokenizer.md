@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Tokenizer'
+title: '[Sooftware NLP] Tokenizer'
 author: [Soohwan Kim]
 tags: ['nlp']
 image: img/writing.jpg

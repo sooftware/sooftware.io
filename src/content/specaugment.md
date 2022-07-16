@@ -1,5 +1,5 @@
 ---
-title: 'SpecAugment Paper Review'
+title: '[Sooftware Speech] SpecAugment Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/specaugment.png

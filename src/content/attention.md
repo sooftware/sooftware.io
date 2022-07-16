@@ -1,5 +1,5 @@
 ---
-title: 'Attention Mechanism (어텐션 메커니즘)'
+title: '[Sooftware NLP] Attention Mechanism (어텐션 메커니즘)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/attention.png
@@ -7,7 +7,7 @@ date: '2020-01-26T10:00:00.000Z'
 draft: false
 ---
 
-# Attention
+# [Sooftware NLP] Attention Mechanism (어텐션 메커니즘)
   
 본 포스팅을 이해하기 위해서는 다음 글에 대한 이해가 선행되는 것이 좋습니다.  
   

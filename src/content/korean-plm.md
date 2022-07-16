@@ -1,5 +1,5 @@
 ---
-title: '한국어 사전학습 모델 (Korean Pre-trained Language Model)'
+title: '[Sooftware NLP] 한국어 사전학습 모델 (Korean Pre-trained Language Model)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/bear.jpeg

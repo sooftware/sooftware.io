@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hugging Face Tokenizers'
+title: '[Sooftware NLP] Hugging Face Tokenizers'
 author: [Soohwan Kim]
 tags: ['huggingface', 'nlp']
 image: img/huggingface.png

@@ -1,5 +1,5 @@
 ---
-title: 'Seq2seq (Sequence to sequence)'
+title: '[Sooftware NLP] Seq2seq (Sequence to sequence)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/seq2seq.png
@@ -7,7 +7,7 @@ date: '2020-01-25T10:00:00.000Z'
 draft: false
 ---
 
-# Seq2seq (Sequence to sequence)
+# [Sooftware NLP] Seq2seq (Sequence to sequence)
   
 본 포스팅을 이해하기 위해서는 다음 글에 대한 이해가 선행되는 것이 좋습니다.  
   
