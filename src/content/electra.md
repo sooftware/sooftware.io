@@ -5,6 +5,7 @@ tags: [nlp, paper]
 image: img/efficient_attention.png
 date: '2020-09-23T10:00:00.000Z'
 tags: [nlp, paper]
+draft: false
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
