@@ -7,7 +7,7 @@ date: '2021-07-15T10:00:00.000Z'
 draft: false
 ---
 
-# 2021 AI 온라인 경진대회 1위 노하우 발
+# 2021 AI 온라인 경진대회 1위 노하우 발표
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aKKDvdel5O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
