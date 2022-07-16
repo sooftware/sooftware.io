@@ -1,9 +1,9 @@
 ---
-layout: post
-title: [Sooftware NLP] Electra Paper Review
-image: img/electra.png
+title: '[Sooftware NLP] Electra Paper Review'
 author: [Soohwan Kim]
-date: 2020-09-23T07:03:47.149Z
+tags: [nlp, paper]
+image: img/efficient_attention.png
+date: '2020-09-23T10:00:00.000Z'
 tags: [nlp, paper]
 ---
 
