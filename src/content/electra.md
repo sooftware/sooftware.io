@@ -4,7 +4,6 @@ author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/efficient_attention.png
 date: '2020-09-23T10:00:00.000Z'
-tags: [nlp, paper]
 draft: false
 ---
 
