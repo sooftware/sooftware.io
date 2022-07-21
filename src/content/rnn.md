@@ -7,7 +7,7 @@ date: '2019-12-26T10:00:00.000Z'
 draft: false
 ---
 
-# [Sooftware NLP] RNN (Recurrent Neural Network)  
+# Sooftware NLP - RNN (Recurrent Neural Network)  
   
 본 포스팅을 이해하기 위해서는 피드포워드 네트워크에 대한 이해가 선행되는 것이 좋습니다.  
   

@@ -7,7 +7,7 @@ date: '2020-01-25T10:00:00.000Z'
 draft: false
 ---
 
-# [Sooftware NLP] Teacher Forcing (티쳐포싱)
+# Sooftware NLP - Teacher Forcing (티쳐포싱)
   
 본 포스팅을 이해하기 위해서는 다음 글에 대한 이해가 선행되는 것이 좋습니다.  
   

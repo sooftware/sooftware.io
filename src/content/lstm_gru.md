@@ -7,7 +7,7 @@ date: '2020-01-24T10:00:00.000Z'
 draft: false
 ---
 
-## [Sooftware NLP] LSTM & GRU
+## Sooftware NLP - LSTM & GRU
   
 본 포스팅을 이해가기 위해서는 아래 글에 대한 이해가 선행되는 것이 좋습니다.  
   

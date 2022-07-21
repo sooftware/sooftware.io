@@ -7,7 +7,7 @@ date: '2020-02-14T10:00:00.000Z'
 draft: false
 ---
 
-# [Sooftware NLP] Beam Search (빔서치)  
+# Sooftware NLP - Beam Search (빔서치)  
   
 본 포스팅은 "빔서치"에 대한 본질적인 개념보다는 Encoder-Decoder 모델 (Seq2seq) 을 기반으로 한 모델에서 빔서치가 어떻게 적용되는지에 중점을 두었습니다.  
   
