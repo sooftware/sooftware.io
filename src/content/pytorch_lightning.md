@@ -1,5 +1,5 @@
 ---
-title: 'PyTorch Lightning'
+title: 'Sooftware ML - PyTorch Lightning'
 author: [Soohwan Kim]
 tags: [toolkit]
 image: img/pl.png

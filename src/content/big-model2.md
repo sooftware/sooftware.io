@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Large Scale LM (2) Distributed Programming'
+title: 'Sooftware NLP - Large Scale LM (2) Distributed Programming'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
 image: img/big-model2.png

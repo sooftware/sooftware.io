@@ -12,7 +12,7 @@ excerpt: The fastest way to build data apps in Python
 
 ***The fastest way to build data apps in Python***
   
-<img src="https://github.com/streamlit/streamlit/raw/develop/docs/_static/img/Streamlit_overview.gif" width="700">
+<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" width="700">
 
 - github repository: https://github.com/streamlit/streamlit
 - tutorial: https://docs.streamlit.io/en/stable/getting_started.html

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] Attention-Based Models for Speech Recognition Paper Review'
+title: 'Sooftware Speech - Attention-Based Models for Speech Recognition Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/loc-attention.png

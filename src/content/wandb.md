@@ -1,5 +1,5 @@
 ---
-title: 'wandb (Weight & Bias)'
+title: 'Sooftware ML - wandb (Weight & Bias)'
 author: [Soohwan Kim]
 tags: [toolkit]
 image: img/wandb.png

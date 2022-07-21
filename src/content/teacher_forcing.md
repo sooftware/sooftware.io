@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Teacher Forcing (티쳐포싱)'
+title: 'Sooftware NLP - Teacher Forcing (티쳐포싱)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/teacher_forcing.png

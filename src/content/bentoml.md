@@ -1,5 +1,5 @@
 ---
-title: 'BentoML'
+title: 'Sooftware ML - BentoML'
 author: [Soohwan Kim]
 tags: [toolkit]
 image: img/bentoml.png

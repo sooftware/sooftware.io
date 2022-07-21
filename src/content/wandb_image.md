@@ -1,5 +1,5 @@
 ---
-title: 'Wandb Image Log'
+title: 'Sooftware ML - Wandb Image Log'
 author: [Soohwan Kim]
 tags: [toolkit, logging]
 image: img/wandb_image.png

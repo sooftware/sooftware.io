@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Fairseq Hydra'
+title: 'Sooftware NLP - Fairseq Hydra'
 author: [Soohwan Kim]
 tags: [toolkit, nlp]
 image: img/fairseq.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] P-Tuning Paper Review'
+title: 'Sooftware NLP - P-Tuning Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/p_tuning.png

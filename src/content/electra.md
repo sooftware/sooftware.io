@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Electra Paper Review'
+title: 'Sooftware NLP - Electra Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
 image: img/electra.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] STATE-OF-THE-ART SPEECH RECOGNITION WITH SEQUENCE-TO-SEQUENCE MODEL Paper Review'
+title: 'Sooftware Speech - STATE-OF-THE-ART SPEECH RECOGNITION WITH SEQUENCE-TO-SEQUENCE MODEL Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
 image: img/sota_speech.png

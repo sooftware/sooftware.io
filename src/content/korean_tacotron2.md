@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] 한국어 Tacotron2'
+title: 'Sooftware Speech - 한국어 Tacotron2'
 author: [Soohwan Kim]
 tags: [speech]
 image: img/taco.png

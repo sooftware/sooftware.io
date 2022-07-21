@@ -1,5 +1,5 @@
 ---
-title: 'Page Rank란??'
+title: 'Sooftware NLP - Page Rank란??'
 author: [Soohwan Kim]
 tags: [nlp, algorithm]
 image: img/page_rank.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware Speech] AI & Speech Processing: DSP for Audio'
+title: 'Sooftware Speech - AI & Speech Processing: DSP for Audio'
 author: [Soohwan Kim]
 tags: [speech, dsp]
 image: img/stft.png

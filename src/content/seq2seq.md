@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Seq2seq (Sequence to sequence)'
+title: 'Sooftware NLP - Seq2seq (Sequence to sequence)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/seq2seq.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Large Scale LM (1) Background'
+title: 'Sooftware NLP - Large Scale LM (1) Background'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
 image: img/big-model1.png

@@ -1,5 +1,5 @@
 ---
-title: 'Hydra'
+title: 'Sooftware ML - Hydra'
 author: [Soohwan Kim]
 tags: [toolkit]
 image: img/hydra.png

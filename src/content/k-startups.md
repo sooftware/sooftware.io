@@ -1,5 +1,5 @@
 ---
-title: 'Korea Startups'
+title: 'K-Startups (Korea AI Startups)'
 author: [Soohwan Kim]
 tags: [record]
 image: img/startup.png

@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] LSTM & GRU'
+title: 'Sooftware NLP - LSTM & GRU'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/lstm_gru.png

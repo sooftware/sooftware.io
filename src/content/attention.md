@@ -1,5 +1,5 @@
 ---
-title: '[Sooftware NLP] Attention Mechanism (어텐션 메커니즘)'
+title: 'Sooftware NLP - Attention Mechanism (어텐션 메커니즘)'
 author: [Soohwan Kim]
 tags: [nlp]
 image: img/attention.png
