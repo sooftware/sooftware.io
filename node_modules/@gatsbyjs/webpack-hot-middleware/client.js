@@ -15,9 +15,9 @@ var options = {
   ansiColors: {},
 };
 if (__resourceQuery) {
-  var querystring = require('querystring');
-  var overrides = querystring.parse(__resourceQuery.slice(1));
-  setOverrides(overrides);
+  var { URLSearchParams } = require('url');
+  var overrides = new URLSearchParams(__resourceQuery.slice(1));
+  setOverrides(Object.fromEntries(overrides));
 }
 
 if (typeof window === 'undefined') {

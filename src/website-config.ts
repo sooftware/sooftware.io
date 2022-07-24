@@ -62,8 +62,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'SOOFTWARE.IO',
-  description: 'Soohwan\'s software knowledge warehouse.',
+  title: 'SOOFTWARE',
+  description: 'Record, NLP, and startups.',
   coverImage: 'img/blog-cover.png',
   logo: 'img/img.png',
   lang: 'en',
