@@ -1,7 +1,7 @@
 ---
 layout: post
 title: N행시를 지어주는 인공지능이 있다?! TUNiBridge N행시 서비스!
-image: img/nverse.png
+image: img/n-emoji.png
 author: [Soohwan Kim]
 date: 2022-08-19T10:00:00.000Z
 tags: [nlp, service]
