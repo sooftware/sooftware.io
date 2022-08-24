@@ -121,7 +121,7 @@ $ make install
 >>> import mecab
 >>> m = mecab.MeCab()
 >>> m.pos('쪽바리')
-[(('쪽바리', 'NNG')]
+[(('쪽바리', 'NNP')]
 ```
   
     

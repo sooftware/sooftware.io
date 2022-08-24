@@ -56,10 +56,10 @@ const About: React.FC = () => (
             </PostFullHeader>
 
             <div>
-              <img src="https://user-images.githubusercontent.com/42150335/175785820-cd441d44-3395-454e-a80a-88c221c9b4e4.png" />
+              <img src="https://user-images.githubusercontent.com/42150335/186487400-1eca51ca-eeee-47f0-8a4a-ea878f611b83.png" />
             </div>
             <div>
-              <img src="https://user-images.githubusercontent.com/42150335/175785822-9bda9fb9-06dc-41c3-b05f-21ea23ddbd6c.png" />
+              <img src="https://user-images.githubusercontent.com/42150335/186487412-edf3471e-c042-4537-ab7a-b9c5fb1f0054.png" />
             </div>
           </article>
         </div>
