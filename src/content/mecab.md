@@ -124,6 +124,21 @@ $ make install
 [(('쪽바리', 'NNP')]
 ```
   
+
++)
+
+```
+./configure: line 1696: syntax error near unexpected token `mecab-ko-dic,'
+./configure: line 1696: `AM_INIT_AUTOMAKE(mecab-ko-dic, 2.0.0)'
+```
+
+에러 발생시
+  
+```
+./autogen.sh
+make
+sudo make install
+```
     
 ## Reference
 
