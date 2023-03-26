@@ -2,7 +2,7 @@
 title: 'ast - literal_eval 에러 기록'
 author: [Soohwan Kim]
 tags: [toolkit, environment]
-image: img/testimg-cover.png
+image: img/testimg-cover.jpg
 date: '2023-03-25T10:00:00.000Z'
 draft: false
 ---
