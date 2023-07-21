@@ -25,7 +25,7 @@ Dearmate 서비스가 나오기 전까지는 한국어 챗봇인 코코, 마스�
 이제는 Dearmate라는 하나의 서비스에 함께 탑재되어 있으며, 코코, 마스, 블루니 외에도 60여가지가 넘는 챗봇이 존재하며, 
 빠른 속도로 다양한 페르소나를 추가해나가고 있습니다.  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height="200">
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height="150">
   
 전에 한참 바이럴을 탔던 '인공지능 N행시' 혹시 아시나요?
   
