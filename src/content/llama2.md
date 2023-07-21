@@ -1,7 +1,7 @@
 ---
 title: 'LLaMA2'
 author: [Soohwan Kim]
-tags: [toolkit, environment]
+tags: [nlp, paper]
 image: img/llama2.png
 date: '2023-07-21T10:00:00.000Z'
 draft: false
