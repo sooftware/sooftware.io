@@ -25,7 +25,7 @@ Dearmate 서비스가 나오기 전까지는 한국어 챗봇인 코코, 마스�
 이제는 Dearmate라는 하나의 서비스에 함께 탑재되어 있으며, 코코, 마스, 블루니 외에도 60여가지가 넘는 챗봇이 존재하며, 
 빠른 속도로 다양한 페르소나를 추가해나가고 있습니다.  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height="400">
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height="200">
   
 전에 한참 바이럴을 탔던 '인공지능 N행시' 혹시 아시나요?
   
@@ -34,7 +34,7 @@ Dearmate 서비스가 나오기 전까지는 한국어 챗봇인 코코, 마스�
 현재 N군이라는 이름으로 N행시를 만들어주는 케릭터부터, 부산에 대해 설명해주는 부산갈매기, 사자성어로 대답하는 
 사자성어봇, 공감력이 뛰어난 왕공감, 잡학다식한 고양이 Baron, 죄를 심판해주는 염라대왕 등 다양한 케릭터들이 준비되어 있습니다!
   
-<iframe width="560" height="315" src="https://www.youtube.com/shorts/UmI14JEyxD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/shorts/UmI14JEyxD4?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 위 유튜브는 실제로 저희 염라대왕 봇과의 대화 내용으로 구성한 Shorts 입니다.  
   
