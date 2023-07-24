@@ -3,7 +3,7 @@ layout: post
 title: 'Sooftware NLP - Hugging Face Tokenizers'
 author: [Soohwan Kim]
 tags: ['huggingface', 'nlp']
-image: img/huggingface.png
+image: img/tokenizers.png
 date: '2021-08-11T15:11:55.000Z'
 draft: false
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 'Sooftware Serving - Huggingface Optimum'
 author: [Soohwan Kim]
 tags: ['huggingface', 'nlp', 'serving']
-image: img/huggingface.png
+image: img/optimum.png
 date: '2022-10-05T15:11:55.000Z'
 draft: false
 ---
