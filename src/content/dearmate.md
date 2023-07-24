@@ -19,13 +19,13 @@ draft: false
 창업했을 당시에, 미래에 저희가 만들어낼 다양한 페르소나의 챗봇들을 상상하며 꿈꿨는데, 
 최근 저희 [Dearmate](https://dearmate.ai/) 라는 이름의 서비스로 그 꿈이 시작이 되고 있습니다. 😎  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/f50359b5-2cc4-4cbb-b83f-bf68357395e1" height="300">
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/f50359b5-2cc4-4cbb-b83f-bf68357395e1" height=300>
   
 Dearmate 서비스가 나오기 전까지는 한국어 챗봇인 코코, 마스와 영어 여행 챗봇인 Bloony 정도가 서로 다른 플랫폼에서 서비스가 됐었는데, 
 이제는 Dearmate라는 하나의 서비스에 함께 탑재되어 있으며, 코코, 마스, 블루니 외에도 60여가지가 넘는 챗봇이 존재하며, 
 빠른 속도로 다양한 페르소나를 추가해나가고 있습니다.  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height="150">
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/bdea6bf5-577a-44bc-a1fe-f45c5db80813" height=150>
   
 전에 한참 바이럴을 탔던 '인공지능 N행시' 혹시 아시나요?
   

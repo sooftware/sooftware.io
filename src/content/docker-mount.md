@@ -2,7 +2,7 @@
 title: 'Docker - 공유 디렉토리 연결 (mount)'
 author: [Soohwan Kim]
 tags: [toolkit, environment]
-image: img/docker.png
+image: img/docker_mount.png
 date: '2023-03-14T10:00:00.000Z'
 draft: false
 ---
