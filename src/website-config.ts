@@ -65,7 +65,7 @@ const config: WebsiteConfig = {
   title: 'SOOFTWARE',
   description: 'Record, NLP, and startups.',
   coverImage: 'img/blog-cover.png',
-  logo: 'img/img.png',
+  logo: 'img/blog_logo.png',
   lang: 'en',
   siteUrl: 'https://sooftware.io',
   facebook: 'https://www.facebook.com/sooftware95',
