@@ -56,11 +56,9 @@ const About: React.FC = () => (
             </PostFullHeader>
 
             <div>
-              <img src="https://user-images.githubusercontent.com/42150335/210587443-8ffdd82e-f62f-4c51-ab0c-1df6f9a00f2a.png" />
+              <iframe src="https://drive.google.com/file/d/1MTlr6oWNFjojmWVT2OriDCiM35juJmIN/view?usp=sharing" width="100%" height="600px"></iframe>
             </div>
-            <div>
-              <img src="https://user-images.githubusercontent.com/42150335/210587456-2334e31a-3645-4ce1-9aa9-f3b14f1f2165.png" />
-            </div>
+
           </article>
         </div>
       </main>
