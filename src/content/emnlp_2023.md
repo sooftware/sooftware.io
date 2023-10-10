@@ -1,5 +1,5 @@
 ---
-title: 'Findings of EMNLP 2023 - Accept'
+title: 'Findings of EMNLP 2023 Accept'
 author: [Soohwan Kim]
 tags: [tunib]
 image: img/emnlp_2023.png
