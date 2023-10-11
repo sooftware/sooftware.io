@@ -13,7 +13,7 @@ draft: false
    
 다행히 운동은 꾸준히 하고 있고, 몸도 많이 좋아졌고 수행능력도 좋아졌다.  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/aac8f9bf-114c-4efb-a3c5-4fe2e8a0165c" height="300">
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/aac8f9bf-114c-4efb-a3c5-4fe2e8a0165c" height="150">
   
 운동 시작하기로 마음 먹은지 2년 반 정도의 경과이다. 이렇게 인바디 앱으로 보니까 조금 더 체감이 된다.  
   
