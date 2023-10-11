@@ -56,9 +56,8 @@ const About: React.FC = () => (
             </PostFullHeader>
 
             <div>
-              <iframe src="https://drive.google.com/uc?id=1MTlr6oWNFjojmWVT2OriDCiM35juJmIN" width="100%" height="1200px"></iframe>
+              <iframe src="https://drive.google.com/uc?id=1bHgJrmnertjEjbt6GrGAw1fu-UL9e_by" width="100%" height="1200px"></iframe>
             </div>
-
           </article>
         </div>
       </main>
