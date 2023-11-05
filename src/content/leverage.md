@@ -2,7 +2,7 @@
 title: '[REVIEW] 레버리지 (LEVERAGE)'
 author: [Soohwan Kim]
 tags: [book, review]
-image: img/leverage.png
+image: img/leverage.jpg
 date: '2023-10-31T10:00:00.000Z'
 draft: false
 ---
