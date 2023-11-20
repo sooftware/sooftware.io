@@ -3,7 +3,7 @@ title: '[REVIEW] 더 마인드'
 author: [Soohwan Kim]
 tags: [book, review]
 image: img/the-mind.jpg
-date: '2023-11-18T10:00:00.000Z'
+date: '2023-11-17T10:00:00.000Z'
 draft: false
 ---
 
