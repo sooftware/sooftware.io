@@ -2,7 +2,7 @@
 title: 'Open AI CEO Sam Altman join Microsoft'
 author: [Soohwan Kim]
 tags: [news]
-image: img/altman.jpeg
+image: img/altman.png
 date: '2023-11-18T10:00:00.000Z'
 draft: false
 ---
