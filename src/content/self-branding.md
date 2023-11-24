@@ -2,7 +2,7 @@
 title: 'Self Branding'
 author: [Soohwan Kim]
 tags: [thinking, book, review]
-image: img/self-brand.jpeg
+image: img/self-brand.jpg
 date: '2023-11-25T10:00:00.000Z'
 draft: false
 ---
