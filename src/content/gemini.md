@@ -17,7 +17,7 @@ Google이 드디어 OpenAI에 대한 반격을 시작한걸까요?
   
 [Gemini의 테크니컬 리포트](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf) 를 보면 아래와 같은 이미지가 나옵니다.  
   
-<img width="450" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/02b0c26f-5f05-46b8-a7aa-26bd6b7eb7ea">
+<img width="600" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/02b0c26f-5f05-46b8-a7aa-26bd6b7eb7ea">
   
 단순 텍스트 뿐만 아니라, 이미지도 입력이 가능하다보니 위와 같은 형태의 프롬프트가 가능하네요. 이렇게 되면 OCR 같은 기술들이나 이미지 캡셔닝이 따로 필요하지 않을 것 같습니다.   
   
