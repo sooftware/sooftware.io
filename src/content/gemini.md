@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to Gemini's Era'
+title: 'Welcome to Gemini\'s Era'
 author: [Soohwan Kim]
 tags: [news]
 image: img/gemini.png
