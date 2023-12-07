@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to Gemini\'s Era'
+title: 'Welcome to the Gemini Era'
 author: [Soohwan Kim]
 tags: [news]
 image: img/gemini.png
@@ -7,7 +7,7 @@ date: '2023-12-07T10:00:00.000Z'
 draft: false
 ---
 
-# Welcome to Gemini's Era
+# Welcome to the Gemini Era
   
 Google이 드디어 OpenAI에 대한 반격을 시작한걸까요?  
   
