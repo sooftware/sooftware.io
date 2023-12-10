@@ -2,14 +2,14 @@
 title: '[REVIEW] 당신의 뇌는 최적화를 원한다'
 author: [Soohwan Kim]
 tags: [book, review]
-image: img/hormone.jpg
+image: img/hormone.png
 date: '2023-12-10T10:00:00.000Z'
 draft: false
 ---
 
 # 당신의 뇌는 최적화를 원한다
   
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2h9I/image/1AZWCB5hx7M5T6I4QK70FF3yqDM.jpg", width=600>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2h9I/image/1AZWCB5hx7M5T6I4QK70FF3yqDM.jpg" width=300>
 
 대학생때 시험전날 새벽에 공부하다가 더 이상 머리에 새로운 지식이 들어가지 않을때, 친구들과 밖에 나가서 산책 한 번 다녀오면 머리가 맑아지고 말료 표현하기 어려운 기분좋은 느낌을 느낀적이 몇 번 있다. 운동을 끝내고 시원한 밤 바람을 맞을때, 적당한 온도의 목욕탕에서 눈 감고 몸에 힘을 빼고 쉴때 등 원인은 모르겠지만 경험적으로 '이럴때 기분이 좋다'라는 데이터를 가지고 있다.  
   
