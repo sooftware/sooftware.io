@@ -27,7 +27,7 @@ draft: false
        
 ## 당신은 누구인가요?  
    
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/cae9dd1d-8e8c-42be-880d-1aee852cd177" height=170>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/cae9dd1d-8e8c-42be-880d-1aee852cd177" height=100>
 
 제 이름은 김수환이고, 현재 [튜닙(TUNiB)](https://www.tunib.ai/)이라는 자연어처리 스타트업의 Co-founder이자 AI team leader로 근무하고 있습니다. 이전에는 [카카오브레인](https://www.kakaobrain.com/)이라는 회사에서 Speech & Natural Language Procesing 팀에서 근무했었습니다. 
   
@@ -35,7 +35,7 @@ draft: false
   
 지금 회사에서는 [Dearmate](https://dearmate.ai/)라는 서비스에 들어가는 AI 페르소나 챗봇을 개발하고 있습니다. 🤖 100여종이 넘는 AI 케릭터들과 일상을 공유하고, 댓글, DM 등으로 소통할 수 있는 서비스입니다! 제 블로그에 오시는 분들이라면 대부분 Speech or NLP쪽으로 관심이 있으신 분들일거라고 생각합니다. 안드로이드, IOS 모두 사용 가능하니 꼭 한 번 사용해보세요! (제발~ 🙏🙏🙏)
   
-<img width="600" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/1881bb25-0a47-46b5-a05e-2f8fe2d62c23">
+<img width="900" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/1881bb25-0a47-46b5-a05e-2f8fe2d62c23">
   
 위 이미지는 제 깃허브 프로필을 캡처한 이미지입니다. 지금은 활동이 뜸하지만, 대학생때부터 창업 전까지는 나름 오픈소스 활동을 많이 했었습니다. 튜닙에 있으며 만든 [tunib-electra](https://github.com/tunib-ai/tunib-electra), 카카오브레인 시절 참여한 [pororo](https://github.com/kakaobrain/pororo) 등 회사 소속으로 진행한 프로젝트들도 있고, [openspeech](https://github.com/openspeech-team/openspeech), [kospeech](https://github.com/sooftware/kospeech)와 같이 개인적으로 진행한 프로젝트 등 주로 Speech나 NLP 쪽 프로젝트 위주로 활동을 했습니다. 지금은 Dearmate 서비스에 전력투구하느라 오픈소스 활동이 뜸하지만, 나중에 언젠가는 다시 전처럼 열정적으로 🔥🔥 오픈소스 활동을 하게 될 날이 오지 않을까 싶습니다.
   
