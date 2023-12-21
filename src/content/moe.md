@@ -12,11 +12,11 @@ draft: false
   
 현존 최강 LLM인 GPT-4에서 "MoE (Mixture of Experts)" 방식을 채택하여 사용하고 있다고 알려졌는데요, 최근 AI계의 뜨거운 감자 Mistral AI에서 [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)라는 좋은 성능의 모델을 오픈소스로 공개한지 몇 달이 채 되지 않았는데 몇일 전, Mixtral이라는 46.7B 모델을 오픈소스로 공개했습니다!  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/40a24753-386e-4271-bf4b-eb7ab90e8dbe" height=280>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/40a24753-386e-4271-bf4b-eb7ab90e8dbe" height=140>
 
 모델 사이즈도 사이즈지만, Mixtral이 "MoE" 방식을 채택해서 사용했으며, LLaMA-2 70B를 상회하는 성능을 보여서 더욱 주목을 받고 있습니다. (Inference 속도는 6배나 빠르다고 합니다 🫢)  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/cafd232f-c846-4502-b185-3db1ad06d21a" height=300>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/cafd232f-c846-4502-b185-3db1ad06d21a" height=270>
 
 Mixtral은 총 46.7B개의 파라미터 사이즈를 가지고 있찌만, 실제 인퍼런스할때는 12.9B의 추론 속도를 보여준다고 하는데요, 이게 어떻게 가능한 걸까요? 🤔  
   
@@ -34,13 +34,13 @@ Mixtral은 총 46.7B개의 파라미터 사이즈를 가지고 있찌만, 실제
 
 - **Gate Network (Router)** : 각 토큰이 어떤 `expert`에 소속되는지를 결정하는 network. 
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/72ea18a1-d0b9-4d06-ace7-78c013658136" height=400>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/72ea18a1-d0b9-4d06-ace7-78c013658136" height=350>
   
 [Switch Transformer](https://arxiv.org/abs/2101.03961)에 아주 좋은 예씨 Figure가 있어서 가져왔습니다. 위 그림처럼 Transformer Block은 Attention -> Add + Norm -> FFN -> Add + Norm과 같은 형태로 이루어져 있습니다. (순서는 아키텍처마다 다를 수 있습니다만 여기서는 넘어가겠습니다.) 여기서 MoE는 **FFN**에 해당하는 layer를 기존과 다르게 사용하는데요, 그림에서처럼 "More"라는 토큰 하나가 들어왔을 때, 이 토큰을 Gate Network (Router)를 거쳐서 N번째 `expert`에 할당되면, 해당 토큰은 다른 `experts`은 제외한 할당된 `expert`에 해당하는 FFN을 통과하게 됩니다. (밑에서 살펴보겠지만, 위 예시에서는 1개의 `expert`만을 할당받았지만, 실제로는 2개 이상의 `expert`도 보낼 수 있습니다. 😎)
   
 ### Sparsity
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/d207e623-2e89-4791-a7b3-55d6da7c2bfa" height=200>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/d207e623-2e89-4791-a7b3-55d6da7c2bfa" height=140>
 
 여기서 **Sparsity**에 대해 보고 넘어가겠습니다. 일반적인 트랜스포머 모델은 dense한 모델입니다. (모든 입력에 대해 모든 입력이 사용되는 모델) 반면에 Sparsity한 모델이란, 모델 파라미터의 일부만 사용할 수 있는 모델을 의미합니다. 즉, 이 MoE 아키텍처는 Sparsity하다고 할 수 있겠죠!
   
@@ -48,7 +48,7 @@ Mixtral은 총 46.7B개의 파라미터 사이즈를 가지고 있찌만, 실제
   
 위에서 `Expert`를 2개 이상에 보낼수도 있다고 했습니다. Mixtral도 1개가 아닌 2개의 `Expert`에 보내는 방식으로 학습되었는데요, 어떻게 동작하는지 살펴보겠습니다.  
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/e6c0e658-f46f-4b40-859c-2c9c13ca731a" height=200>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/e6c0e658-f46f-4b40-859c-2c9c13ca731a" height=100>
 
 총 8개의 `Expert`가 있고, 여기서 1개의 `Expert`로 보내는 문제를 먼저 보겠습니다. 굉장히 간단한 **Classification** 문제죠. PyTorch 코드로 구현한다면 아래와 같겠네요.
   
@@ -67,7 +67,7 @@ nth_expert = F.softmax(gate(inputs), dim=-1).argmax()
   
 여러 방법이 있겠지만, Mixtral에서 사용한 Top-k Gating 방식을 소개드리겠습니다. gate network의 linear layer를 H(x)라고 하고, K개의 `Expert`에게 보내고 싶다면, 아래와 같은 수식으로 표현할 수 있습니다.
   
-<img height="100" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/68702730-e153-4a7d-b39f-5eb7c6606f01">
+<img height="70" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/68702730-e153-4a7d-b39f-5eb7c6606f01">
   
 (이해를 위해 K=2를 예시로 들겠습니다.) Linear layer의 결과로 나온 logits에 top 2개의 logits을 뽑고 이 2개의 logits에 대해서 Softmax 함수를 적용합니다. 그럼 이 2개의 expert에 대한 weight 값이 나오게 됩니다!   
   
