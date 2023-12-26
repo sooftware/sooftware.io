@@ -1,13 +1,16 @@
 ---
-title: '[REVIEW] 부의 추월차선 (The Millionaire Fastlane)'
-author: [Soohwan Kim]
-tags: [book, review]
+title: 부의 추월차선 (The Millionaire Fastlane)
+author:
+  - Soohwan Kim
+tags:
+  - book
+  - review
 image: img/fastlane.jpg
-date: '2023-11-16T10:00:00.000Z'
+date: 2023-11-16T10:00:00.000Z
 draft: false
 ---
 
-# 부의 추월차선 (The Millionaire Fastlane)
+# \# 부의 추월차선 (The Millionaire Fastlane)
   
 엄청 유명한 책이라 전부터 한 번 읽어봐야지 했다가 드디어 읽어봤다. 전에 읽었던 [레버리지](https://sooftware.io/leverage/) 와 비슷한 내용이 많았다. 비슷한 내용이지만 집중적으로 말하고 싶은 내용이 레버리지는 책 제목처럼 '레버리지(leverage)를 해라!'라면, '부의 추월차선'은 좀 더 '부'에 초점을 맞춰서 얘기하는 느낌이다.  
   

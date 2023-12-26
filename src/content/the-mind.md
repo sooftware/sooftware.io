@@ -1,13 +1,16 @@
 ---
-title: '[REVIEW] 더 마인드'
-author: [Soohwan Kim]
-tags: [book, review]
+title: 더 마인드 (The Mind)
+author:
+  - Soohwan Kim
+tags:
+  - book
+  - review
 image: img/the-mind.jpg
-date: '2023-11-17T10:00:00.000Z'
+date: 2023-11-17T10:00:00.000Z
 draft: false
 ---
 
-# 더 마인드
+# \# 더 마인드 (The Mind)
   
 흔히 말하는 '끌어당김의 법칙'에 대한 책이다. 이 '끌어당김의 법칙'이 참 말이 많은 주제인데 이 책은 이 법칙을 완전히 지지하는 입장의 책이다.  
   

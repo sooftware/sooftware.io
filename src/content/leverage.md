@@ -1,13 +1,16 @@
 ---
-title: '[REVIEW] 레버리지 (LEVERAGE)'
-author: [Soohwan Kim]
-tags: [book, review]
+title: 레버리지 (LEVERAGE)
+author:
+  - Soohwan Kim
+tags:
+  - book
+  - review
 image: img/leverage.jpg
-date: '2023-10-31T10:00:00.000Z'
+date: 2023-10-31T10:00:00.000Z
 draft: false
 ---
 
-# 레버리지 (LEVERAGE)
+# \# 레버리지 (LEVERAGE)
   
 전부터 유명했던 '레버리지', '부자 아빠 가난한 아빠', '부의 추월차선' 등의 책을 읽어봐야겠다고 생각했는데, 이번에 레버리지를 완독했고, 지금은 '부의 추월차선'을 읽고 있다.  
   

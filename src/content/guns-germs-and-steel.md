@@ -1,13 +1,16 @@
 ---
-title: '[REVIEW] 총, 균, 쇠 (guns germs and steel)'
-author: [Soohwan Kim]
-tags: [book, review]
+title: 총, 균, 쇠 (guns germs and steel)
+author:
+  - Soohwan Kim
+tags:
+  - book
+  - review
 image: img/ggs.png
-date: '2021-11-29T10:00:00.000Z'
+date: 2021-11-29T10:00:00.000Z
 draft: false
 ---
 
-# [REVIEW] 총, 균, 쇠 (guns germs and steel)
+# \# 총, 균, 쇠 (guns germs and steel)
   
 아직 책을 다 읽지 못해서 리뷰라고 하기는 뭐하지만 😅 일단은 드는 생각을 적어두려고 한다.  
   

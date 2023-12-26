@@ -1,13 +1,16 @@
 ---
-title: '[REVIEW] 당신의 뇌는 최적화를 원한다'
-author: [Soohwan Kim]
-tags: [book, review]
-image: img/hormone.png
-date: '2023-12-10T10:00:00.000Z'
+title: 당신의 뇌는 최적화를 원한다
+author:
+  - Soohwan Kim
+tags:
+  - book
+  - review
+image: img/brain-hormone.png
+date: 2023-12-10T10:00:00.000Z
 draft: false
 ---
 
-# 당신의 뇌는 최적화를 원한다
+# \# 당신의 뇌는 최적화를 원한다
   
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2h9I/image/1AZWCB5hx7M5T6I4QK70FF3yqDM.jpg" width=300>
 
