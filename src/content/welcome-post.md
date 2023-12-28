@@ -1,9 +1,11 @@
 ---
-title: 'Welcome to sooftware.io'
-author: [Soohwan Kim]
-tags: [welcome]
-image: img/welcome.png
-date: '2033-12-10T10:00:00.000Z'
+title: Welcome to sooftware.io
+author:
+  - Soohwan Kim
+tags:
+  - welcome
+image: img/welcome.jpg
+date: 2033-12-10T10:00:00.000Z
 draft: false
 ---
 
