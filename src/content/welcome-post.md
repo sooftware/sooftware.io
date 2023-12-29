@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - welcome
-image: img/welcome.jpg
+image: img/welcome.png
 date: 2033-12-10T10:00:00.000Z
 draft: false
 ---
