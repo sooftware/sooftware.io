@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/leaders_perspective.md",
+                "file": "src/content/atomic_habits.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/leaders_perspective.md",
+                "file": "src/content/atomic_habits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/leaders_perspective.md",
+                "file": "src/content/atomic_habits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/leaders_perspective.md"
+                "file": "src/content/atomic_habits.md"
               }
             }
           }
@@ -148,12 +148,13 @@
   },
   "active": "9be7c5c684ea2918",
   "lastOpenFiles": [
+    "src/content/img/welcome.png",
+    "src/content/atomic_habits.md",
+    "src/content/img/atomic_habits.png",
+    "src/content/leaders_perspective.md",
     "src/content/img/birdeye 1.jpeg",
     "src/content/img/birdeye.jpeg",
-    "src/content/leaders_perspective.md",
     "src/content/2023.md",
-    "src/content/img/welcome.png",
-    "src/content/img/welcome.png",
     "src/content/img/welcome 1.jpg",
     "src/content/img/2023.png",
     "src/content/welcome-post.md",

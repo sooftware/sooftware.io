@@ -3,7 +3,7 @@ title: 팀장의 관점
 author:
   - Soohwan Kim
 tags:
-  - record
+  - review
 image: img/birdeye.jpeg
 date: 2024-01-06T10:00:00.000Z
 draft: false
