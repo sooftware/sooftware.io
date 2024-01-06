@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "30e29281b9ad9427",
+        "id": "3e14109ea04c2928",
         "type": "tabs",
         "children": [
           {
-            "id": "c4b3ca8ab06d7b9c",
+            "id": "9be7c5c684ea2918",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/2023.md",
+                "file": "src/content/leaders_perspective.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/2023.md",
+                "file": "src/content/leaders_perspective.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/2023.md",
+                "file": "src/content/leaders_perspective.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/2023.md"
+                "file": "src/content/leaders_perspective.md"
               }
             }
           }
@@ -146,12 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d0f233f4c692a9e",
+  "active": "9be7c5c684ea2918",
   "lastOpenFiles": [
+    "src/content/img/birdeye 1.jpeg",
+    "src/content/img/birdeye.jpeg",
+    "src/content/leaders_perspective.md",
+    "src/content/2023.md",
     "src/content/img/welcome.png",
     "src/content/img/welcome.png",
     "src/content/img/welcome 1.jpg",
-    "src/content/2023.md",
     "src/content/img/2023.png",
     "src/content/welcome-post.md",
     "src/content/img/welcome.jpg",
