@@ -29,7 +29,7 @@ Meta는 LLaMA-1에 이어 2023년 7월 LLaMA-2를 공개했습니다. 모델 사
   
 ## 그렇다면 Meta는 왜 LLaMA를 공개하기로 했을까?
   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/17ba722e-731c-42c8-a250-fce2645b9b5e" height=400>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/17ba722e-731c-42c8-a250-fce2645b9b5e" width=450>
     
 \* 해당 부분은 개인적은 견해가 섞여있습니다.
 
@@ -48,17 +48,17 @@ Meta는 LLaMA-1에 이어 2023년 7월 LLaMA-2를 공개했습니다. 모델 사
   
 ### 2. LLaMA 시리즈를 공개함으로써, OpenAI의 독점을 막을 수 있다.
 
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/52f804a9-b7a9-41b9-bf03-f5373ed22820" height=200>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/52f804a9-b7a9-41b9-bf03-f5373ed22820" width=350>
 
 어차피 LLM 시장을 내가 먹지 못할것이라면, OpenAI-Microsoft가 이 시장을 독점하지 못하도록 막는것도 하는게 최선일 수 있을 겁니다. Meta는 메타버스 세상을 꿈꾸고 있습니다. 만약 이대로 OpenAI가 LLM 시장을 독점하게 된다면, Meta는 본인들이 꿈꾸는 세상을 위해 필요한 LLM 기술을 OpenAI와 Microsoft에게 막대한 비용을 지불하고 사용해야 할 겁니다. 이건 미래의 Meta에게 큰 걸림돌이 되겠죠.
 
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/2cd2df63-bd47-4f21-983e-c2ac6b2a4b1a" height=300>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/2cd2df63-bd47-4f21-983e-c2ac6b2a4b1a" width=400>
   
 지금 LLM 시장은 과거의 Desktop PC OS(Operating System) 시장을 보는 것 같기도 합니다. 현재 대표적인 Desktop PC OS 시스템은 Microsoft의 Windows, Apple의 OS X, 그리고 오픈소스 OS인 Linux가 있습니다. 2023년 1월 기준으로 Windows는 74%, OS X는 15%, Linux는 3% 정도를 점유하고 있습니다. 압도적으로 Windows가 장악하고 있는 만큼, Microsoft는 막대한 돈을 벌어들이고 있습니다. Meta 입장에서는 OpenAI가 LLM 시장을 이렇게 장악해버리길 원하지 않을겁니다. Meta가 오픈소스 LLM 진영에 LLaMA를 공개하며 힘을 실어줌으로써, OpenAI의 독주를 견제하는 것으로 보입니다. 마치 OS 시장의 Linux를 보는 것 같습니다.
 
 ### 3. 집단지성의 힘을 이용해서 OpenAI와의 격차를 해소한다.
 
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/43a1c7c0-75bd-451b-a746-d3bd7bcdf6de" height=150>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/43a1c7c0-75bd-451b-a746-d3bd7bcdf6de" width=300>
   
 또한, LLaMA를 공개함으로써 Meta는 OpenAI와의 기술적 격차를 해소할 가능성을 높일 수 있습니다. 집단지성의 힘은 무섭습니다. 실제로 LLaMA 공개 이후 Alpaca, Vicuna, Guanaco 등 다양한 파생 모델이 등장했으며, 최근에 핫한 Mistral-AI에서 공개한 모델도 LLaMA-2 아키텍처를 활용했습니다. 이처럼 LLaMA-2를 공개함으로써 오픈소스 LLM 진영의 기술개발에 불이 붙었고, LLM을 활용하는 여러 기업들에게 LLaMA-2를 활용하는 선택지도 추가로 주어지게 됐습니다. 
   
