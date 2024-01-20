@@ -13,7 +13,7 @@ draft: false
   
 <img src="https://github.com/sooftware/sooftware.io/assets/42150335/6dfc9147-fa1e-4dc2-b9ef-2609d23b4dbf" width=500>
     
-Meta(구 Facebook)은 FAANG(Facebook, Apple, Amazon, Netflix, Google)라는 용어가 있을 정도로 거대 IT 기업들중 대표적인 기업 중 하나입니다. Meta는 지금 LLM 시대가 열리기 전, [RoBERTa](https://arxiv.org/abs/1907.11692), [Wav2vec 2.0](https://arxiv.org/abs/2006.11477), [Blenderbot](https://arxiv.org/abs/2208.03188) 등 A.I.쪽에 큰 영향력을 끼친 연구들을 공개하며, OpenAI, Google과 함께 대표적인 A.I. 선진 기업이였습니다.   
+Meta(구 Facebook)은 FAANG(Facebook, Apple, Amazon, Netflix, Google)라는 용어가 있을 정도로 거대 IT 기업 중 하나입니다. Meta는 지금 LLM 시대가 열리기 전, [RoBERTa](https://arxiv.org/abs/1907.11692), [Wav2vec 2.0](https://arxiv.org/abs/2006.11477), [Blenderbot](https://arxiv.org/abs/2208.03188) 등 A.I.쪽에 큰 영향력을 끼친 연구들을 공개하며, OpenAI, Google과 함께 대표적인 A.I. 선진 기업이였습니다.   
   
 또한, 현재는 많이 쓰이진 않지만, [Fairseq](https://github.com/facebookresearch/fairseq)이라는 오픈소스 툴킷으로 자신들의 연구에 쓰인 코드들을 모두 공개하며, 많은 리서쳐 / 엔지니어들이 본인들의 연구를 활용할 수 있도록 큰 도움을 줬습니다. 이 툴킷은 굉장히 잘 작성된 높은 수준의 코드로, 현재 자연어처리에서 가장 영향력이 높은 오픈소스 기업인 Huggingface에서도 내부 코드를 살펴보면 Fairseq의 코드를 가져다가 쓴 것을 종종 볼 수 있으며, 논문의 Official 코드여서 실제로 모델이 어떻게 작동하는지, 어떻게 학습됐는지를 살펴볼 수 있는 좋은 학습 자료였습니다.
 
