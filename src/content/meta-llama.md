@@ -85,4 +85,5 @@ Meta는 LLaMA-1에 이어 2023년 7월 LLaMA-2를 공개했습니다. 모델 사
 
 ## Reference
 - [LLaMA-2 Paper](https://arxiv.org/abs/2307.09288)
-- [Meta begins training Llama 3, reshuffles AI responsibilities](https://www.axios.com/2024/01/18/zuckerberg-meta-llama-3-ai](https://www.axios.com/2024/01/18/zuckerberg-meta-llama-3-ai)
+- [Meta begins training Llama 3, reshuffles AI responsibilities](https://www.axios.com/2024/01/18/zuckerberg-meta-llama-3-ai)
+
