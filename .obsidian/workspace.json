@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/meta-llama.md",
+                "file": "src/content/llm-abs-202312.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/meta-llama.md",
+                "file": "src/content/llm-abs-202312.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/meta-llama.md",
+                "file": "src/content/llm-abs-202312.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/meta-llama.md"
+                "file": "src/content/llm-abs-202312.md"
               }
             }
           }
@@ -146,11 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9be7c5c684ea2918",
+  "active": "2d0f233f4c692a9e",
   "lastOpenFiles": [
+    "src/content/llm-abs-202311.md",
+    "src/content/llm-abs-202312.md",
+    "src/content/meta-llama.md",
     "src/content/img/meta-llama.jpeg",
     "src/content/altman.md",
-    "src/content/meta-llama.md",
     "src/content/atomic_habits.md",
     "src/content/img/welcome.png",
     "src/content/img/atomic_habits.png",
