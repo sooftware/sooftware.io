@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/the-mind.md",
+                "file": "src/content/ultra-learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/the-mind.md",
+                "file": "src/content/ultra-learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/the-mind.md",
+                "file": "src/content/ultra-learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/the-mind.md"
+                "file": "src/content/ultra-learning.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "2d0f233f4c692a9e",
   "lastOpenFiles": [
+    "src/content/img/ultra-learning.png",
+    "src/content/img/ulb.png",
+    "src/content/ultra-learning.md",
+    "src/content/the-mind.md",
     "src/content/llm-abs-202312.md",
     "src/content/llm-abs-202311.md",
     "src/content/meta-llama.md",
@@ -166,7 +170,6 @@
     "src/content/img/welcome.jpg",
     "src/content/one-thing.md",
     "src/content/img/welcome 2.jpg",
-    "src/content/img/one-thing.png",
     "src/content/brain-hormone.md"
   ]
 }
