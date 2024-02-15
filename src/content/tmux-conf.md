@@ -14,7 +14,11 @@ Tmux 설정을 위한 tmux configuraion 기록
 - `~/.tmux.conf` 
 
 ```shell
-set-option -g default-command "tmux-shell-wrapper"
+set-option -g remain-on-exit on
+
+unbind C-b
+set-option -g prefix C-b
+
 # Make shift+arrows, ctrl+arrows etc work in Vim.
 set -g xterm-keys on
 
