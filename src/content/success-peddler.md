@@ -29,7 +29,7 @@ draft: false
   
 성공팔이들을 비판하는 영상을 다루는 '동기부여 뒤집기'라는 유튜버분이 이번에 '자청'을 저격했는데, 40분동안 논리적으로 여러 의문점을 제기했다.
 
-<img height="374" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/6faffccd-a7e9-49a8-9566-706347780247">
+<img height="250" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/6faffccd-a7e9-49a8-9566-706347780247">
   
 이 영상을 시작으로 자청에 대한 여러 저격이 이뤄지고 있는데, 자청이 본인 블로그에 이 유튜버의 신상에 대해 현상금을 걸었고, 조선족을 언급하는 등 매우 저급한 협박을 하고 있다고 한다. 본인이 당당하면 의문점에 대해 하나하나 반박하면 될텐데 말이다. 🤔
   
