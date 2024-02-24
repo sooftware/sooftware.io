@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - record
-image: img/c-lab.jpg
+image: img/h100.png
 date: 2024-02-24T14:00:00.000Z
 draft: false
 ---
