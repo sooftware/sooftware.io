@@ -1,14 +1,17 @@
 ---
 layout: post
-title: 'What is MoE? (Mixture of Experts) - 1'
-author: [Soohwan Kim]
-tags: ['nlp', 'mixtral']
+title: What is MoE? (Mixture of Experts)
+author:
+  - Soohwan Kim
+tags:
+  - nlp
+  - mixtral
 image: img/moe.png
-date: '2023-12-22T01:11:55.000Z'
+date: 2023-12-22T01:11:55.000Z
 draft: false
 ---
 
-# What it MoE? (Mixture of Experts) - 1
+# What it MoE? (Mixture of Experts)
   
 현존 최강 LLM인 GPT-4에서 "MoE (Mixture of Experts)" 방식을 채택하여 사용하고 있다고 알려졌는데요, 최근 AI계의 뜨거운 감자 Mistral AI에서 [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)라는 좋은 성능의 모델을 오픈소스로 공개한지 몇 달이 채 되지 않았는데 몇일 전, Mixtral이라는 46.7B 모델을 오픈소스로 공개했습니다!  
   
@@ -127,8 +130,7 @@ class MoeLayer(nn.Module):
 게이트가 여러 `Expert`에게 라우팅하는 방법을 학습하게 하기 위해서 이렇게 2개 이상의 `Expert`에게 보내도록 학습을 시켰다고 합니다.  
   
 
-이번 포스팅은 여기서 마치고, 보다 자세한 내용은 'What is MoE? (Mixture of Experts) - 2' 포스팅에서 다루도록 하겠습니다!
-  
+최근에 나온 여러 아키텍처들이 이 MoE 방식에 기반하여 만들어지고 있습니다! 그런만큼 MoE에 대한 이해가 중요한데, 이 포스팅이 도움이 됐으면 좋겠습니다!  
   
 ## Reference
 
