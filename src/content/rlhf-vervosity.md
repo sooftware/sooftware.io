@@ -33,9 +33,9 @@ RLHF(or DPO 등) 학습 전후를 비교해본 NLP 연구자분들은 가장 직
 
 <img width="700" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/c77d6eca-095f-4cd6-8223-f0434bbd2327">
   
-위 그래프를 나온것처럼 RLHF 적용 전후를 비교했을 때, 응답 길이에 분명한 차이가 있는 것을 볼 수 있습니다.
+위 그래프에 보이는것처럼 RLHF 적용 전후를 비교했을 때, 응답 길이에 분명한 차이가 있는 것을 볼 수 있습니다.
 
-이 외의 연구들에서도 RLHF가 응답 길이를 길어지게 한다는 연구 결과를 볼 수 있는데요, [Is Stack Overflow Obsolete? An Empirical Study of the Characteristics of ChatGPT Answers to Stack Overflow Questions](https://arxiv.org/abs/2308.02312)에서는 ChatGPT 응답 중 77%가 verbose 하다고 평가했으며, [Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint](https://arxiv.org/abs/2312.11456)에서는 DPO iterate마다 응답 길이가 2.5배씩 길어진다는 연구 결과도 리포트 됐습니다.
+이 외의 연구들에서도 RLHF를 적용 했을 때 응답 길이가 길어진다는 연구 결과를 볼 수 있는데요, [Is Stack Overflow Obsolete? An Empirical Study of the Characteristics of ChatGPT Answers to Stack Overflow Questions](https://arxiv.org/abs/2308.02312)에서는 ChatGPT 응답 중 77%가 verbose 하다고 평가했으며, [Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint](https://arxiv.org/abs/2312.11456)에서는 DPO iterate마다 응답 길이가 2.5배씩 길어진다는 연구 결과도 리포트 됐습니다.
 
 ## AI가 말을 길게 하면 좋은거 아닌가?  
 
