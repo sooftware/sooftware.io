@@ -13,7 +13,7 @@ draft: false
 # RLHF는 수다쟁이를 만든다?! (Does RLHF Breed Verbose Chatterboxes?!)
 
 RLHF(*Reinforcement Learning from Human Feedback*)는 OpenAI의 ChatGPT를 만드는데 사용됐다고 알려지며 LLM(*Large-scaled Language Model*)의 새로운 연구분야로 자리잡은 기술입니다. RLHF는 이름에서 알 수 있듯이 사람의 피드백을 사용하여 AI 모델을 학습시키는 방법입니다. RLHF가 자리잡기 전까지는 Pre-training → SFT(*Supervised Fine-Tuning*)으로 이루어지는 파이프라인이 정석이였다면, 현재는 Pre-training → SFT → RLHF 파이프라인이 정석으로 자리잡게 되었습니다.
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/99ae9556-430d-4903-a2c1-fba58a14fec5" width=400>
+<img src="https://github.com/sooftware/sooftware.io/assets/42150335/99ae9556-430d-4903-a2c1-fba58a14fec5" width=550>
 
 RLHF가 인기를 끌면서, RLAIF(*Reinforcement Learning from AI Feedback*), DPO(*Direct Preference Optimization*) 등의 RLHF 기반하여 나온 파생 학습법들이 등장하게 됐습니다. 저희를 포함한 국내﹒해외 LLM 기업들은 이런 RLHF 류의 학습법을 적용하면서 LLM의 성능을 끌어올리고 있습니다.   
 
@@ -45,7 +45,7 @@ LLM이 응답을 길게길게하면 좋은거 아닐까요? 실제로 RLHF 나�
 
 <img src="https://github.com/sooftware/sooftware.io/assets/42150335/8d1fd586-1f60-4cd6-b705-b49f9a40aff6" width=400>
   
-하지만, 뭐든지 그때그때 "알맞게" 답변해주는 것이 가장 이상적입니다. '네', '아니오' 정도의 응답만 필요한데, '네 그것은 어쩌고저쩌고 .......' 와 같이 항상 길게 답변을 해준다면, 읽는 사람 입장에서 피로감을 유발하게 됩니다. 그런 관점에서, LLM의 응답이 전체적으로 길어지는 현상은 마냥 좋다고 볼 수는 없습니다. 또한, 현재 RLHF를 적용한 모델의 경향성을 보면, 응답 길이의 평균 자체가 상당히 높아져서 오히려 짧은 답변을 못한다고 봐야될 정도입니다.  
+하지만, 뭐든지 그때그때 "알맞게" 답변해주는 것이 가장 이상적입니다. '네', '아니오' 정도의 응답만 필요한데, '네 그것은 어쩌고저쩌고 .......' 와 같이 항상 길게 답변을 해준다면, 읽는 사람 입장에서 피로감을 유발하게 됩니다. 그런 관점에서, LLM의 응답이 전체적으로 길어지는 현상은 마냥 좋다고 볼 수는 없습니다. 또한, 현재 RLHF를 적용한 모델의 경향성을 보면, 응답 길이의 평균 자체가 상당히 높아져서 오히려 짧은 답변을 못한다고 봐야될 것 같습니다.  
 
 ## 그렇다면 해결방법은?  
   
