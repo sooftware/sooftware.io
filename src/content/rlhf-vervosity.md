@@ -19,7 +19,7 @@ RLHF가 인기를 끌면서, RLAIF(*Reinforcement Learning from AI Feedback*), D
 
 <img src="https://github.com/sooftware/sooftware.io/assets/42150335/8a8b79a5-9b8b-4952-ac19-f2b7c7572276" width=400>
   
-RLHF는 LLM이 생성한 답변에 대해서 사람의 피드백(좋다, 나쁘다)을 받아서 학습을 하기 때문에, 학습 이후 생성되는 답변을 보면 "오? 답변이 좋아졌는데?!" 싶을 정도로, 실제 사람이 느낄 정도로 꽤나 큰 효과를 내고 있습니다. 하지만 RLHF의 문제점이 하나 있는데요, 바로 RLHF가 AI 모델을 투 머치 토커(too much talker)로 만든다는 것입니다!  
+RLHF는 LLM이 생성한 답변에 대해서 사람의 피드백(좋다, 나쁘다)을 받아서 학습을 하기 때문에, 학습 이후 생성되는 답변을 보면 "오? 답변이 좋아졌는데?!" 싶게 바로 체감될 정도로 꽤나 큰 효과를 내고 있습니다. 하지만 RLHF의 문제점이 하나 있는데요, 바로 RLHF가 AI 모델을 투 머치 토커(too much talker)로 만든다는 것입니다!  
 
 ## RLHF와 답변 길이의 상관관계?  
 
