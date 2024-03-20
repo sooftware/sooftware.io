@@ -3,7 +3,7 @@ title: 성공팔이들에게 속지 말자. (feat. 역행자, 자청)
 author:
   - Soohwan Kim
 tags:
-  - news
+  - record
 image: img/success-peddler.png
 date: 2024-02-17T10:00:00.000Z
 draft: false
