@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/no-rules-rules.md",
+                "file": "src/content/terashuf.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b51a5f1920c890bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/github_follow_500.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/no-rules-rules.md",
+                "file": "src/content/github_follow_500.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/no-rules-rules.md",
+                "file": "src/content/github_follow_500.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/no-rules-rules.md"
+                "file": "src/content/github_follow_500.md"
               }
             }
           }
@@ -146,35 +159,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d0f233f4c692a9e",
+  "active": "b51a5f1920c890bc",
   "lastOpenFiles": [
+    "src/content/img/sooftware.png",
+    "src/content/gpt.md",
+    "src/content/github_follow_500.md",
+    "src/content/2023.md",
+    "src/content/img/terashuf.png",
+    "src/content/tmux-conf.md",
+    "src/content/terashuf.md",
+    "src/content/meta-llama.md",
+    "src/content/grok-1.md",
+    "src/content/img/grok.jpg",
+    "src/content/img/grok-1.jpg",
+    "src/content/success-peddler.md",
+    "src/content/welcome-post.md",
+    "src/content/img/welcome.png",
+    "src/content/img/welcome 2.jpg",
+    "src/content/rlhf-vervosity.md",
+    "src/content/img/rlhf-verbose.png",
+    "src/content/img/rlhf-vervose.png",
+    "src/content/moe.md",
+    "src/content/no-rules-rules.md",
     "src/content/aica-h100.md",
     "src/content/img/h100.png",
     "src/content/c-lab.md",
     "src/content/img/c-lab.jpg",
     "src/content/tunib-seed.md",
-    "src/content/success-peddler.md",
     "src/content/2022_ai_online_competition.md",
     "src/content/img/success-peddler 1.png",
-    "src/content/img/success-peddler.png",
-    "src/content/meta-llama.md",
-    "src/content/tmux-conf.md",
-    "src/content/img/tmux.png",
-    "src/content/no-rules-rules.md",
-    "src/content/img/netflix 1.jpg",
-    "src/content/img/netflix.jpg",
     "src/content/ultra-learning.md",
-    "src/content/img/ultra-learning.png",
-    "src/content/img/ulb.png",
     "src/content/the-mind.md",
     "src/content/llm-abs-202312.md",
     "src/content/llm-abs-202311.md",
-    "src/content/img/meta-llama.jpeg",
     "src/content/altman.md",
     "src/content/atomic_habits.md",
     "src/content/leaders_perspective.md",
-    "src/content/2023.md",
-    "src/content/welcome-post.md",
     "src/content/one-thing.md",
     "src/content/brain-hormone.md"
   ]
