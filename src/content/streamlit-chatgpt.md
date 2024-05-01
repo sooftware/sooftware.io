@@ -19,7 +19,7 @@ excerpt:
 <img width="400" alt="image" src="https://github.com/sooftware/sooftware.io/assets/42150335/134118d0-c4b2-4689-bc85-4c805b8c7154">
 
 
-두 라이브러리 모두 간단하게 웹페이지를 띄울 수 있다는 장점이 있지만, 제 경험상 streamlit으로 코드를 작성했을 때 보다 간편헀던 것 같습니다. 그래서 이번 포스트에서는 streamlit에서 제공하는 `chat_message` 메서드와 OpenAI API를 이용해서 **단 30줄의 코드**로 ChatGPT를 웹페이지에 띄워보려고 합니다! (chat_message 외의 사용법을 알고싶으신 분들은 [이전 streamlit 포스트](https://sooftware.io/streamlit/)를 참고하세요!)
+두 라이브러리 모두 간단하게 웹페이지를 띄울 수 있다는 장점이 있지만, 제 경험상 streamlit으로 코드를 작성했을 때 보다 간편헀던 것 같습니다. 그래서 이번 포스트에서는 streamlit에서 제공하는 **chat_message** 메서드와 OpenAI API를 이용해서 **단 30줄의 코드**로 ChatGPT를 웹페이지에 띄워보려고 합니다! (chat_message 외의 사용법을 알고싶으신 분들은 [이전 streamlit 포스트](https://sooftware.io/streamlit/)를 참고하세요!)
 
 ## Installation
 
@@ -72,7 +72,7 @@ if 'messages' not in st.session_state:
     st.session_state.messages = []  
 ```
   
-Streamlit은 기본적으로 매 event가 발생할때마다 페이지를 새로 로드하는 방식입니다. 그래서 `st.session_state`가 아닌 새로 변수를 생성하게 되면 이벤트가 발생할대마다 해당 변수가 초기화되어 버립니다. 그래서 스트림릿에서 변수들을 기록할때는 `st.session_state`에 위와 같은 형식으로 저장하는 것을 추천드립니다.
+Streamlit은 기본적으로 매 event가 발생할때마다 페이지를 새로 로드하는 방식입니다. 그래서 **st.session_state**가 아닌 새로 변수를 생성하게 되면 이벤트가 발생할대마다 해당 변수가 초기화되어 버립니다. 그래서 스트림릿에서 변수들을 기록할때는 **st.session_state**에 위와 같은 형식으로 저장하는 것을 추천드립니다.
 
 다음으로는 사용자로부터 텍스트를 입력받을 창과 텍스트를 전송할 버튼을 만들어 보겠습니다.
 
@@ -83,7 +83,7 @@ if st.button("Send"):
     st.session_state.messages.append({"role": "user", "content": user_message})
 ```
   
-스트림릿에서 텍스트를 입력받을 때는 `st.text_input` 메서드를 사용합니다. 버튼은 `st.button` 메서드를 이용하면 되는데, 저희는 버튼이 눌렸을때의 동작이 필요하므로 `if st.button("Send")`과 같이 작성했습니다. 그리고 유저 메세지를 ChatGPT에게 보내기 위해 기존에 초기화를 해둔 `st.session_state.messages`에 ChatGPT에서 요구하는 형식에 맞게 append를 해주겠습니다.  
+스트림릿에서 텍스트를 입력받을 때는 **st.text_input** 메서드를 사용합니다. 버튼은 **st.button** 메서드를 이용하면 되는데, 저희는 버튼이 눌렸을때의 동작이 필요하므로 **if st.button("Send")** 와 같이 작성했습니다. 그리고 유저 메세지를 ChatGPT에게 보내기 위해 기존에 초기화를 해둔 **st.session_state.messages**에 ChatGPT에서 요구하는 형식에 맞게 append를 해주겠습니다.  
 
 ```python
 if st.button("Send"):  
@@ -97,7 +97,7 @@ if st.button("Send"):
     st.session_state.messages.append({"role": "assistant", "content": response}) 
 ```
 
-입력받은 유저 메세지를 ChatGPT에게 전송해서 응답을 받아옵니다! 이전 세팅에서 생성한 openai client의 `chat.completions.create` 메서드를 이용하여 응답을 받아오고, ChatGPT의 응답을 유저 메세지 같이 `st.session_state.messages`에 append 해줍니다. 여기까지 코드작성이 됐다면 아래와 같은 플로우가 완성됩니다!
+입력받은 유저 메세지를 ChatGPT에게 전송해서 응답을 받아옵니다! 이전 세팅에서 생성한 openai client의 **chat.completions.create** 메서드를 이용하여 응답을 받아오고, ChatGPT의 응답을 유저 메세지 같이 **st.session_state.messages**에 append 해줍니다. 여기까지 코드작성이 됐다면 아래와 같은 플로우가 완성됩니다!
 
 1. 유저 메세지 입력
 2. messages에 유저 메세지 추가
@@ -107,7 +107,7 @@ if st.button("Send"):
 
 ### Step 4: chat_message 메서드로 대화 display
 
-주고받은 대화들을 시각적으로 볼 수 있게 하기 위해 주고받는 대화들을 streamlit의 `chat_message` 메서드로 display 해줍니다.
+주고받은 대화들을 시각적으로 볼 수 있게 하기 위해 주고받는 대화들을 streamlit의 **chat_message** 메서드로 display 해줍니다.
  
 ```python
 for message in reversed(st.session_state.messages):  
@@ -118,11 +118,11 @@ for message in reversed(st.session_state.messages):
             st.write(message['content'], avatar=st.image('assets/openai-logo.png', width=30))
 ```
 
-위에서 저장한 `st.session_state.messages`를 for 문을 돌면서 하나씩 가져와서 사용자인지 ChatGPT인지를 판별하고, display 해줍니다. (최근 대화가 위에 오도록 하기 위하여 reversed 메서드를 사용합니다) 조금 더 명확하게 표시를 해주기 위해 ChatGPT의 경우 미리 저장해둔 OpenAI logo로 아바타를 표시해줬습니다.
+위에서 저장한 **st.session_state.messages**를 for 문을 돌면서 하나씩 가져와서 사용자인지 ChatGPT인지를 판별하고, display 해줍니다. (최근 대화가 위에 오도록 하기 위하여 reversed 메서드를 사용합니다) 조금 더 명확하게 표시를 해주기 위해 ChatGPT의 경우 미리 저장해둔 OpenAI logo로 아바타를 표시해줬습니다.
 
 ## Step 5: Run Streamlit
 
-Streamlit 기반 웹페이지를 실행할때는 아래와 같이 `streamlit run ***.py` 형식으로 입력해주시면 됩니다. 저는 파이썬 파일명을 app.py로 했으니 아래와 같이 실행했습니다.
+Streamlit 기반 웹페이지를 실행할때는 아래와 같이 **streamlit run \*\*\*.py** 형식으로 입력해주시면 됩니다. 저는 파이썬 파일명을 app.py로 했으니 아래와 같이 실행했습니다.
 
 ```
 $ streamlit run app.py
