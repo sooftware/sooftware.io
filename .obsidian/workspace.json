@@ -25,9 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/github_follow_500.md",
+                "file": "src/content/streamlit-chatgpt.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "521a2a202ec42eab",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
               }
             }
           }
@@ -61,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:chat",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,11 +88,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "41979c0ff9875fd4",
@@ -98,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/github_follow_500.md",
+                "file": "src/content/streamlit-chatgpt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/github_follow_500.md",
+                "file": "src/content/streamlit-chatgpt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/github_follow_500.md"
+                "file": "src/content/streamlit-chatgpt.md"
               }
             }
           }
@@ -161,9 +172,12 @@
   },
   "active": "b51a5f1920c890bc",
   "lastOpenFiles": [
+    "src/content/streamlit.md",
+    "src/content/streamlit-chatgpt.md",
+    "src/content/img/streamlit-chatgpt.png",
+    "src/content/github_follow_500.md",
     "src/content/img/sooftware.png",
     "src/content/gpt.md",
-    "src/content/github_follow_500.md",
     "src/content/2023.md",
     "src/content/img/terashuf.png",
     "src/content/tmux-conf.md",
@@ -184,18 +198,13 @@
     "src/content/aica-h100.md",
     "src/content/img/h100.png",
     "src/content/c-lab.md",
-    "src/content/img/c-lab.jpg",
     "src/content/tunib-seed.md",
     "src/content/2022_ai_online_competition.md",
-    "src/content/img/success-peddler 1.png",
     "src/content/ultra-learning.md",
     "src/content/the-mind.md",
     "src/content/llm-abs-202312.md",
     "src/content/llm-abs-202311.md",
     "src/content/altman.md",
-    "src/content/atomic_habits.md",
-    "src/content/leaders_perspective.md",
-    "src/content/one-thing.md",
-    "src/content/brain-hormone.md"
+    "src/content/atomic_habits.md"
   ]
 }

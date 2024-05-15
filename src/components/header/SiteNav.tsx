@@ -94,9 +94,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   </Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="about.sooftware.io" activeClassName="nav-current">
+                  <a href="https://about.sooftware.io" className="nav-current">
                     About
-                  </Link>
+                  </a>
                 </li>
                 <li role="menuitem">
                   <Link to="/resume" activeClassName="nav-current">
