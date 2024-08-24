@@ -4,7 +4,7 @@ title: "[ELK] Elastic Search logstash - Nori 토크나이저 설정"
 image: img/logstash.png
 author:
   - Soohwan Kim
-date: 2024-05-01T10:00:00.000Z
+date: 2024-08-24T10:00:00.000Z
 tags:
   - toolkit
   - web
