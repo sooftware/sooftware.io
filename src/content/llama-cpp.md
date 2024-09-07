@@ -23,7 +23,7 @@ excerpt:
 
 대표적인 오픈소스 LLM인 Meta의 llama에서 이름을 따온 이 라이브러리는 llama에만 종속되는게 아닌 오픈소스 LLM들을 순수 C/C++로만 인퍼런스 가능하게 해주는 툴이다. 일반적으로 AI 모델들은 대부분 Python 기반으로 작동하기 때문에 온디바이스 상에서 LLM 구동을 위해서는 제약이 꽤 있는 편이다.  
 
-<img src="https://files.oaiusercontent.com/file-QBBL4OkB96dBuJBvVJu3gVfj?se=2024-09-07T11%3A06%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1edcdf1c-53f6-4c76-8b6d-56982f1df0fc.webp&sig=c78xpwKgJwMiqmfwTKsRXTcQv4HQ5jMTO4raNDtKTOE%3D" width=350>
+<img src="https://github.com/user-attachments/assets/a787c756-2843-4a91-9bdd-cd34a285ddde" width=350>
 
 일반적인 리눅스 기반 서버에서는 쉽게 사용 가능한 PyTorch, Hugginface Transformers 등을 온디바이스 상에서 구동하려면 라이브러리 단에서 제공되는 API도 한정적일 뿐더러 연산 대부분이 GPU에 맞춰져 있기 때문에 파이썬 기반으로 llm을 온비다이스에서 구동하기란 상당히 어려운 일이다. (매우 큰 프로젝트가 될 것)
 
@@ -31,7 +31,7 @@ excerpt:
 
 ## llama.cpp 사용법
 
-<img src="https://files.oaiusercontent.com/file-dD3Lc5jvqEkZD0U5KykwtBBQ?se=2024-09-07T11%3A14%3A37Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D972ee912-9ebb-4b5b-b59a-67519ba8660c.webp&sig=5Odwmzh9WrwXBiQfFySwrRziIsfiuKhTYQ1wLWu8lWI%3D" width=400>
+<img src="https://github.com/user-attachments/assets/5ee981ad-e4b5-40b8-9546-3669e08b4d8e" width=400>
   
 그럼 llama.cpp 사용법을 살펴보자!
   
