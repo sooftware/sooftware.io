@@ -1,7 +1,7 @@
 ---
 layout: post
 title: llama.cpp (On device llm inference tool)
-image: img/llama-cpp.jepg
+image: img/llama-cpp.png
 author:
   - Soohwan Kim
 date: 2024-09-07T10:00:00.000Z
