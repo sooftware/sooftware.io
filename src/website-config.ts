@@ -63,7 +63,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'SOOFTWARE',
-  description: 'Co-founder | CTO @tunib.ai',
+  description: 'My Learning Journey in AI and Software Engineering',
   coverImage: 'img/blog-cover.png',
   logo: 'img/blog_logo.png',
   lang: 'en',
