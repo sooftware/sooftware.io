@@ -6,10 +6,10 @@ author:
   - Soohwan Kim
 date: 2025-10-21T12:00:00.000Z
 tags:
-  - langchain
-  - langgraph
-  - openai
-  - rag
+  - nlp
+  - diffusion
+  - bert
+  - chatgpt
 excerpt:
 ---
 # BERT는 사실 Diffusion 모델이였다?!
