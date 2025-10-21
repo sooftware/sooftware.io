@@ -4,7 +4,7 @@ title: LangGraph로 구현하는 RAG 시스템 실습
 image: img/langgraph.png
 author:
   - Soohwan Kim
-date: 2024-05-01T10:00:00.000Z
+date: 2025-10-21T10:00:00.000Z
 tags:
   - langchain
   - langgraph
