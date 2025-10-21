@@ -21,7 +21,7 @@ excerpt:
 
 ## BERT와 Diffusion이 같은 방식이다?!
 
-<img width=500 src="https://github.com/user-attachments/assets/a08751f9-b503-4eb4-aa13-9ccb23bd84d2">
+<img width=500 src="https://wikidocs.net/images/page/208933/bert.png">
 
 NLP 연구자들에게 BERT는 너무 익숙한 모델입니다. 2018년 등장 이후, 수많은 자연어처리의 분류, 검색, QA 태스크에 활용됐습니다. `[MASK]` 토큰으로 단어를 가리고 맞추는 Masked Language Modeling(MLM)은 너무나 단순하고 명확한 학습 방식인데 강력한 성능으로 당시 많은 연구자들을 좌절케하기도 했었습니다.  
 
@@ -34,7 +34,9 @@ Computer Vision(CV) 연구자들에게 Diffusion은 마찬가지로 익숙한 �
 Diffusion 기술을 텍스트에 적용한다고 하면, BERT의 MLM과 굉장히 유사한 방식이라는 걸 알 수 있습니다.  
 
 ### BERT의 MLM
-  
+
+<img src="https://raw.githubusercontent.com/UKPLab/sentence-transformers/master/docs/img/MLM.png" width=500>
+
 - 입력 텍스트의 15%를 `[MASK]` 토큰으로 가림
 - 마스킹된 토큰 예측
 
