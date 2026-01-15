@@ -27,7 +27,7 @@ draft: false
 
 ### Transformer에서 MoE 적용
 
-<img src="img/deepseek-moe/ffn-moe.png", width=500>
+<img src="img/deepseek-moe/ffn-moe.png" width=500>
 
 전통적인 Transformer의 FFN(Feed-Forward Network) 레이어를 MoE로 교체합니다.
 
@@ -77,6 +77,7 @@ Expert 수를 늘리고, 선택의 경우의 수도 늘리되, 계산량은 유�
 | 나누기 | 1개 → 8개 head     | 8개 → 256개 expert      |
 | 활성화 | 모두 사용            | 일부만 선택                |
 | 효과  | 다양한 attention 패턴 | 다양한 expert 조합         |
+  
 이처럼 기존의 덩어리를 더 작지만 여러개로 나누면서 **성능 향상**이라는 효과를 얻었습니다.  
 
 ## 4. DeepSeek의 혁신 ②: Shared Expert Isolation  
