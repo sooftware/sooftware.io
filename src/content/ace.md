@@ -44,7 +44,7 @@ draft: false
   
 ## ACE (Agentic Context Engineering)
 
-<img src="ace/ace_logic.png" width=500>
+<img src="img/ace/ace_logic.png" width=500>
 
 그래서 저자들은 이러한 **Context Collapse** 문제를 해결하기 위해 ACE를 제안합니다. ACE는 핵심 아이디어는 **"Contexts as evolving playbooks"**입니다. Context를 매번 re-write하면서 정보를 잃어버릴게 아니라, 계속 축적하고 구조화함으로써 성능을 개선한다는게 핵심입니다.  
 
@@ -152,21 +152,18 @@ Reasoning:
 						- 선호 곡들의 공통 장르/아티스트 기반 추천" 
 		},
 		{ 
-			"type": "UPDATE", 
-			"section": "music_recommendation_strategies", 
-			"content": "청취 완료율로 선호도 판단 
-						- 80% 이상 청취: 강한 선호 신호 
-						- 20% 미만 청취: 강한 비선호 신호 
-						- 최근성보다 청취율을 우선순위로 
-						- 선호 곡들의 공통 장르/아티스트 기반 추천" 
-		}, 
+			"type": "UPDATE_COUNTER",  // ← 이 부분 수정
+			"bullet_id": "str-00001", 
+			"counter": "harmful",
+			"increment": 1 
+		}
 	] 
 }
 ```
 
 **Output:**
 ```
-[str-00001] helpful=5 harmful=5 :: 
+[str-00001] helpful=5 harmful=1 :: 
 	- 가장 최근 들었던 노래와 같은 장르 추천
 [str-00002] helpful=5 harmful=0 ::
 	- 청취 완료율 기반 필터링 
@@ -196,7 +193,7 @@ Reasoning:
 
 ACE는 기존 context adaptation 기법들 대비해서 우수한 성능을 보였습니다.  
 
-- AppWorld LLM Agent Benchmark : 기존 베이스라인 대비 평귱 10.6%의 정확도 향상
+- AppWorld LLM Agent Benchmark : 기존 베이스라인 대비 평균 10.6%의 정확도 향상
 - FiNER (금융 분석 벤치마크) : 적응 지연 시간을 평균 86.9%로 단축, 토큰 사용량, 롤아웃 횟수 크게 감소
 
 즉, 기존 방법들 대비 많이 좋아졌다고 합니다.
@@ -209,7 +206,7 @@ ACE는 기존 context adaptation 기법들 대비해서 우수한 성능을 보�
 
 #### Reflector & Multi-Epoch
 
-위 Table 3에서 볼 수 있듯이 reflector와 multi-epoch이 없을시에 성능이 하락했습니다. 즉 Reflector의 insight가 성능 향상에 기여했다는 것이며, 한 번만 학습하기보다는 같은 샘플을 여러 번 학습해주는 것이 성능 향상에 효과적이였다고 합니다.  
+위 Table 3에서 볼 수 있듯이 reflector와 multi-epoch이 없을시에 성능이 하락했습니다. 즉 Reflector의 insight가 성능 향상에 기여했다는 것이며, 한 번만 학습하기보다는 여러 epoch에 걸쳐 반복 학습해주며 Playbook을 점진적으로 정제하는것이 성능 향상에 도움이 됐다고 합니다.
 
 #### Offline Warmup
 
