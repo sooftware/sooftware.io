@@ -17,7 +17,7 @@ draft: false
 
 <img src="img/ace/ace_paper.png" width=350>
 
-| https://arxiv.org/pdf/2510.04618
+| https://arxiv.org/abs/2510.04618
 
 ## Context Adaptation
 
@@ -46,12 +46,14 @@ draft: false
 
 <img src="img/ace/ace_logic.png" width=500>
 
-그래서 저자들은 이러한 **Context Collapse** 문제를 해결하기 위해 ACE를 제안합니다. ACE는 핵심 아이디어는 **"Contexts as evolving playbooks"**입니다. Context를 매번 re-write하면서 정보를 잃어버릴게 아니라, 계속 축적하고 구조화함으로써 성능을 개선한다는게 핵심입니다.  
+그래서 저자들은 이러한 **Context Collapse** 문제를 해결하기 위해 ACE를 제안합니다. ACE는 핵심 아이디어는 ** "Contexts as evolving playbooks" **입니다. Context를 매번 re-write하면서 정보를 잃어버릴게 아니라, 계속 축적하고 구조화함으로써 성능을 개선한다는게 핵심입니다.  
 
 이제 ACE의 구조에 대해서 살펴보겠습니다. 🧐  
 
 ### ACE의 세 모듈과 Playbook  
-   
+
+ACE를 구성하는 세 가지 모듈을 살펴보겠습니다:
+  
 #### 1. Generator
   
 Generator는 들어온 Query에 대한 문제를 해결하는 모듈입니다. 이때 모델이 어떤 정보를 가지고 어떤 생각을 해서 그런 결론이 나왔는지를 모두 기록합니다. 이것을 **Reasoning Trajectory**라고 합니다. 이 정보를 통해 Generator가 어떤 분석을 했고, 어떤 실수를 하는지를 파악할 수 있습니다.
@@ -82,25 +84,29 @@ AI Agent가 사용자가 들을 다음 노래를 자동으로 설정하는 태�
 
 #### 1. Generator
 
+
+  
 ```
 Reasoning:
 1. 사용자가 최근에 들은 곡 확인...
 2. Playbook을 보니 최근에 들었던 노래와 같은 장르 노래를 추천해주는게 좋을 것 같음
 3. Despacito와 같은 장르 곡 추천
 ```
+
+   
 **Output:**
 - 추천곡 : "Bailando"
 - 피드백 : 10% 청취 후 스킵 (harmful)
 
 #### 2. Reflector
-
+  
 **Input:**
 - Generator의 reasoning 과정
 - 추천곡 : "Bailando"
 - 피드백 : 10% 청취 후 스킵 (harmful)
-
+  
 **Process:**
-
+  
 ```json
 {
   "reasoning": "Generator가 '최근 곡'인 Despacito를 기준으로 판단했는데,
@@ -121,20 +127,23 @@ Reasoning:
                   최근성보다 청취 완료율을 우선해야 함"
 }
 ```
-
+  
+  
 **Output:**
 
 - Key lesson : "청취 완료율이 추천의 핵심 신호다. ~ 최근성보다 청취 완료율을 우선해야 함"
-
+  
+  
 #### 3. Curator
 
 **Input:**
 - Playbook: 
 	- [str-00001]helpful=5 harmful=0 :: 가장 최근 들었던 노래와 같은 장르 추천
 - Reflector insight : "청취 완료율이 추천의 핵심 신호다. ~ 최근성보다 청취 완료율을 우선해야 함"
-
+   
 **Process:**
 
+  
 ```json
 { 
 	"reasoning": "Reflector가 중요한 패턴을 발견했다. 
@@ -161,6 +170,7 @@ Reasoning:
 }
 ```
 
+  
 **Output:**
 ```
 [str-00001] helpful=5 harmful=1 :: 
@@ -171,7 +181,7 @@ Reasoning:
 	- 20%- 청취 = 비선호 곡으로 분류 
 	- 최근성 < 청취 완료율 (우선순위) 
 ```
-  
+
 ***
 
 간단한 "플레이리스트 다음 곡 추천"이라는 주제를 예시로 ACE의 동작을 살펴봤습니다! 이해하시는데 도움이 됐으면 좋겠습니다.  
