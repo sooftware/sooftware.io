@@ -58,7 +58,8 @@
     "react-linkify": "^1.0.0-alpha",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^4.0.3",
-    "rehype-react": "7.0.2"
+    "rehype-react": "7.0.2",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "@types/lodash": "4.14.172",
