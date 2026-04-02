@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import Comments from '../components/Comments';
 import { Footer } from '../components/Footer';
 import SiteNav, { SiteNavMain } from '../components/header/SiteNav';
 import PostContent from '../components/PostContent';
@@ -234,6 +235,8 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
+
+            <Comments slug={location.pathname} />
           </div>
         </main>
 
