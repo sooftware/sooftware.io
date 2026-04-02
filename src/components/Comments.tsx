@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import styled from '@emotion/styled';
 import { lighten } from 'polished';
 import { colors } from '../styles/colors';
+import config from '../website-config';
 
 interface Comment {
   id: string;
@@ -12,9 +13,17 @@ interface Comment {
   createdAt: string;
 }
 
+interface GitHubUser {
+  login: string;
+  avatar_url: string;
+  name: string | null;
+}
+
 interface CommentsProps {
   slug: string;
 }
+
+const GITHUB_AUTH_URL = 'https://github.com/login/oauth/authorize';
 
 const Comments: React.FC<CommentsProps> = ({ slug }) => {
   const [comments, setComments] = useState<Comment[]>([]);
@@ -26,8 +35,35 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
   const [passwordInput, setPasswordInput] = useState<{ [id: string]: string }>({});
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const [deletePassword, setDeletePassword] = useState('');
+  const [githubUser, setGithubUser] = useState<GitHubUser | null>(null);
 
+  const isAdmin = githubUser?.login === config.adminGithubUsername;
   const storageKey = `comments_${slug}`;
+
+  const handleOAuthMessage = useCallback((event: MessageEvent) => {
+    if (event.data?.type === 'github-oauth-code') {
+      const code = event.data.code;
+      fetch('/.netlify/functions/github-auth', {
+        method: 'POST',
+        body: JSON.stringify({ code }),
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.login) {
+            const user: GitHubUser = {
+              login: data.login,
+              avatar_url: data.avatar_url,
+              name: data.name,
+            };
+            setGithubUser(user);
+            sessionStorage.setItem('github_user', JSON.stringify(user));
+          }
+        })
+        .catch(() => {
+          alert('GitHub 로그인에 실패했습니다.');
+        });
+    }
+  }, []);
 
   useEffect(() => {
     try {
@@ -35,10 +71,31 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
       if (stored) {
         setComments(JSON.parse(stored));
       }
+      const savedUser = sessionStorage.getItem('github_user');
+      if (savedUser) {
+        setGithubUser(JSON.parse(savedUser));
+      }
     } catch {
       // ignore
     }
-  }, [storageKey]);
+
+    window.addEventListener('message', handleOAuthMessage);
+    return () => window.removeEventListener('message', handleOAuthMessage);
+  }, [storageKey, handleOAuthMessage]);
+
+  const handleGitHubLogin = () => {
+    const redirectUri = `${config.siteUrl}/github-callback`;
+    const authUrl = `${GITHUB_AUTH_URL}?client_id=${config.githubClientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=read:user`;
+    const popup = window.open(authUrl, 'github-oauth', 'width=600,height=700');
+    if (!popup) {
+      alert('팝업이 차단되었습니다. 팝업 차단을 해제해주세요.');
+    }
+  };
+
+  const handleGitHubLogout = () => {
+    setGithubUser(null);
+    sessionStorage.removeItem('github_user');
+  };
 
   const saveComments = (updated: Comment[]) => {
     setComments(updated);
@@ -78,6 +135,10 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
     }
   };
 
+  const handleAdminDelete = (id: string) => {
+    saveComments(comments.filter(c => c.id !== id));
+  };
+
   const handleDelete = (id: string) => {
     const comment = comments.find(c => c.id === id);
     if (!comment) return;
@@ -97,9 +158,26 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
 
   return (
     <CommentsSection>
-      <CommentsTitle>
-        댓글 <CommentCount>{comments.length}</CommentCount>
-      </CommentsTitle>
+      <CommentsTitleRow>
+        <CommentsTitle>
+          댓글 <CommentCount>{comments.length}</CommentCount>
+        </CommentsTitle>
+        {githubUser ? (
+          <AdminBadgeRow>
+            <GitHubAvatar src={githubUser.avatar_url} alt={githubUser.login} />
+            <GitHubName>{githubUser.login}</GitHubName>
+            {isAdmin && <AdminBadge>관리자</AdminBadge>}
+            <AdminLogoutBtn onClick={handleGitHubLogout}>로그아웃</AdminLogoutBtn>
+          </AdminBadgeRow>
+        ) : (
+          <GitHubLoginBtn onClick={handleGitHubLogin}>
+            <GitHubIcon viewBox="0 0 16 16" width="16" height="16">
+              <path fillRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </GitHubIcon>
+            GitHub 로그인
+          </GitHubLoginBtn>
+        )}
+      </CommentsTitleRow>
 
       <CommentList>
         {comments.map(comment => (
@@ -111,7 +189,9 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
               </CommentAuthor>
               <CommentMeta>
                 <CommentDate>{formatDate(comment.createdAt)}</CommentDate>
-                {deleteConfirm === comment.id ? (
+                {isAdmin ? (
+                  <DeleteLink onClick={() => handleAdminDelete(comment.id)}>삭제</DeleteLink>
+                ) : deleteConfirm === comment.id ? (
                   <DeleteForm>
                     <DeleteInput
                       type="password"
@@ -128,7 +208,7 @@ const Comments: React.FC<CommentsProps> = ({ slug }) => {
                 )}
               </CommentMeta>
             </CommentHeader>
-            {comment.isPrivate && !revealedIds.has(comment.id) ? (
+            {comment.isPrivate && !isAdmin && !revealedIds.has(comment.id) ? (
               <PrivateContent>
                 <PrivateIcon>🔒</PrivateIcon>
                 <span>비밀 댓글입니다.</span>
@@ -221,17 +301,100 @@ const CommentsSection = styled.section`
   }
 `;
 
+const CommentsTitleRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid ${colors.darkgrey};
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+`;
+
 const CommentsTitle = styled.h2`
-  margin: 0 0 24px;
+  margin: 0;
   font-size: 2.2rem;
   font-weight: 600;
   color: ${colors.darkgrey};
-  border-bottom: 2px solid ${colors.darkgrey};
-  padding-bottom: 12px;
 
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.9);
-    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+`;
+
+const GitHubLoginBtn = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  background: #24292e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #1a1e22;
+  }
+`;
+
+const GitHubIcon = styled.svg`
+  fill: #fff;
+`;
+
+const AdminBadgeRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+const GitHubAvatar = styled.img`
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+`;
+
+const GitHubName = styled.span`
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: ${colors.darkgrey};
+
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
+`;
+
+const AdminBadge = styled.span`
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: ${colors.blue};
+  padding: 2px 8px;
+  border-radius: 4px;
+`;
+
+const AdminLogoutBtn = styled.button`
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: ${colors.midgrey};
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: ${colors.red};
   }
 `;
 

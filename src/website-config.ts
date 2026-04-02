@@ -59,6 +59,14 @@ export interface WebsiteConfig {
    * Otherwise only shows first (primary) tag
    */
   showAllTags: boolean;
+  /**
+   * GitHub OAuth App Client ID for comment admin login
+   */
+  githubClientId?: string;
+  /**
+   * GitHub username that has admin access to comments
+   */
+  adminGithubUsername?: string;
 }
 
 const config: WebsiteConfig = {
@@ -78,6 +86,8 @@ const config: WebsiteConfig = {
   googleSiteVerification: 'GoogleCode',
   footer: 'All Rights Reserved.',
   showAllTags: true,
+  githubClientId: 'YOUR_GITHUB_OAUTH_CLIENT_ID',
+  adminGithubUsername: 'sooftware',
 };
 
 export default config;

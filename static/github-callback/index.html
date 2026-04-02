@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub 로그인 중...</title>
+  <style>
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f6f8fa; color: #24292e; }
+    .loading { text-align: center; }
+    .spinner { width: 40px; height: 40px; border: 3px solid #e1e4e8; border-top-color: #0366d6; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <div class="spinner"></div>
+    <p>GitHub 인증 처리 중...</p>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    if (code && window.opener) {
+      window.opener.postMessage({ type: 'github-oauth-code', code: code }, '*');
+      setTimeout(() => window.close(), 1000);
+    } else if (!code) {
+      document.querySelector('.loading p').textContent = '인증에 실패했습니다.';
+      setTimeout(() => window.close(), 2000);
+    }
+  </script>
+</body>
+</html>
