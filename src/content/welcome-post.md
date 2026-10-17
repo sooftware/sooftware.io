@@ -28,8 +28,6 @@ draft: false
 대학생 때 몇 년간 네이버 블로그를 꾸준히 운영하며 하루에 100명~200명 정도 방문하는 블로그로 성장했습니다. 사실 다른 블로그들에 비하면 많은 방문자 수는 아니지만, 개인기록용으로 만들었던 블로그인지라 제 입장에서는 신기한 경험이였습니다. 그러다 블로그를 좀 더 키우고 싶다는 생각이 들었고, 기존에 운영하던 네이버 블로그는 블로그 주소를 외우기 어렵고 커스터마이즈하는데 한계가 있다는 단점 때문에 개인 도메인을 사서 사이트를 운영하게 됐습니다.
        
 ## 당신은 누구인가요?  
-   
-<img src="https://github.com/sooftware/sooftware.io/assets/42150335/cae9dd1d-8e8c-42be-880d-1aee852cd177" height=100>
 
 제 이름은 김수환이고, 현재 당근마켓에서 Machine Learning Engineer로 일하고 있습니다. 이전에는 [튜닙(TUNiB)](https://www.tunib.ai/)이라는 자연어처리 스타트업의 Co-founder이자 AI Lead로 근무했었고 그 이전에는 [카카오브레인](https://www.kakaobrain.com/)이라는 회사에서 Speech & Natural Language Procesing 팀에서 근무했었습니다. 
   
