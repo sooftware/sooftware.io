@@ -5,6 +5,7 @@ tags: [thinking, book, review]
 image: img/self-brand.jpeg
 date: '2023-11-25T10:00:00.000Z'
 draft: false
+series: '독서'
 ---
 
 # Self Branding

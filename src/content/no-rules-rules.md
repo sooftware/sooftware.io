@@ -8,6 +8,7 @@ tags:
 image: img/netflix.jpg
 date: 2024-03-04T22:00:00.000Z
 draft: false
+series: '독서'
 ---
 
 # 규칙 없음 (No Rules Rules)

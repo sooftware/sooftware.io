@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/pushing.png
 date: '2021-03-17T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Pushing the Limits of Semi-Supervised Learning for Automatic Speech Recognition

@@ -1,0 +1,9 @@
+[
+  { "name": "회고", "slug": "retrospective", "description": "한 해를 돌아보며 남긴 기록" },
+  { "name": "뉴스", "slug": "news", "description": "AI 업계 소식과 그에 대한 생각" },
+  { "name": "논문 리뷰", "slug": "paper-review", "description": "읽은 논문을 정리한 리뷰" },
+  { "name": "AI 개념", "slug": "ai-concepts", "description": "음성·자연어처리·LLM 개념 정리" },
+  { "name": "개발", "slug": "dev", "description": "개발 도구와 실습 노트" },
+  { "name": "독서", "slug": "books", "description": "읽은 책에 대한 생각" },
+  { "name": "활동", "slug": "activities", "description": "대회, 발표, 그리고 그때의 기록" }
+]

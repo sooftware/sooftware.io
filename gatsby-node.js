@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/restrict-plus-operands, @typescript-eslint/no-var-requires */
 const path = require('path');
 const _ = require('lodash');
+const seriesList = require('./src/series.json');
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -62,6 +63,7 @@ exports.createPages = async ({ graphql, actions }) => {
           date
           draft
           excerpt
+          series
           image {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
@@ -103,23 +105,64 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create post pages
-  const posts = result.data.allMarkdownRemark.edges;
+  // Markdown with `layout: page` (e.g. about.md) becomes a standalone page,
+  // not a blog post — keep it out of the post list and prev/next links.
+  const isPage = ({ node }) => node.fields.layout === 'page';
+  const posts = result.data.allMarkdownRemark.edges.filter(edge => !isPage(edge));
+
+  result.data.allMarkdownRemark.edges.filter(isPage).forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve('./src/templates/page.tsx'),
+      context: { slug: node.fields.slug },
+    });
+  });
 
   // Create paginated index
-  // TODO: new pagination
-  const postsPerPage = 1000;
+  const postsPerPage = 10;
   const numPages = Math.ceil(posts.length / postsPerPage);
+
+  // Series cards on the home page: post count + the newest post with a cover image
+  const newestFirst = [...posts].reverse();
+  const seriesCards = seriesList.map(({ name, slug }) => {
+    const inSeries = newestFirst.filter(({ node }) => node.frontmatter.series === name);
+    const cover = inSeries.find(({ node }) => node.frontmatter.image);
+    return { slug, count: inSeries.length, coverSlug: cover ? cover.node.fields.slug : '' };
+  });
+  const coverSlugs = seriesCards.map(card => card.coverSlug).filter(Boolean);
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? '/' : `/${i + 1}`,
+      path: i === 0 ? '/' : `/${i + 1}/`,
       component: path.resolve('./src/templates/index.tsx'),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
         currentPage: i + 1,
+        seriesCards,
+        coverSlugs,
       },
+    });
+  });
+
+  // Create paginated series pages (series list: src/series.json)
+  seriesList.forEach(({ name: series, slug }) => {
+    const count = posts.filter(({ node }) => node.frontmatter.series === series).length;
+    const seriesPages = Math.max(1, Math.ceil(count / postsPerPage));
+    Array.from({ length: seriesPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/series/${slug}/` : `/series/${slug}/${i + 1}/`,
+        component: path.resolve('./src/templates/series.tsx'),
+        context: {
+          series,
+          slug,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages: seriesPages,
+          currentPage: i + 1,
+        },
+      });
     });
   });
 

@@ -11,6 +11,7 @@ tags:
   - bert
   - chatgpt
 excerpt:
+series: '뉴스'
 ---
 # BERT는 사실 Diffusion 모델이였다?!
 

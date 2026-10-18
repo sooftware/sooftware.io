@@ -6,6 +6,7 @@ tags: ['nlp']
 image: img/writing.jpg
 date: '2021-09-13T23:46:37.121Z'
 draft: false
+series: 'AI 개념'
 ---
 
 ## Tokenization

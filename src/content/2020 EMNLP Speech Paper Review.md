@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/2020-emnlp.png
 date: '2020-12-08T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # EMNLP Paper Review: Speech

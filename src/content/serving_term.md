@@ -5,6 +5,7 @@ tags: [nlp, serving]
 image: img/term.png
 date: '2022-10-04T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Sooftware Serving - Terminology 

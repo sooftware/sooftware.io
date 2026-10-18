@@ -8,6 +8,7 @@ tags:
 image: img/last-winner.png
 date: 2023-10-31T10:00:00.000Z
 draft: false
+series: '독서'
 ---
 
 # \# 그들은 왜 최후의 승자가 되지 못했나

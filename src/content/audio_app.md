@@ -5,6 +5,7 @@ tags: [speech]
 image: img/audio_app1.png
 date: '2020-04-15T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # AI & Speech Processing: Application-1

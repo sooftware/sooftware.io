@@ -5,6 +5,7 @@ tags: [software]
 image: img/vscode.png
 date: '2022-07-30T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # 마크다운으로 발표자료 만들기 (Marp for VS Code)

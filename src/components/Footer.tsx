@@ -1,5 +1,4 @@
 import { Link } from 'gatsby';
-import { setLightness } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
@@ -12,34 +11,24 @@ export const Footer: React.FC = () => (
   <footer css={[outer, SiteFooter]}>
     <div css={[inner, SiteFooterContent]}>
       <section className="copyright">
-        <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
-        {config.footer && (
-          <Link to="/">
-            | {config.title} {config.footer}
-          </Link>
-        )}
+        &copy; {new Date().getFullYear()} <Link to="/">{config.title}</Link>
       </section>
       <SiteFooterNav>
-        <Link to="/">Latest Posts</Link>
+        {config.github && (
+          <a href={config.github} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        )}
+        {config.linkedin && (
+          <a href={config.linkedin} target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        )}
         {config.facebook && (
           <a href={config.facebook} target="_blank" rel="noopener noreferrer">
             Facebook
           </a>
         )}
-        {config.twitter && (
-          <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-            Twitter
-          </a>
-        )}
-
-        <a
-          href="https://github.com/scttcper/gatsby-casper"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Casper
-        </a>
-
         <a href="/rss.xml">RSS</a>
       </SiteFooterNav>
     </div>
@@ -48,10 +37,13 @@ export const Footer: React.FC = () => (
 
 const SiteFooter = css`
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  color: #fff;
-  background: ${setLightness('0.0015', colors.darkgrey)};
+  padding-top: 40px;
+  padding-bottom: 64px;
+  border-top: 1px solid ${colors.line};
+
+  @media (prefers-color-scheme: dark) {
+    border-top-color: ${colors.darkLine};
+  }
 `;
 
 const SiteFooterContent = css`
@@ -59,46 +51,32 @@ const SiteFooterContent = css`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.3rem;
+  gap: 12px;
+  color: ${colors.faint};
+  font-size: 1.4rem;
+
   a {
-    color: rgba(255, 255, 255, 0.7);
+    color: ${colors.subtle};
   }
+
   a:hover {
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
+    color: ${colors.text};
   }
-  @media (max-width: 650px) {
-    flex-direction: column;
+
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
+
+    a {
+      color: ${colors.darkSubtle};
+    }
+
+    a:hover {
+      color: ${colors.darkText};
+    }
   }
 `;
 
 const SiteFooterNav = styled.nav`
   display: flex;
-
-  a {
-    position: relative;
-    margin-left: 20px;
-  }
-
-  a:before {
-    content: '';
-    position: absolute;
-    top: 11px;
-    left: -11px;
-    display: block;
-    width: 2px;
-    height: 2px;
-    background: #fff;
-    border-radius: 100%;
-  }
-
-  a:first-of-type:before {
-    display: none;
-  }
-  @media (max-width: 650px) {
-    a:first-of-type {
-      margin-left: 0;
-    }
-  }
+  gap: 20px;
 `;

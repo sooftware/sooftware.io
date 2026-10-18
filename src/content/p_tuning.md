@@ -5,6 +5,7 @@ tags: [nlp, paper]
 image: img/p_tuning.png
 date: '2021-05-13T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # GPT Understands, Too

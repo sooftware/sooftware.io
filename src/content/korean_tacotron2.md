@@ -5,6 +5,7 @@ tags: [speech]
 image: img/taco.png
 date: '2021-10-10T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # 한국어 Tacotron2

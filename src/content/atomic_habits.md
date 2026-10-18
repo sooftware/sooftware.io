@@ -7,6 +7,7 @@ tags:
 image: img/atomic_habits.png
 date: 2024-01-06T10:01:00.000Z
 draft: false
+series: '독서'
 ---
 # Atomic Habits (아주 작은 습관의 힘)
 

@@ -5,6 +5,7 @@ tags: [book, review]
 image: img/krafton.png
 date: '2021-07-10T10:00:00.000Z'
 draft: false
+series: '독서'
 ---
 
 # [REVIEW] 크래프톤웨이 (Krafton Way)

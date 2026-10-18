@@ -9,20 +9,11 @@ import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import Pagination from '../components/Pagination';
 import { PostCard } from '../components/PostCard';
+import { SeriesCard, SeriesCards } from '../components/SeriesCards';
+import { SeriesTabs } from '../components/SeriesTabs';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
-import {
-  inner,
-  outer,
-  PostFeed,
-  Posts,
-  SiteDescription,
-  SiteHeader,
-  SiteHeaderContent,
-  SiteMain,
-  SiteTitle,
-  SiteHeaderStyles,
-} from '../styles/shared';
+import { inner, outer, PostFeed, Posts, SectionTitle, SiteMain, SiteNavMain } from '../styles/shared';
 import config from '../website-config';
 import { PageContext } from './post';
 
@@ -30,6 +21,7 @@ export interface IndexProps {
   pageContext: {
     currentPage: number;
     numPages: number;
+    seriesCards: SeriesCard[];
   };
   data: {
     logo: any;
@@ -39,15 +31,31 @@ export interface IndexProps {
         node: PageContext;
       }>;
     };
+    seriesCovers: {
+      nodes: Array<{
+        fields: { slug: string };
+        frontmatter: { image: any };
+      }>;
+    };
   };
 }
 
 const IndexPage: React.FC<IndexProps> = props => {
   const width = getImage(props.data.header)?.width;
   const height = getImage(props.data.header)?.height;
+  // filter out drafts in production
+  const posts = props.data.allMarkdownRemark.edges.filter(
+    post => post.node.frontmatter.draft !== true || process.env.NODE_ENV !== 'production',
+  );
+  // the newest post is shown large on the first page only
+  const featured = props.pageContext.currentPage === 1 ? posts[0] : undefined;
+  const rest = featured ? posts.slice(1) : posts;
+  const covers = Object.fromEntries(
+    props.data.seriesCovers.nodes.map(node => [node.fields.slug, node.frontmatter.image]),
+  );
 
   return (
-    <IndexLayout css={HomePosts}>
+    <IndexLayout>
       <Helmet>
         <html lang={config.lang} />
         <title>{config.title}</title>
@@ -77,53 +85,39 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:image:height" content={height?.toString()} />
       </Helmet>
       <Wrapper>
-        <div
-          css={[outer, SiteHeader, SiteHeaderStyles]}
-          className="site-header-background"
-          style={{
-            backgroundImage: `url('${getSrc(props.data.header)}')`,
-          }}
-        >
+        <header css={[outer, SiteNavMain]}>
           <div css={inner}>
             <SiteNav isHome />
-            <SiteHeaderContent className="site-header-content">
-              <SiteTitle className="site-title">
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '55px' }}
-                    src={getSrc(props.data.logo)}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
-              </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
-            </SiteHeaderContent>
           </div>
-        </div>
+        </header>
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={[inner, Posts]}>
+            {featured && (
+              <section css={Hero}>
+                <PostCard post={featured.node} large />
+              </section>
+            )}
+            <SectionTitle>전체 글</SectionTitle>
+            <SeriesTabs />
             <div css={[PostFeed]}>
-              {props.data.allMarkdownRemark.edges.map((post, index) =>
-                // filter out drafts in production
-                (
-                  (post.node.frontmatter.draft !== true
-                    || process.env.NODE_ENV !== 'production') && (
-                    <PostCard key={post.node.fields.slug} post={post.node} large={index === 0} />
-                  )
-                ),
-              )}
+              {rest.map(post => (
+                <PostCard key={post.node.fields.slug} post={post.node} />
+              ))}
             </div>
+            {props.pageContext.numPages > 1 && (
+              <Pagination
+                currentPage={props.pageContext.currentPage}
+                numPages={props.pageContext.numPages}
+              />
+            )}
+            {featured && (
+              <section css={SeriesSection}>
+                <SeriesCards title="시리즈" cards={props.pageContext.seriesCards} covers={covers} />
+              </section>
+            )}
           </div>
         </main>
         {props.children}
-        {props.pageContext.numPages > 1 && (
-          <Pagination
-            currentPage={props.pageContext.currentPage}
-            numPages={props.pageContext.numPages}
-          />
-        )}
         <Footer />
       </Wrapper>
     </IndexLayout>
@@ -131,7 +125,7 @@ const IndexPage: React.FC<IndexProps> = props => {
 };
 
 export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
+  query blogPageQuery($skip: Int!, $limit: Int!, $coverSlugs: [String]) {
     logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED)
@@ -142,104 +136,48 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 2000, quality: 100, layout: FIXED)
       }
     }
+    seriesCovers: allMarkdownRemark(filter: { fields: { slug: { in: $coverSlugs } } }) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 400, height: 400, layout: CONSTRAINED)
+            }
+          }
+        }
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true } } }
+      filter: { frontmatter: { draft: { ne: true }, layout: { ne: "page" } } }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
-          frontmatter {
-            title
-            date
-            tags
-            draft
-            excerpt
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-            author {
-              id
-              bio
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
-                }
-              }
-            }
-          }
-          excerpt
-          fields {
-            readingTime {
-              text
-            }
-            layout
-            slug
-          }
+          ...PostCardFields
         }
       }
     }
   }
 `;
 
-const HomePosts = css`
-  @media (min-width: 795px) {
-    .post-card-large {
-      flex: 1 1 100%;
-      flex-direction: row;
-      padding-bottom: 40px;
-      min-height: 280px;
-      border-top: 0;
-    }
+const SeriesSection = css`
+  padding-bottom: 120px;
 
-    .post-card-large .post-card-title {
-      margin-top: 0;
-      font-size: 3.2rem;
-    }
+  @media (max-width: 650px) {
+    padding-bottom: 80px;
+  }
+`;
 
-    .post-card-large:not(.no-image) .post-card-header {
-      margin-top: 0;
-    }
+const Hero = css`
+  padding: 120px 0 96px;
 
-    .post-card-large .post-card-image-link {
-      position: relative;
-      flex: 1 1 auto;
-      margin-bottom: 0;
-      min-height: 380px;
-    }
-
-    .post-card-large .post-card-image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .post-card-large .post-card-content {
-      flex: 0 1 361px;
-      justify-content: center;
-    }
-
-    .post-card-large .post-card-title {
-      margin-top: 0;
-      font-size: 3.2rem;
-    }
-
-    .post-card-large .post-card-content-link {
-      padding: 0 0 0 40px;
-    }
-
-    .post-card-large .post-card-meta {
-      padding: 0 0 0 40px;
-    }
-
-    .post-card-large .post-card-excerpt p {
-      margin-bottom: 1.5em;
-      font-size: 1.8rem;
-      line-height: 1.5em;
-    }
+  @media (max-width: 650px) {
+    padding: 88px 0 56px;
   }
 `;
 

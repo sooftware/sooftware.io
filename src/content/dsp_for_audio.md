@@ -5,6 +5,7 @@ tags: [speech, dsp]
 image: img/stft.png
 date: '2020-04-11T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # AI & Speech Signal Processing Lecture : DSP for Audio

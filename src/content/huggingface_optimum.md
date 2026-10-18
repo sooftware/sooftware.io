@@ -6,6 +6,7 @@ tags: ['huggingface', 'nlp', 'serving']
 image: img/optimum.png
 date: '2022-10-05T15:11:55.000Z'
 draft: false
+series: '개발'
 ---
 
 # Sooftware Serving - Huggingface Optimum  

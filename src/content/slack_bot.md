@@ -5,6 +5,7 @@ tags: [toolkit]
 image: img/slack.png
 date: '2021-12-23T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Slack Bot

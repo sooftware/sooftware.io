@@ -9,6 +9,7 @@ tags:
 image: img/rlhf-verbose.png
 date: 2024-03-13T01:11:55.000Z
 draft: false
+series: '논문 리뷰'
 ---
 # RLHF는 수다쟁이를 만든다?! (Does RLHF Breed Verbose Chatterboxes?!)
 

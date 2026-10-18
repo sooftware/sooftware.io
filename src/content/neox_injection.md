@@ -5,6 +5,7 @@ tags: [toolkit, environment]
 image: img/neox.png
 date: '2023-05-24T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # GPT-NeoX - DeepSpeed Inference

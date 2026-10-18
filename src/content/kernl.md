@@ -6,6 +6,7 @@ tags: ['nlp', 'serving']
 image: img/kernl.png
 date: '2022-10-30T15:11:55.000Z'
 draft: false
+series: '개발'
 ---
 
 # Sooftware Serving - Kernl  

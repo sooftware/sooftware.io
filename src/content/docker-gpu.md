@@ -5,6 +5,7 @@ tags: [toolkit, environment]
 image: img/docker_gpu.png
 date: '2023-03-25T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Docker - GPU 할당

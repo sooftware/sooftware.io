@@ -1,10 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/react';
-import { lighten } from 'polished';
 
 import favicon from '../../src/favicon.ico';
-import { colors } from '../styles/colors';
+import { colors, fontStack } from '../styles/colors';
 
 interface IndexProps {
   className?: string;
@@ -14,6 +13,10 @@ const IndexLayout: React.FC<IndexProps> = props => (
   <div className={props.className}>
     <Helmet>
       <link rel="icon" href={favicon} type="image/x-icon" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+      />
     </Helmet>
     <Global
       styles={css`
@@ -273,25 +276,25 @@ const IndexLayout: React.FC<IndexProps> = props => (
           }
           body {
             overflow-x: hidden;
-            color: ${lighten('-0.3', colors.midgrey)};
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-              Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: ${colors.body};
+            font-family: ${fontStack};
             font-size: 1.6rem;
-            line-height: 1.6em;
+            line-height: 1.7;
             font-weight: 400;
             font-style: normal;
-            letter-spacing: 0;
+            letter-spacing: -0.01em;
+            word-break: keep-all;
+            overflow-wrap: break-word;
             text-rendering: optimizeLegibility;
             background: #fff;
 
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            -moz-font-feature-settings: 'liga' on;
           }
 
           ::selection {
             text-shadow: none;
-            background: ${lighten('0.3', colors.blue)};
+            background: #e8e8e8;
           }
 
           hr {
@@ -302,7 +305,7 @@ const IndexLayout: React.FC<IndexProps> = props => (
             padding: 0;
             height: 1px;
             border: 0;
-            border-top: 1px solid ${lighten('0.1', colors.lightgrey)};
+            border-top: 1px solid ${colors.line};
           }
 
           audio,
@@ -312,12 +315,6 @@ const IndexLayout: React.FC<IndexProps> = props => (
           svg,
           video {
             vertical-align: middle;
-          }
-
-          fieldset {
-            margin: 0;
-            padding: 0;
-            border: 0;
           }
 
           textarea {
@@ -359,16 +356,15 @@ const IndexLayout: React.FC<IndexProps> = props => (
           }
 
           li {
-            margin: 0.5em 0;
+            margin: 0.4em 0;
             padding-left: 0.3em;
-            line-height: 1.6em;
           }
 
           dt {
             float: left;
             margin: 0 20px 0 0;
             width: 120px;
-            color: ${colors.darkgrey};
+            color: ${colors.text};
             font-weight: 500;
             text-align: right;
           }
@@ -380,37 +376,13 @@ const IndexLayout: React.FC<IndexProps> = props => (
 
           blockquote {
             margin: 1.5em 0;
-            padding: 0 1.6em 0 1.6em;
-            border-left: ${colors.whitegrey} 0.5em solid;
-          }
-
-          blockquote p {
-            margin: 0.8em 0;
-            font-size: 1.2em;
-            font-weight: 300;
-          }
-
-          blockquote small {
-            display: inline-block;
-            margin: 0.8em 0 0.8em 1.5em;
-            font-size: 0.9em;
-            opacity: 0.8;
-          }
-
-          blockquote cite {
-            font-weight: bold;
-          }
-          blockquote cite a {
-            font-weight: normal;
+            padding: 0 1.6em;
+            border-left: ${colors.line} 3px solid;
           }
 
           a {
-            color: ${lighten('-0.05', colors.blue)};
+            color: ${colors.text};
             text-decoration: none;
-          }
-
-          a:hover {
-            text-decoration: underline;
           }
 
           h1,
@@ -420,73 +392,69 @@ const IndexLayout: React.FC<IndexProps> = props => (
           h5,
           h6 {
             margin-top: 0;
-            line-height: 1.15;
-            font-weight: 600;
+            color: ${colors.text};
+            line-height: 1.3;
+            font-weight: 700;
+            letter-spacing: -0.025em;
             text-rendering: optimizeLegibility;
           }
 
           h1 {
             margin: 0 0 0.5em 0;
-            font-size: 5.5rem;
-            font-weight: 600;
+            font-size: 4.4rem;
           }
           @media (max-width: 500px) {
             h1 {
-              font-size: 2.2rem;
+              font-size: 2.8rem;
             }
           }
 
           h2 {
             margin: 1.5em 0 0.5em 0;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
           }
           @media (max-width: 500px) {
             h2 {
-              font-size: 1.8rem;
+              font-size: 2rem;
             }
           }
 
           h3 {
             margin: 1.5em 0 0.5em 0;
-            font-size: 1.8rem;
-            font-weight: 500;
-          }
-          @media (max-width: 500px) {
-            h3 {
-              font-size: 1.7rem;
-            }
+            font-size: 1.9rem;
+            font-weight: 600;
           }
 
-          h4 {
-            margin: 1.5em 0 0.5em 0;
-            font-size: 1.6rem;
-            font-weight: 500;
-          }
-
-          h5 {
-            margin: 1.5em 0 0.5em 0;
-            font-size: 1.4rem;
-            font-weight: 500;
-          }
-
+          h4,
+          h5,
           h6 {
             margin: 1.5em 0 0.5em 0;
-            font-size: 1.4rem;
-            font-weight: 500;
-          }
-
-          /* globals from screen.css */
-          body {
-            background: #fff;
+            font-size: 1.6rem;
+            font-weight: 600;
           }
 
           @media (prefers-color-scheme: dark) {
             body {
-              color: rgba(255, 255, 255, 0.75);
+              color: ${colors.darkBody};
               background: ${colors.darkmode};
             }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            a {
+              color: ${colors.darkText};
+            }
+            hr {
+              border-top-color: ${colors.darkLine};
+            }
+            ::selection {
+              background: rgba(255, 255, 255, 0.2);
+            }
             img {
-              opacity: 0.9;
+              opacity: 0.92;
             }
           }
         `}

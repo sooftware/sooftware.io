@@ -5,6 +5,7 @@ tags: [toolkit, logging]
 image: img/wandb_image.png
 date: '2021-10-13T22:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Wandb (Weights & Bias) Image Log

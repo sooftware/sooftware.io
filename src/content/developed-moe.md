@@ -9,6 +9,7 @@ tags:
 image: img/deepseek-moe/deepseek-moe.png
 date: 2026-01-15T01:11:55.000Z
 draft: false
+series: 'AI 개념'
 ---
 
 # MoE(Mixture of Experts) 기초부터 DeepSeek 혁신까지

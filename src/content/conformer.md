@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/conformer.png
 date: '2020-08-30T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Conformer: Convolution-augmented Transformer for Speech Recognition  

@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/datasets.png
 date: '2022-02-17T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
   
 # Huggingface Datasets Methods

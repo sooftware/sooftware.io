@@ -6,6 +6,7 @@ tags: ['huggingface', 'nlp', 'record']
 image: img/electra.png
 date: '2021-09-18T15:11:55.000Z'
 draft: false
+series: '활동'
 ---
   
 이번에 저희 튜닙에서 공들여 만든 **TUNiB Electra** 모델을 공개했습니다 !! 🎉 🎉  

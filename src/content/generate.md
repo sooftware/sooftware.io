@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/decoding.png
 date: '2022-01-15T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # Decoding Strategy (디코딩 전략)

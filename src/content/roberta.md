@@ -5,6 +5,7 @@ tags: [nlp, paper]
 image: img/roberta.png
 date: '2020-10-11T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # RoBERTa

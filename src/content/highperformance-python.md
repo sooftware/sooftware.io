@@ -5,6 +5,7 @@ tags: [book, review]
 image: img/hp.png
 date: '2022-01-03T10:00:00.000Z'
 draft: false
+series: '독서'
 ---
 
 # 고성능 파이썬 (High Performance Python)

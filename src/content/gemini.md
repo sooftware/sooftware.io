@@ -5,6 +5,7 @@ tags: [news]
 image: img/gemini.png
 date: '2023-12-07T10:00:00.000Z'
 draft: false
+series: '뉴스'
 ---
 
 # Welcome to the Gemini Era

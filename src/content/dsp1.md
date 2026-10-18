@@ -5,6 +5,7 @@ tags: [speech, dsp]
 image: img/dsp1.png
 date: '2020-04-08T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # AI & Speech Processing: DSP-1

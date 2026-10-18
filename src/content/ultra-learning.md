@@ -8,6 +8,7 @@ tags:
 image: img/ultra-learning.png
 date: 2024-02-04T10:00:00.000Z
 draft: false
+series: '독서'
 ---
 
 # \# 울트라러닝 (Ultra Learning)

@@ -5,6 +5,7 @@ tags: [nlp, paper]
 image: img/fid.png
 date: '2022-01-04T23:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Generation with Retrieval

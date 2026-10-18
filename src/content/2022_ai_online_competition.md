@@ -5,6 +5,7 @@ tags: [record]
 image: img/2022-ai-compete.png
 date: '2022-06-24T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # 2022 AI 온라인 경진대회 1위  

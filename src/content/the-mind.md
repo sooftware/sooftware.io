@@ -8,6 +8,7 @@ tags:
 image: img/the-mind.jpg
 date: 2023-11-17T10:00:00.000Z
 draft: false
+series: '독서'
 ---
 
 # \# 더 마인드 (The Mind)

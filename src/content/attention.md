@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/attention.png
 date: '2020-01-26T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # Sooftware NLP - Attention Mechanism (어텐션 메커니즘)

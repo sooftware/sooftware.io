@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/las.png
 date: '2019-09-20T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # 「Listen, Attend and Spell」 Review  

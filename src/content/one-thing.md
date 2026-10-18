@@ -8,6 +8,7 @@ tags:
 image: img/one-thing.png
 date: 2023-12-26T10:00:00.000Z
 draft: false
+series: '독서'
 ---
 
 # \# 원씽 (THE ONE THING)

@@ -5,6 +5,7 @@ tags: [software, environment]
 image: img/iterm_zsh.png
 date: '2020-12-02T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Mac iTerm2 + ZSH 세팅    

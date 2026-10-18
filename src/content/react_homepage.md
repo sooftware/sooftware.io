@@ -5,6 +5,7 @@ tags: [toolkit, web]
 image: img/gatsby.png
 date: '2021-09-22T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
   
 ## React 기반 개인 웹페이지 배포하기  

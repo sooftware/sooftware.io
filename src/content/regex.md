@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/regex.png
 date: '2021-09-08T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # 정규 표현식

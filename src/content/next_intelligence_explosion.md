@@ -9,6 +9,7 @@ tags:
 image: img/next_intelligence/paper.png
 date: 2026-04-06T01:11:55.000Z
 draft: false
+series: '논문 리뷰'
 ---
 
 # Agentic AI and the next intelligence explosion

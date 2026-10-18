@@ -7,6 +7,7 @@ tags:
 image: img/h100.png
 date: 2024-02-24T14:00:00.000Z
 draft: false
+series: '활동'
 ---
 
 # 튜닙, AICA H100 * 8대 GPU 지원 선정

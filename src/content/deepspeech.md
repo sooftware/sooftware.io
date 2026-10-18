@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/deepspeech.png
 date: '2019-11-11T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Deep Speech: Scaling up end-to-end speech recognition  

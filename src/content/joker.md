@@ -7,6 +7,7 @@ tags:
 image: img/joker.png
 date: 2024-07-10T10:00:00.000Z
 draft: false
+series: '활동'
 ---
 # AI Joker 공개
   

@@ -5,6 +5,7 @@ tags: [cs]
 image: img/computer_architecture.png
 date: '2022-01-04T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 ## Basic Computer System

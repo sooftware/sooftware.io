@@ -3,6 +3,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { getSrc } from 'gatsby-plugin-image';
 
+import { colors } from '../../styles/colors';
 import config from '../../website-config';
 
 interface SiteNavLogoProps {
@@ -36,23 +37,21 @@ const SiteNavLogoStyles = css`
   z-index: 100;
   flex-shrink: 0;
   display: inline-block;
-  margin-right: 32px;
-  padding: 12px 0;
-  color: #fff;
-  font-size: 1.7rem;
-  line-height: 1.8rem;
-  font-weight: bold;
-  letter-spacing: -0.5px;
-  text-transform: none;
-
-  :hover {
-    text-decoration: none;
-  }
+  margin-right: 28px;
+  padding: 8px 0;
+  color: ${colors.text};
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 
   img {
     display: block;
     width: auto;
     height: 21px;
   }
-`;
 
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkText};
+  }
+`;

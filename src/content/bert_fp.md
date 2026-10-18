@@ -5,6 +5,7 @@ tags: [nlp, paper]
 image: img/bert_fp.png
 date: '2021-12-18T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 

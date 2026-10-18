@@ -5,6 +5,7 @@ tags: [toolkit, nlp]
 image: img/fairseq.png
 date: '2020-12-31T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 ## [Fairseq's Hydra](https://github.com/pytorch/fairseq/blob/master/docs/hydra_integration.md)  

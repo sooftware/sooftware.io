@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/bear.jpeg
 date: '2022-07-12T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # 한국어 사전학습 모델 (Korean Pre-trained Language Model)

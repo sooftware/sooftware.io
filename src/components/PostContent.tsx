@@ -1,9 +1,8 @@
-import { lighten } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
 import RehypeReact from 'rehype-react';
 
-import { colors } from '../styles/colors';
+import { colors, monoStack } from '../styles/colors';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -28,33 +27,12 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => (
 export const PostFullContent = styled.section`
   position: relative;
   margin: 0 auto;
-  padding: 0 170px 6vw;
+  max-width: 700px;
   min-height: 230px;
-  font-family: sans-serif, serif;
-  font-size: 2rem;
-  line-height: 1.6em;
-  background: #fff;
-
-  @media (max-width: 1170px) {
-    padding: 0 11vw;
-  }
-  @media (max-width: 800px) {
-    padding: 0 5vw;
-    font-size: 1.8rem;
-  }
-  @media (max-width: 500px) {
-    padding: 0;
-  }
-  @media (max-width: 500px) {
-    .post-full-custom-excerpt {
-      font-size: 1.9rem;
-      line-height: 1.5em;
-    }
-  }
-
-  .no-image {
-    padding-top: 0;
-  }
+  color: ${colors.body};
+  font-size: 1.7rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
 
   h1,
   h2,
@@ -70,23 +48,14 @@ export const PostFullContent = styled.section`
   blockquote,
   .post-full-comments,
   .footnotes {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.4em 0;
     min-width: 100%;
-  }
-  @media (max-width: 500px) {
-    p,
-    ul,
-    ol,
-    dl,
-    pre,
-    .post-full-comments,
-    .footnotes {
-      margin-bottom: 1.28em;
-    }
   }
 
   li {
-    word-break: break-word;    
+    margin: 0 0 0.6em;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   li p {
@@ -94,26 +63,26 @@ export const PostFullContent = styled.section`
   }
 
   a {
-    /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
-    word-break: break-word;
-    /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
-    box-shadow: ${colors.darkgrey} 0 -1px 0 inset;
-    transition: all 0.2s ease-in-out;
+    color: ${colors.text};
+    text-decoration: underline;
+    text-decoration-color: rgba(3, 18, 40, 0.25);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+    transition: text-decoration-color 0.2s ease;
   }
 
   a:hover {
-    /* color: var(--blue); */
-    color: ${colors.blue};
-    text-decoration: none;
-    /* box-shadow: var(--blue) 0 -1px 0 inset; */
-    box-shadow: ${colors.blue} 0 -1px 0 inset;
+    text-decoration-color: ${colors.text};
   }
 
-  strong,
+  strong {
+    color: ${colors.text};
+    font-weight: 700;
+  }
+
   em {
-    /* color: color(var(--darkgrey) l(-5%)); */
-    color: ${lighten('-0.05', colors.darkgrey)};
+    color: ${colors.text};
   }
 
   small {
@@ -124,26 +93,55 @@ export const PostFullContent = styled.section`
   img,
   video {
     display: block;
-    margin: 1.5em auto;
-    max-width: 1040px;
+    margin: 2em auto;
+    max-width: 100%;
     height: auto;
-  }
-  @media (max-width: 1040px) {
-    img,
-    video {
-      width: 100%;
-    }
+    border-radius: 12px;
   }
 
-  img[src$='#full'] {
-    max-width: none;
-    width: 100vw;
+  .gatsby-resp-image-wrapper {
+    margin: 2em auto;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .gatsby-resp-image-wrapper img {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* images on one line in markdown → side by side (gatsby-remark-image-layout) */
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 2em 0;
+  }
+
+  .image-row-item {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .image-sized {
+    margin: 2em auto;
+    max-width: 100%;
+  }
+
+  .image-row-item img,
+  .image-row-item .gatsby-resp-image-wrapper,
+  .image-sized img,
+  .image-sized .gatsby-resp-image-wrapper {
+    margin: 0 !important;
+    width: 100%;
   }
 
   img + br + small {
     display: block;
-    margin-top: -3em;
-    margin-bottom: 1.5em;
+    margin-top: -1.6em;
+    margin-bottom: 1.6em;
+    color: ${colors.subtle};
     text-align: center;
   }
 
@@ -152,14 +150,11 @@ export const PostFullContent = styled.section`
   }
 
   blockquote {
-    margin: 0 0 1.5em;
-    padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
-  }
-  @media (max-width: 500px) {
-    blockquote {
-      padding: 0 1.3em;
-    }
+    margin: 0 0 1.6em;
+    padding: 16px 20px;
+    color: ${colors.body};
+    background: ${colors.surface};
+    border-radius: 12px;
   }
 
   blockquote p {
@@ -167,7 +162,6 @@ export const PostFullContent = styled.section`
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    font-style: italic;
   }
 
   blockquote p:last-child {
@@ -175,12 +169,12 @@ export const PostFullContent = styled.section`
   }
 
   code {
-    padding: 0 5px 2px;
-    font-size: 0.8em;
-    line-height: 1em;
+    padding: 0.15em 0.4em;
+    color: ${colors.body};
+    font-family: ${monoStack};
+    font-size: 0.9em;
     font-weight: 400 !important;
-    /* background: var(--whitegrey); */
-    background: ${colors.whitegrey};
+    background: rgba(2, 32, 71, 0.05);
     border-radius: 3px;
   }
 
@@ -190,23 +184,12 @@ export const PostFullContent = styled.section`
 
   pre {
     overflow-x: auto;
-    /* margin: 1.5em 0 3em; */
     padding: 20px;
     max-width: 100%;
-    /* border: color(var(--darkgrey) l(-10%)) 1px solid; */
-    /* border: ${lighten('-0.1', colors.darkgrey)} 1px solid; */
-    /* color: var(--whitegrey); */
     color: ${colors.whitegrey};
     font-size: 1.4rem;
-    line-height: 1.5em;
-    /* background: color(var(--darkgrey) l(-3%)); */
-    /* background: ${lighten('-0.03', colors.darkgrey)}; */
-    border-radius: 5px;
-  }
-
-  pre ::selection {
-    /* color: color(var(--midgrey) l(-25%)); */
-    color: ${lighten('-0.25', colors.midgrey)};
+    line-height: 1.6;
+    border-radius: 10px;
   }
 
   pre code {
@@ -225,26 +208,9 @@ export const PostFullContent = styled.section`
   }
 
   hr {
-    margin: 2em 0;
-  }
-
-  hr:after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    display: block;
-    margin-left: -10px;
-    width: 1px;
-    height: 30px;
-    /* background: color(var(--lightgrey) l(+10%)); */
-    background: ${lighten('0.1', colors.lightgrey)};
-    box-shadow: #fff 0 0 0 5px;
-    transform: rotate(45deg);
-  }
-
-  hr + p {
-    margin-top: 1.2em;
+    margin: 3.2em auto;
+    width: 64px;
+    border-top: 1px solid ${colors.line};
   }
 
   h1,
@@ -253,265 +219,130 @@ export const PostFullContent = styled.section`
   h4,
   h5,
   h6 {
-    /* color: color(var(--darkgrey) l(-5%)); */
-    color: ${lighten('-0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+    color: ${colors.text};
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
 
   h1 {
-    margin: 0.5em 0 0.4em;
-    font-size: 4.2rem;
-    line-height: 1.25em;
-    font-weight: 600;
-  }
-  p + h1 {
-    margin-top: 0.8em;
-  }
-  @media (max-width: 800px) {
-    h1 {
-      font-size: 3.2rem;
-      line-height: 1.25em;
-    }
+    margin: 2em 0 0.6em;
+    font-size: 3.2rem;
+    line-height: 1.45;
   }
 
   h2 {
-    margin: 0.5em 0 0.4em;
-    font-size: 3.2rem;
-    line-height: 1.25em;
-    font-weight: 600;
-  }
-  p + h2 {
-    margin-top: 0.8em;
-  }
-  @media (max-width: 800px) {
-    h2 {
-      margin-bottom: 0.3em;
-      font-size: 2.8rem;
-      line-height: 1.25em;
-    }
+    margin: 2em 0 0.6em;
+    font-size: 2.8rem;
+    line-height: 1.5;
   }
 
   h3 {
-    margin: 0.5em 0 0.2em;
-    font-size: 2.5rem;
-    line-height: 1.3em;
-    font-weight: 600;
-  }
-  h2 + h3 {
-    margin-top: 0.7em;
-  }
-  @media (max-width: 800px) {
-    h3 {
-      margin-bottom: 0.3em;
-      font-size: 2.4rem;
-      line-height: 1.3em;
-    }
+    margin: 1.6em 0 0.5em;
+    font-size: 2.2rem;
+    line-height: 1.55;
   }
 
-  h4 {
-    margin: 0.5em 0 0.2em;
-    font-size: 2.5rem;
-    font-weight: 600;
+  h4,
+  h5,
+  h6 {
+    margin: 1.6em 0 0.5em;
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
-  h2 + h4 {
-    margin-top: 0.7em;
-  }
-  h3 + h4 {
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child {
     margin-top: 0;
   }
-  @media (max-width: 800px) {
-    h4 {
-      margin-bottom: 0.3em;
-      font-size: 2.4rem;
-      line-height: 1.3em;
-    }
-  }
 
-  h5 {
-    display: block;
-    margin: 0.5em 0;
-    padding: 0.4em 1em 0.9em;
-    border: 0;
-    /* color: var(--blue); */
-    color: ${colors.blue};
-    font-family: Georgia, serif;
-    font-size: 3.2rem;
-    line-height: 1.35em;
-    text-align: center;
-  }
-  @media (min-width: 1180px) {
-    h5 {
-      max-width: 1060px;
-      /* width: 100vw; */
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 2.5rem;
     }
-  }
-  @media (max-width: 800px) {
-    h5 {
-      margin-bottom: 1em;
-      margin-left: 1.3em;
-      padding: 0 0 0.5em;
-      font-size: 2.4rem;
-      text-align: initial;
+    h2 {
+      font-size: 2.2rem;
     }
-  }
-
-  h6 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  @media (max-width: 800px) {
-    h6 {
-      font-size: 1.8rem;
-      line-height: 1.4em;
+    h3 {
+      font-size: 1.9rem;
     }
   }
 
   table {
-    display: inline-block;
+    display: block;
     overflow-x: auto;
     margin: 0.5em 0 2.5em;
     max-width: 100%;
-    width: auto;
+    width: max-content;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.6rem;
-    white-space: nowrap;
-    vertical-align: top;
-  }
-
-  table {
+    font-size: 1.5rem;
+    line-height: 1.6;
     -webkit-overflow-scrolling: touch;
-    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0
-        center,
-      radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
-    background-attachment: scroll, scroll;
-    background-size: 10px 100%, 10px 100%;
-    background-repeat: no-repeat;
-  }
-
-  table td:first-of-type {
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 20px 100%;
-    background-repeat: no-repeat;
-  }
-
-  table td:last-child {
-    background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-position: 100% 0;
-    background-size: 20px 100%;
-    background-repeat: no-repeat;
   }
 
   table th {
-    /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+    color: ${colors.text};
+    font-weight: 600;
     text-align: left;
-    text-transform: uppercase;
-    /* background-color: color(var(--whitegrey) l(+4%)); */
-    background-color: ${lighten('0.04', colors.whitegrey)};
+    background: ${colors.surface};
   }
 
   table th,
   table td {
-    padding: 6px 12px;
-    /* border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid; */
-    border: ${lighten('-0.01', colors.whitegrey)} 1px solid;
+    padding: 8px 14px;
+    border: 1px solid ${colors.line};
   }
 
   @media (prefers-color-scheme: dark) {
-    /* background: var(--darkmode); */
-    background: ${colors.darkmode};
+    color: ${colors.darkBody};
 
     h1,
     h2,
     h3,
     h4,
-    h6 {
-      color: rgba(255, 255, 255, 0.9);
+    h5,
+    h6,
+    strong,
+    em {
+      color: ${colors.darkText};
+    }
+
+    blockquote {
+      color: ${colors.darkBody};
+      background: ${colors.darkSurface};
     }
 
     a {
-      color: #fff;
-      box-shadow: inset 0 -1px 0 #fff;
+      color: ${colors.darkText};
+      text-decoration-color: rgba(255, 255, 255, 0.3);
     }
 
-    strong {
-      color: #fff;
-    }
-
-    em {
-      color: #fff;
+    a:hover {
+      text-decoration-color: ${colors.darkText};
     }
 
     code {
-      color: #fff;
-      background: #000;
+      color: ${colors.darkText};
+      background: ${colors.darkSurface};
     }
 
     hr {
-      /* border-top-color: color(var(--darkmode) l(+8%)); */
-      /* border-top-color: ${lighten('0.08', colors.darkmode)}; */
-      border-top-color: #17191c;
-    }
-
-    hr:after {
-      background: #17191c;
-      box-shadow: ${colors.darkmode} 0 0 0 5px;
+      border-top-color: ${colors.darkLine};
     }
 
     figcaption {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    table td:first-of-type {
-      /* background-image: linear-gradient(
-        to right,
-        var(--darkmode) 50%,
-        color(var(--darkmode) a(0%)) 100%
-      ); */
-      background-image: linear-gradient(to right, ${colors.darkmode} 50%, ${colors.darkmode} 100%);
-    }
-
-    table td:last-child {
-      /* background-image: linear-gradient(
-        to left,
-        var(--darkmode) 50%,
-        color(var(--darkmode) a(0%)) 100%
-      ); */
-      background-image: linear-gradient(270deg, #191b1f 50%, rgba(25, 27, 31, 0));
+      color: ${colors.darkSubtle};
     }
 
     table th {
-      color: rgba(255, 255, 255, 0.85);
-      /* background-color: color(var(--darkmode) l(+8%)); */
-      background-color: ${lighten('0.08', colors.darkmode)};
+      color: ${colors.darkText};
+      background: ${colors.darkSurface};
     }
 
     table th,
     table td {
-      /* border: color(var(--darkmode) l(+8%)) 1px solid; */
-      border: ${lighten('0.08', colors.darkmode)} 1px solid;
-    }
-
-    .kg-bookmark-container,
-    .kg-bookmark-container:hover {
-      color: rgba(255, 255, 255, 0.75);
-      box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+      border-color: ${colors.darkLine};
     }
   }
 
@@ -521,7 +352,7 @@ export const PostFullContent = styled.section`
   pre[class*='language-'] {
     color: white;
     background: none;
-    font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+    font-family: ${monoStack};
     font-feature-settings: normal;
     text-align: left;
     white-space: pre;
@@ -571,11 +402,17 @@ export const PostFullContent = styled.section`
 
   /* Inline code */
   *:not(pre) > code[class*='language-'] {
-    border-radius: 0.3em;
-    background: rgb(1, 22, 39);
-    color: white;
-    padding: 0.15em 0.5em;
+    padding: 0.15em 0.4em;
+    color: ${colors.body};
+    font-size: 0.9em;
     white-space: normal;
+    background: rgba(2, 32, 71, 0.05);
+    border-radius: 3px;
+
+    @media (prefers-color-scheme: dark) {
+      color: ${colors.darkText};
+      background: ${colors.darkSurface};
+    }
   }
 
   .token.attr-name {
@@ -655,9 +492,7 @@ export const PostFullContent = styled.section`
   }
 
   .gatsby-highlight {
-    margin-bottom: 1.75rem;
-    margin-left: -1.3125rem;
-    margin-right: -1.3125rem;
+    margin-bottom: 1.6em;
     border-radius: 10px;
     background: #011627;
     -webkit-overflow-scrolling: touch;

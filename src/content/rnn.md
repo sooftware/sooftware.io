@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/rnn.png
 date: '2019-12-26T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # Sooftware NLP - RNN (Recurrent Neural Network)  

@@ -23,8 +23,13 @@ export const SiteNavMain = css`
   right: 0;
   left: 0;
   z-index: 1000;
-  /* background: color(var(--darkgrey) l(-5%)); */
-  background: ${lighten('-0.05', colors.darkgrey)};
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(25, 27, 31, 0.92);
+  }
 `;
 
 export const SiteMain = css`
@@ -37,28 +42,34 @@ export const SiteMain = css`
 
 export const SiteTitle = styled.h1`
   z-index: 10;
-  margin: 0 0 0 -2px;
+  margin: 0;
   padding: 0;
-  font-size: 5rem;
-  line-height: 1em;
-  font-weight: 600;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 
   @media (max-width: 500px) {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
   }
 `;
 
 export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
-  padding: 5px 0;
-  font-size: 2.1rem;
-  line-height: 1.4em;
+  padding: 10px 0 0;
+  color: ${colors.subtle};
+  font-size: 1.8rem;
+  line-height: 1.5;
   font-weight: 400;
-  opacity: 0.8;
+  letter-spacing: -0.01em;
 
   @media (max-width: 500px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
   }
 `;
 
@@ -69,47 +80,60 @@ export const Posts = css`
 export const PostFeed = css`
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 -20px;
-  padding: 50px 0 0;
-  background: #fff;
+  flex-direction: column;
+  gap: 56px;
+  padding: 48px 0 120px;
 
-  /* Special Template Styles */
-  padding: 40px 0 5vw;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  @media (max-width: 650px) {
+    gap: 48px;
+    padding: 32px 0 80px;
+  }
+`;
+
+export const SectionTitle = styled.h2`
+  margin: 0;
+  color: ${colors.body};
+  font-size: 3.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+
+  @media (max-width: 650px) {
+    font-size: 2.6rem;
+  }
 
   @media (prefers-color-scheme: dark) {
-    background: ${colors.darkmode};
+    color: ${colors.darkText};
   }
 `;
 
 export const SocialLink = css`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin: 0;
-  padding: 10px;
-  opacity: 0.8;
+  padding: 8px;
+  color: ${colors.subtle};
+  transition: color 0.2s ease;
 
   :hover {
-    opacity: 1;
+    color: ${colors.text};
   }
 
   svg {
-    height: 1.8rem;
-    fill: #fff;
+    height: 1.6rem;
+    fill: currentColor;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
+
+    :hover {
+      color: ${colors.darkText};
+    }
   }
 `;
 
-export const SocialLinkFb = css`
-  svg {
-    height: 1.6rem;
-  }
-`;
-export const SocialLinkGithub = css`
-  svg {
-    height: 1.6rem;
-  }
-`;
+export const SocialLinkFb = css``;
+export const SocialLinkGithub = css``;
 
 export const SiteHeader = css``;
 
@@ -118,49 +142,15 @@ export const SiteHeaderContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 6vw 3vw;
-  min-height: 200px;
-  max-height: 340px;
+  padding: 140px 0 32px;
 `;
 
 export const SiteHeaderStyles = css`
   position: relative;
-  /* margin-top: 64px; */
-  padding-bottom: 12px;
-  color: #fff;
-  /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
-  background: ${lighten('-0.05', colors.darkgrey)} no-repeat center center;
-  background-size: cover;
-
-  :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    display: block;
-    background: rgba(0, 0, 0, 0.18);
-  }
-  :after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    z-index: 10;
-    display: block;
-    height: 140px;
-    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
-  }
+  border-bottom: 1px solid ${colors.line};
 
   @media (prefers-color-scheme: dark) {
-    :before {
-      background: rgba(0, 0, 0, 0.6);
-    }
+    border-bottom-color: ${colors.darkLine};
   }
 `;
 

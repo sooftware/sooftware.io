@@ -67,7 +67,7 @@ const SubscribeEmail = styled.input`
   line-height: 1em;
   font-weight: normal;
   user-select: text;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: border-color 0.15s linear;
 
   -webkit-appearance: none;
@@ -116,15 +116,15 @@ const SubscribeFormButton = styled.button`
     ${saturate('-0.1', lighten('-0.07', colors.blue))} 90%,
     ${saturate('-0.1', lighten('-0.04', colors.blue))}
   ); */
-  background: linear-gradient(#4fb7f0, #29a0e0 60%, #29a0e0 90%, #36a6e2);
-  border-radius: 5px;
+  background: ${colors.accent};
+  border-radius: 10px;
 
   -webkit-font-smoothing: subpixel-antialiased;
 
   :active,
   :focus {
     /* background: color(var(--blue) lightness(-9%) saturation(-10%)); */
-    background: ${saturate('-0.1', lighten('-0.09', colors.blue))};
+    background: #1b64da;
   }
   @media (max-width: 500px) {
     margin: 10px 0 0 0;

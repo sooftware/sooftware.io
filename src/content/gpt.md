@@ -5,6 +5,7 @@ tags: [nlp, parallelism, large-scale, lm]
 image: img/gpt.png
 date: '2021-11-23T11:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # GPT (Generative Pre-trained Transformer)

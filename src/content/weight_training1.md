@@ -5,6 +5,7 @@ tags: [record]
 image: img/weight_training.png
 date: '2022-09-07T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # 개인 운동 기록 - 2022.09.07

@@ -5,6 +5,7 @@ tags: [record]
 image: img/startup.png
 date: '2021-12-05T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
   
 # K(orea) Startups

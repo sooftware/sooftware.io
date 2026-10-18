@@ -5,6 +5,7 @@ tags: [nlp]
 image: img/seq2seq.png
 date: '2020-01-25T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # Sooftware NLP - Seq2seq (Sequence to sequence)

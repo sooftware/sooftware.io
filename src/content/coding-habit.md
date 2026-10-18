@@ -5,6 +5,7 @@ tags: [record]
 image: img/coding-habit.png
 date: '2022-08-17T17:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Sooftware Coding - 좋은 코딩 습관 (네이밍)

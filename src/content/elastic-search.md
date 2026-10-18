@@ -10,6 +10,7 @@ tags:
   - web
   - chatgpt
 excerpt:
+series: '개발'
 ---
 
 # Elastic Search logstash - Nori 토크나이저 설정

@@ -25,6 +25,8 @@ module.exports = {
       options: {
         name: 'content',
         path: path.join(__dirname, 'src', 'content'),
+        // skip dot-folders such as editor/tool state (e.g. .omc/)
+        ignore: ['**/.*'],
       },
     },
     {
@@ -39,6 +41,8 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
+          // must run before gatsby-remark-images (side-by-side images, kept widths)
+          'gatsby-remark-image-layout',
           'gatsby-remark-smartypants',
           'gatsby-remark-reading-time',
           {
@@ -91,7 +95,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  filter: { frontmatter: { draft: { ne: true } } }
+                  filter: { frontmatter: { draft: { ne: true }, layout: { ne: "page" } } }
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {

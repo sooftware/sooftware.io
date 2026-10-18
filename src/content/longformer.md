@@ -6,6 +6,7 @@ tags: ['nlp', 'paper']
 image: img/longformer.png
 date: '2021-02-06T23:46:37.121Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Longformer: The Long-Document Transformer

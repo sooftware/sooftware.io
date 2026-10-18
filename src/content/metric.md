@@ -5,6 +5,7 @@ tags: [nlp, metric]
 image: img/cm.png
 date: '2021-10-13T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # NLP Metrics

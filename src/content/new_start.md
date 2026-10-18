@@ -5,6 +5,7 @@ tags: [record]
 image: img/new_start.png
 date: '2021-02-27T10:00:00.000Z'
 draft: false
+series: '회고'
 ---
 
 # 카카오브레인 퇴사, 그리고 창업 (feat. 졸업)  

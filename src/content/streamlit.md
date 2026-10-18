@@ -6,6 +6,7 @@ author: [Soohwan Kim]
 date: 2021-08-30T10:00:00.000Z
 tags: [toolkit, web]
 excerpt: The fastest way to build data apps in Python
+series: '개발'
 ---
 
 # Streamlit

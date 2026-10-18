@@ -5,6 +5,7 @@ image: img/ner.png
 author: [Soohwan Kim]
 date: 2022-07-22T10:00:00.000Z
 tags: [nlp]
+series: 'AI 개념'
 ---
   
 # Sooftware NLP - 문장의 개체명을 분석해보자! Named Entity Recognition (NER)

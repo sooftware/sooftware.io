@@ -5,6 +5,7 @@ tags: [news]
 image: img/altman.png
 date: '2023-11-18T10:00:00.000Z'
 draft: false
+series: '뉴스'
 ---
 
 # Open AI CEO Sam Altman join Microsoft

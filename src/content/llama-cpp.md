@@ -11,6 +11,7 @@ tags:
   - parallelism
   - ondevice
 excerpt:
+series: '개발'
 ---
 
 # llama.cpp (On device llm inference tool)

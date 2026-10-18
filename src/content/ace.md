@@ -9,6 +9,7 @@ tags:
 image: img/ace/ace.png
 date: 2026-02-02T01:11:55.000Z
 draft: false
+series: '논문 리뷰'
 ---
 
 # Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models Paper Review

@@ -6,6 +6,7 @@ author: [Soohwan Kim]
 date: 2022-07-16T10:00:00.000Z
 tags: [nlp]
 excerpt: St. Patrick, the original safety engine by TUNiB, checks if the user text includes any toxic expressions or personal information and provides detailed reports.
+series: '활동'
 ---
   
 # 혐오는 이제 그만! St. Patrick

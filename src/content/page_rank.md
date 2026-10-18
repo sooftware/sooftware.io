@@ -5,6 +5,7 @@ tags: [nlp, algorithm]
 image: img/page_rank.png
 date: '2021-10-08T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 ## Page Rank

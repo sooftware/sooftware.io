@@ -6,6 +6,7 @@ tags: ['huggingface', 'nlp']
 image: img/tokenizers.png
 date: '2021-08-11T15:11:55.000Z'
 draft: false
+series: '개발'
 ---
 
 최근 NLP 토크나이저를 만드는데 가장 많이 사용되는 `tokenizers` 라이브러와 실제 사용이 가장 많이 되는 `transformers` 라이브러리로의 변환에 대한 코드를 담고 있습니다. 해당 내용은 `tokenizers==0.10.3` 버젼에서 수행되었습니다.  

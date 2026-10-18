@@ -5,6 +5,7 @@ tags: [toolkit, environment]
 image: img/tmux.png
 date: '2024-02-15T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # tmux - conf

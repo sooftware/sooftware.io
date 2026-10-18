@@ -5,6 +5,7 @@ tags: [nlp, parallelism, large-scale, lm]
 image: img/big-model1.png
 date: '2021-11-22T10:00:00.000Z'
 draft: false
+series: 'AI 개념'
 ---
 
 # Large Scale LM (1) Background

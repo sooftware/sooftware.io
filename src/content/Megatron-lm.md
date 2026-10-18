@@ -5,6 +5,7 @@ tags: [nlp, parallelism, paper]
 image: img/megatron.png
 date: '2020-12-03T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism

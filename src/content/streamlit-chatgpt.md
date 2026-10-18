@@ -10,6 +10,7 @@ tags:
   - web
   - chatgpt
 excerpt:
+series: '개발'
 ---
 
 # 단 30줄로 ChatGPT 웹페이지 만들기 (Streamlit chat_message)

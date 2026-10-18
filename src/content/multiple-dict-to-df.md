@@ -5,6 +5,7 @@ tags: [toolkit, python]
 image: img/pandas.png
 date: '2022-08-16T10:00:00.000Z'
 draft: false
+series: '개발'
 ---
 
 # Sooftware Pandas - 다중 딕셔너리를 Pandas DataFrame으로! 

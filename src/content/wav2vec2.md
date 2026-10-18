@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/wav2vec2.png
 date: '2020-09-12T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # wav2vec 2.0 : A Framework for Self-Supervised Learning of Speech Representations  

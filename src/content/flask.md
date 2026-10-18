@@ -6,6 +6,7 @@ author: [Soohwan Kim]
 date: 2021-12-01T10:00:00.000Z
 tags: [toolkit, web, python, open-source]
 draft: false
+series: '개발'
 ---
 
 ## Flask

@@ -7,6 +7,7 @@ tags:
 image: img/sooftware.png
 date: 2024-04-15T10:00:00.000Z
 draft: false
+series: '활동'
 ---
 # GitHub Follow 500 달성!!
 

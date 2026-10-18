@@ -11,6 +11,7 @@ tags:
   - openai
   - rag
 excerpt:
+series: '개발'
 ---
 # LangGraph로 구현하는 Self-Correcting RAG 시스템
 

@@ -2,7 +2,6 @@ import { format } from 'date-fns';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getSrc, getImage } from 'gatsby-plugin-image';
 import * as _ from 'lodash';
-import { lighten, setLightness } from 'polished';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -19,7 +18,6 @@ import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
-import { AuthorList } from '../components/AuthorList';
 
 export interface Author {
   id: string;
@@ -46,6 +44,7 @@ interface PageTemplateProps {
         image: any;
         excerpt: string;
         tags: string[];
+        series?: string;
         author: Author[];
       };
       fields: {
@@ -91,6 +90,7 @@ export interface PageContext {
     date: string;
     draft?: boolean;
     tags: string[];
+    series?: string;
     author: Author[];
   };
 }
@@ -104,11 +104,13 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     height = getImage(post.frontmatter.image)?.height;
   }
 
+  const series = config.series.find(item => item.name === post.frontmatter.series);
+
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
-  // 20 AUG 2018
-  const displayDatetime = format(date, 'dd LLL yyyy');
+  // 2018년 8월 20일
+  const displayDatetime = format(date, 'yyyy년 M월 d일');
 
   return (
     <IndexLayout className="post-template">
@@ -178,12 +180,25 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
           <div css={inner}>
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
+              {post.frontmatter.image && (
+                <PostFullImage>
+                  <GatsbyImage
+                    image={getImage(post.frontmatter.image)!}
+                    style={{ height: '100%' }}
+                    alt={post.frontmatter.title} />
+                </PostFullImage>
+              )}
               <PostFullHeader className="post-full-header">
                 <PostFullTags className="post-full-tags">
+                  {series && (
+                    <Link className="primary" to={`/series/${series.slug}/`}>
+                      {series.name}
+                    </Link>
+                  )}
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && config.showAllTags && (
                     post.frontmatter.tags.map(tag => (
                       <React.Fragment key={tag}>
-                        <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link>,<b>&nbsp;</b>
+                        <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link>
                       </React.Fragment>
                     ))
                   )}
@@ -194,41 +209,24 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   )}
                 </PostFullTags>
                 <PostFullTitle className="post-full-title">{post.frontmatter.title}</PostFullTitle>
-                <PostFullCustomExcerpt className="post-full-custom-excerpt">
-                  {post.frontmatter.excerpt}
-                </PostFullCustomExcerpt>
+                {post.frontmatter.excerpt && (
+                  <PostFullCustomExcerpt className="post-full-custom-excerpt">
+                    {post.frontmatter.excerpt}
+                  </PostFullCustomExcerpt>
+                )}
                 <PostFullByline className="post-full-byline">
-                  <section className="post-full-byline-content">
-                    <AuthorList authors={post.frontmatter.author} tooltip="large" />
-                    <section className="post-full-byline-meta">
-                      <h4 className="author-name">
-                        {post.frontmatter.author.map(author => (
-                          <Link key={author.id} to={`/author/${_.kebabCase(author.id)}/`}>
-                            {author.id}
-                          </Link>
-                        ))}
-                      </h4>
-                      <div className="byline-meta-content">
-                        <time className="byline-meta-date" dateTime={datetime}>
-                          {displayDatetime}
-                        </time>
-                        <span className="byline-reading-time">
-                          <span className="bull">&bull;</span>{post.fields.readingTime.text}
-                        </span>
-                      </div>
-                    </section>
-                  </section>
+                  {post.frontmatter.author.map(author => (
+                    <Link key={author.id} to="/about/">
+                      {author.id}
+                    </Link>
+                  ))}
+                  <span className="bull">&middot;</span>
+                  <time dateTime={datetime}>{displayDatetime}</time>
+                  <span className="bull">&middot;</span>
+                  <span>{post.fields.readingTime.text}</span>
                 </PostFullByline>
               </PostFullHeader>
 
-              {post.frontmatter.image && (
-                <PostFullImage>
-                  <GatsbyImage
-                    image={getImage(post.frontmatter.image)!}
-                    style={{ height: '100%' }}
-                    alt={post.frontmatter.title} />
-                </PostFullImage>
-              )}
               <PostContent htmlAst={post.htmlAst} />
 
               {/* The big email subscribe modal content */}
@@ -252,14 +250,13 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
 
 const PostTemplate = css`
   .site-main {
-    margin-top: 64px;
+    margin-top: 60px;
     background: #fff;
-    padding-bottom: 4vw;
+    padding-bottom: 120px;
   }
 
   @media (prefers-color-scheme: dark) {
     .site-main {
-      /* background: var(--darkmode); */
       background: ${colors.darkmode};
     }
   }
@@ -274,165 +271,127 @@ export const NoImage = css`
   .post-full-content {
     padding-top: 0;
   }
-
-  .post-full-content:before,
-  .post-full-content:after {
-    display: none;
-  }
 `;
 
 export const PostFullHeader = styled.header`
   position: relative;
   margin: 0 auto;
-  padding: 70px 170px 50px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-
-  @media (max-width: 1170px) {
-    padding: 60px 11vw 50px;
-  }
-
-  @media (max-width: 800px) {
-    padding-right: 5vw;
-    padding-left: 5vw;
-  }
+  padding: 36px 0 48px;
+  max-width: 700px;
 
   @media (max-width: 500px) {
-    padding: 20px 0 35px;
+    padding: 28px 0 32px;
   }
 `;
 
 const PostFullTags = styled.section`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* color: var(--midgrey); */
-  color: ${colors.midgrey};
-  font-size: 1.3rem;
-  line-height: 1.4em;
-  font-weight: 600;
-  text-transform: uppercase;
-`;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
 
-const PostFullCustomExcerpt = styled.p`
-  margin: 20px 0 0;
-  color: var(--midgrey);
-  font-family: Georgia, serif;
-  font-size: 2.3rem;
-  line-height: 1.4em;
-  font-weight: 300;
+  a {
+    padding: 2px 10px;
+    color: ${colors.subtle};
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.6;
+    background: ${colors.surface};
+    border-radius: 8px;
+  }
 
-  @media (max-width: 500px) {
-    font-size: 1.9rem;
-    line-height: 1.5em;
+  a.primary {
+    color: ${colors.accent};
+    background: ${colors.accentSoft};
+  }
+
+  a:empty {
+    display: none;
   }
 
   @media (prefers-color-scheme: dark) {
-    /* color: color(var(--midgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.midgrey)};
+    a {
+      color: ${colors.darkSubtle};
+      background: ${colors.darkSurface};
+    }
+    a.primary {
+      color: #64a8ff;
+      background: rgba(49, 130, 246, 0.16);
+    }
+  }
+`;
+
+const PostFullCustomExcerpt = styled.p`
+  margin: 16px 0 0;
+  color: ${colors.subtle};
+  font-size: 1.9rem;
+  line-height: 1.6;
+
+  @media (max-width: 500px) {
+    font-size: 1.7rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
   }
 `;
 
 const PostFullByline = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin: 35px 0 0;
-  padding-top: 15px;
-  /* border-top: 1px solid color(var(--lightgrey) l(+10%)); */
-  border-top: 1px solid ${lighten('0.1', colors.lightgrey)};
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 28px 0 0;
+  color: ${colors.faint};
+  font-size: 1.4rem;
+  font-variant-numeric: tabular-nums;
 
-  .post-full-byline-content {
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .post-full-byline-content .author-list {
-    justify-content: flex-start;
-    padding: 0 12px 0 0;
-  }
-
-  .post-full-byline-meta {
-    margin: 2px 0 0;
-    /* color: color(var(--midgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.midgrey)};
-    font-size: 1.2rem;
-    line-height: 1.2em;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-  }
-
-  .post-full-byline-meta h4 {
-    margin: 0 0 3px;
-    font-size: 1.3rem;
-    line-height: 1.4em;
-    font-weight: 500;
-  }
-
-  .post-full-byline-meta h4 a {
-    /* color: color(var(--darkgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.darkgrey)};
-  }
-
-  .post-full-byline-meta h4 a:hover {
-    /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
-  }
-
-  .post-full-byline-meta .bull {
-    display: inline-block;
-    margin: 0 4px;
-    opacity: 0.6;
+  a {
+    color: ${colors.body};
+    font-weight: 600;
   }
 
   @media (prefers-color-scheme: dark) {
-    /* border-top-color: color(var(--darkmode) l(+15%)); */
-    border-top-color: ${lighten('0.15', colors.darkmode)};
+    color: ${colors.darkSubtle};
 
-    .post-full-byline-meta h4 a {
-      color: rgba(255, 255, 255, 0.75);
-    }
-
-    .post-full-byline-meta h4 a:hover {
-      color: #fff;
+    a {
+      color: ${colors.darkText};
     }
   }
 `;
 
 export const PostFullTitle = styled.h1`
-  margin: 0 0 0.2em;
-  color: ${setLightness('0.05', colors.darkgrey)};
+  margin: 0;
+  color: ${colors.body};
+  font-size: 4.8rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
   @media (max-width: 500px) {
-    margin-top: 0.2em;
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 
   @media (prefers-color-scheme: dark) {
-    color: rgba(255, 255, 255, 0.9);
+    color: ${colors.darkText};
   }
 `;
 
 const PostFullImage = styled.figure`
-  margin: 25px 0 50px;
-  height: 800px;
-  background: ${colors.lightgrey} center center;
-  background-size: cover;
-  border-radius: 5px;
+  overflow: hidden;
+  margin: 40px auto 0;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  background: ${colors.surface};
+  border-radius: 16px;
 
-  @media (max-width: 1170px) {
-    margin: 25px -6vw 50px;
-    border-radius: 0;
-    img {
-      max-width: 1170px;
-    }
-  }
-
-  @media (max-width: 800px) {
-    height: 400px;
-  }
   @media (max-width: 500px) {
-    margin-bottom: 4vw;
-    height: 350px;
+    margin-top: 24px;
+    border-radius: 12px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: ${colors.darkSurface};
   }
 `;
 
@@ -456,6 +415,7 @@ export const query = graphql`query ($slug: String, $primaryTag: String) {
       userDate: date(formatString: "D MMMM YYYY")
       date
       tags
+      series
       excerpt
       image {
         childImageSharp {

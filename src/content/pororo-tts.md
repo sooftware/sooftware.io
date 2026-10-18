@@ -5,6 +5,7 @@ tags: [speech, toolkit, record]
 image: img/tts.png
 date: '2021-02-16T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # PORORO Text-To-Speech (TTS)  

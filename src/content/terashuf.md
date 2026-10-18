@@ -8,6 +8,7 @@ tags:
 image: img/terashuf.png
 date: 2024-03-20T10:00:00.000Z
 draft: false
+series: '개발'
 ---
 # Terabyte(TB) 단위 데이터 셔플링 - terashuf  
   

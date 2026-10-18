@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { lighten } from 'polished';
 import styled from '@emotion/styled';
 import * as _ from 'lodash';
 
@@ -21,6 +20,9 @@ export interface ReadNextProps {
         };
         fields: {
           slug: string;
+          readingTime?: {
+            text: string;
+          };
         };
       };
     }>;
@@ -48,7 +50,7 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
             // 2018-08-20
             const datetime = format(date, 'yyyy-MM-dd');
             // 20 AUG 2018
-            const displayDatetime = format(date, 'dd LLL yyyy');
+            const displayDatetime = format(date, 'yyyy년 M월 d일');
             return (
               <li key={n.node.frontmatter.title}>
                 <h4>
@@ -56,8 +58,7 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
                 </h4>
                 <ReadNextCardMeta className="read-next-card-meta">
                   <p>
-                    <time dateTime={datetime}>{displayDatetime}</time> - {n.node.timeToRead} min
-                    read
+                    <time dateTime={datetime}>{displayDatetime}</time> &middot; {n.node.fields.readingTime?.text}
                   </p>
                 </ReadNextCardMeta>
               </li>
@@ -77,137 +78,90 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
 };
 
 const ReadNextCardArticle = styled.article`
-  position: relative;
-  flex: 0 1 326px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  margin: 0 25px 50px;
-  padding: 25px;
-  /* background: linear-gradient(
-    color(var(--darkgrey) l(+2%)),
-    color(var(--darkgrey) l(-5%))
-  ); */
-  background: linear-gradient(
-    ${lighten('0.02', colors.darkgrey)},
-    ${lighten('-0.05', colors.darkgrey)}
-  );
-  border-radius: 3px;
-
-  a {
-    transition: all 0.2s ease-in-out;
-  }
+  padding: 24px;
+  background: ${colors.surface};
+  border-radius: 16px;
 
   a:hover {
     text-decoration: none;
   }
 
-  @media (max-width: 1170px) {
-    flex: 1 1 261px;
-    margin-bottom: 5vw;
-  }
-
-  @media (max-width: 650px) {
-    flex: 1 1 auto;
-    margin: 0 25px;
-    padding: 0;
-    background: none;
+  @media (prefers-color-scheme: dark) {
+    background: ${colors.darkSurface};
   }
 `;
 
 const ReadNextCardHeaderTitle = styled.h3`
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2rem;
-  line-height: 1em;
-  font-weight: 300;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
+  color: ${colors.subtle};
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
 
   a {
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    opacity: 0.8;
+    color: ${colors.accent};
+    font-weight: 600;
   }
 
-  a:hover {
-    opacity: 1;
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
   }
 `;
 
 const ReadNextCardContent = styled.div`
-  font-size: 1.7rem;
-
   ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    margin: 12px 0 0;
     padding: 0;
     list-style: none;
   }
 
   li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0;
-    padding: 20px 0;
-    border-bottom: rgba(255, 255, 255, 0.1);
-  }
-
-  li:last-of-type {
-    padding-bottom: 5px;
-    border: none;
+    padding: 10px 0;
   }
 
   h4 {
     margin: 0;
     font-size: 1.6rem;
-    line-height: 1.35em;
+    line-height: 1.5;
     font-weight: 600;
   }
 
   li a {
-    display: block;
-    color: #fff;
-    opacity: 0.8;
+    color: ${colors.body};
   }
 
   li a:hover {
-    opacity: 1;
+    color: ${colors.accent};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    li a {
+      color: ${colors.darkText};
+    }
   }
 `;
 
 const ReadNextCardMeta = styled.div`
   margin-top: 2px;
-  font-size: 1.2rem;
-  line-height: 1.4em;
-  font-weight: 400;
+  font-size: 1.3rem;
 
   p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.6);
+    color: ${colors.faint};
   }
 `;
 
 const ReadNextCardFooter = styled.footer`
-  position: relative;
-  margin: 40px 0 5px;
+  margin-top: 12px;
 
   a {
-    padding: 7px 12px 8px 14px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.3rem;
-    border-radius: 999px;
-    transition: all 0.35s ease-in-out;
+    color: ${colors.subtle};
+    font-size: 1.4rem;
+    font-weight: 600;
   }
 
   a:hover {
-    /* border-color: var(--yellow); */
-    border-color: ${colors.yellow};
-    color: ${colors.yellow};
-    text-decoration: none;
+    color: ${colors.accent};
   }
 `;

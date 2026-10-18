@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { darken } from 'polished';
 import { css } from '@emotion/react';
 
 import { colors } from '../styles/colors';
@@ -8,13 +7,20 @@ import { colors } from '../styles/colors';
 export interface PaginationProps {
   currentPage: number;
   numPages: number;
+  /** path prefix of the paginated list, e.g. '/series/dev' ('' for home) */
+  basePath?: string;
 }
 
-const Pagination: React.FunctionComponent<PaginationProps> = ({ currentPage, numPages }) => {
+const Pagination: React.FunctionComponent<PaginationProps> = ({
+  currentPage,
+  numPages,
+  basePath = '',
+}) => {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
-  const nextPage = (currentPage + 1).toString();
+  const pagePath = (page: number) => (page === 1 ? `${basePath}/` : `${basePath}/${page}/`);
+  const prevPage = pagePath(currentPage - 1);
+  const nextPage = pagePath(currentPage + 1);
 
   return (
     <nav css={navCss}>
@@ -30,7 +36,7 @@ const Pagination: React.FunctionComponent<PaginationProps> = ({ currentPage, num
           <Link
             key={`pagination-number${i + 1}`}
             className={i + 1 === currentPage ? 'active' : ''}
-            to={`/${i === 0 ? '' : i + 1}`}
+            to={pagePath(i + 1)}
           >
             {i + 1}
           </Link>
@@ -48,38 +54,31 @@ const Pagination: React.FunctionComponent<PaginationProps> = ({ currentPage, num
 };
 
 const navCss = css`
-  text-align: center;
+  padding-bottom: 96px;
+
   div {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
   }
 
   a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
-    background: #fff;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: 1px solid #ddd;
-    margin: 0 4px;
-    box-shadow: rgba(39, 44, 49, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
-    border-radius: 6px;
-    margin-bottom: 5px;
-    min-width: 50px;
+    min-width: 40px;
+    text-align: center;
+    padding: 8px 12px;
+    color: ${colors.subtle};
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background 0.2s ease;
 
     &.active {
-      -webkit-box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
-      -moz-box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
-      box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
-    }
-
-    &:hover:not(.active) {
-      background-color: #ddd;
+      color: ${colors.text};
+      background: ${colors.surface};
     }
 
     &:hover {
-      text-decoration: none;
+      background: ${colors.surface};
     }
   }
 `;

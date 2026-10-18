@@ -5,6 +5,7 @@ tags: [record]
 image: img/img_1.png
 date: '2022-12-30T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # 2022 인공지능 그랜드 챌린지 - 정책지원 3위

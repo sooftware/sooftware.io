@@ -5,6 +5,7 @@ tags: [record]
 image: img/deadlift.png
 date: '2023-10-11T10:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # 개인 운동 기록 - 2023.10.11

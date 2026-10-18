@@ -7,6 +7,7 @@ tags:
 image: img/c-lab.jpg
 date: 2024-02-24T11:00:00.000Z
 draft: false
+series: '활동'
 ---
 
 # 튜닙, 삼성 C-Lab Outside 선정 & 사무실 이사

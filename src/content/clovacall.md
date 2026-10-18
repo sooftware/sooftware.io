@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/clovacall.png
 date: '2020-03-13T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # ClovaCall: Korean Goal-Oriented Dialog Speech Corpus for Automatic Speech Recognition of Contact Centers  

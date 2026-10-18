@@ -7,6 +7,7 @@ tags:
 image: img/birdeye.jpeg
 date: 2024-01-06T10:00:00.000Z
 draft: false
+series: '독서'
 ---
 # 팀장의 관점
 

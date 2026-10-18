@@ -1,29 +1,19 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { getSrc } from 'gatsby-plugin-image';
+import { Helmet } from 'react-helmet';
+
+import styled from '@emotion/styled';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import { PostCard } from '../components/PostCard';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
-import {
-  inner,
-  outer,
-  PostFeed,
-  SiteDescription,
-  SiteHeader,
-  SiteHeaderContent,
-  SiteMain,
-  SiteTitle,
-  SiteNavMain,
-  SiteArchiveHeader,
-  ResponsiveHeaderBackground,
-  SiteHeaderBackground,
-} from '../styles/shared';
-import { PageContext } from './post';
-import { Helmet } from 'react-helmet';
+import { colors } from '../styles/colors';
+import { inner, outer, PostFeed, SectionTitle, SiteMain, SiteNavMain } from '../styles/shared';
 import config from '../website-config';
+import { PageContext } from './post';
+import { ListTop } from './series';
 
 interface TagTemplateProps {
   location: Location;
@@ -36,7 +26,6 @@ interface TagTemplateProps {
         node: {
           id: string;
           description: string;
-          image?: any;
         };
       }>;
     };
@@ -66,48 +55,20 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${tag} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + location.pathname} />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${tag} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
       </Helmet>
       <Wrapper>
-        <header className="site-archive-header" css={[SiteHeader, SiteArchiveHeader]}>
-          <div css={[outer, SiteNavMain]}>
-            <div css={inner}>
-              <SiteNav isHome={false} />
-            </div>
+        <header css={[outer, SiteNavMain]}>
+          <div css={inner}>
+            <SiteNav />
           </div>
-          <ResponsiveHeaderBackground
-            css={[outer, SiteHeaderBackground]}
-            backgroundImage={getSrc(tagData?.node?.image)}
-            className="site-header-background"
-          >
-            <SiteHeaderContent css={inner} className="site-header-content">
-              <SiteTitle className="site-title">{tag}</SiteTitle>
-              <SiteDescription className="site-description">
-                {tagData?.node.description ? (
-                  tagData.node.description
-                ) : (
-                  <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
-                    {totalCount === 0 && 'No posts'}
-                  </>
-                )}
-              </SiteDescription>
-            </SiteHeaderContent>
-          </ResponsiveHeaderBackground>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
-          <div css={inner}>
-            <div css={[PostFeed]}>
+          <div css={[inner, ListTop]}>
+            <SectionTitle>#{tag}</SectionTitle>
+            <TagDescription>
+              {tagData?.node.description || `${totalCount}개의 글`}
+            </TagDescription>
+            <div css={PostFeed}>
               {edges.map(({ node }) => (
                 <PostCard key={node.fields.slug} post={node} />
               ))}
@@ -120,6 +81,16 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
   );
 };
 
+const TagDescription = styled.p`
+  margin: 8px 0 0;
+  color: ${colors.subtle};
+  font-size: 1.7rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: ${colors.darkSubtle};
+  }
+`;
+
 export default Tags;
 
 export const pageQuery = graphql`
@@ -129,11 +100,6 @@ export const pageQuery = graphql`
         node {
           id
           description
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
         }
       }
     }
@@ -145,34 +111,7 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          excerpt
-          frontmatter {
-            title
-            excerpt
-            tags
-            date
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-            author {
-              id
-              bio
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
-                }
-              }
-            }
-          }
-          fields {
-            readingTime {
-              text
-            }
-            layout
-            slug
-          }
+          ...PostCardFields
         }
       }
     }

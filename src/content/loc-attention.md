@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/loc-attention.png
 date: '2020-01-20T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # Attention-Based Models for Speech Recognition Paper Review  

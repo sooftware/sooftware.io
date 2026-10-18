@@ -1,3 +1,5 @@
+import series from './series.json';
+
 export interface WebsiteConfig {
   title: string;
   description: string;
@@ -55,6 +57,19 @@ export interface WebsiteConfig {
    */
   footer?: string;
   /**
+   * path of the CV file served from /static
+   */
+  cv: string;
+  /**
+   * file name the CV is saved as when downloaded
+   */
+  cvFileName: string;
+  /**
+   * series shown as tabs on the home page, in this order (see src/series.json).
+   * `name` must match the `series` frontmatter of each post.
+   */
+  series: Array<{ name: string; slug: string; description: string }>;
+  /**
    * Shows all post tags in main index view and post view if true
    * Otherwise only shows first (primary) tag
    */
@@ -78,6 +93,9 @@ const config: WebsiteConfig = {
   googleSiteVerification: 'GoogleCode',
   footer: 'All Rights Reserved.',
   showAllTags: true,
+  cv: '/cv.pdf',
+  cvFileName: 'Soohwan_Kim_CV.pdf',
+  series,
 };
 
 export default config;

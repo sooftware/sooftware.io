@@ -5,6 +5,7 @@ tags: [nlp, record]
 image: img/emnlp_2023.png
 date: '2023-10-11T12:00:00.000Z'
 draft: false
+series: '활동'
 ---
 
 # Findings of EMNLP 2023 - Accept

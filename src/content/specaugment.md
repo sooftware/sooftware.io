@@ -5,6 +5,7 @@ tags: [speech, paper]
 image: img/specaugment.png
 date: '2020-01-12T10:00:00.000Z'
 draft: false
+series: '논문 리뷰'
 ---
 
 # SpecAugment:
