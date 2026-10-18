@@ -315,8 +315,8 @@ const PostFullTags = styled.section`
       background: ${colors.darkSurface};
     }
     a.primary {
-      color: #64a8ff;
-      background: rgba(49, 130, 246, 0.16);
+      color: ${colors.darkAccent};
+      background: ${colors.darkAccentSoft};
     }
   }
 `;

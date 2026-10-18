@@ -259,7 +259,7 @@ const CvButton = styled.a`
 
   :hover {
     color: #fff;
-    background: #1b64da;
+    background: ${colors.accentHover};
   }
 
   @media (prefers-color-scheme: dark) {

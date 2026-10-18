@@ -124,7 +124,7 @@ const SubscribeFormButton = styled.button`
   :active,
   :focus {
     /* background: color(var(--blue) lightness(-9%) saturation(-10%)); */
-    background: #1b64da;
+    background: ${colors.accentHover};
   }
   @media (max-width: 500px) {
     margin: 10px 0 0 0;

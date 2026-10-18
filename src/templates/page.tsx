@@ -175,7 +175,7 @@ const PageActions = styled.div`
   }
 
   a.primary:hover {
-    background: #1b64da;
+    background: ${colors.accentHover};
   }
 
   @media (prefers-color-scheme: dark) {
