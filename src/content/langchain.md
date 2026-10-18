@@ -2,7 +2,7 @@
 title: 'LangChain으로 구현하는 RAG 시스템 실습'
 author: [Soohwan Kim]
 tags: [langchain, rag, ai, llm, python]
-image: img/langchain.png
+image: img/langchain/langchain.png
 date: '2025-10-10T10:00:00.000Z'
 draft: false
 series: '개발'

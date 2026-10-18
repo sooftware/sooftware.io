@@ -2,7 +2,7 @@
 title: '마크다운으로 발표자료 만들기 (Marp for VS Code)'
 author: [Soohwan Kim]
 tags: [software]
-image: img/vscode.png
+image: img/marp/vscode.png
 date: '2022-07-30T10:00:00.000Z'
 draft: false
 series: '개발'
@@ -93,7 +93,7 @@ marp: true
   
 위와 같이 바꿔주게 되면 다음과 같이 슬라이드를 미리 볼 수 있습니다.
   
-![](img/marp-ex.png)
+![](img/marp/marp-ex.png)
   
 ### Theme
   
@@ -110,7 +110,7 @@ theme: uncover
 
 위와 같이 `theme: 테마명`을 표시해주게 되면 해당 테마가 적용된 발표자료로 변환됩니다.  
   
-![](img/marp-ex2.png)
+![](img/marp/marp-ex2.png)
   
 ## 발표자료로 변환
   

@@ -2,7 +2,7 @@
 title: 'Sooftware Coding - 좋은 코딩 습관 (네이밍)'
 author: [Soohwan Kim]
 tags: [record]
-image: img/coding-habit.png
+image: img/coding-habit/coding-habit.png
 date: '2022-08-17T17:00:00.000Z'
 draft: false
 series: '개발'

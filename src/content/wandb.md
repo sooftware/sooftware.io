@@ -2,7 +2,7 @@
 title: 'Sooftware ML - wandb (Weight & Bias)'
 author: [Soohwan Kim]
 tags: [toolkit]
-image: img/wandb.png
+image: img/wandb/wandb.png
 date: '2021-06-13T10:00:00.000Z'
 draft: false
 series: '개발'

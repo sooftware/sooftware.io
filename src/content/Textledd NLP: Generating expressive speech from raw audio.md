@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Textless NLP'
 author: [Soohwan Kim]
 tags: [speech, nlp, paper]
-image: img/gslm.png
+image: img/Textledd-NLP-Generating-expressive-speech-from-raw-audio/gslm.png
 date: '2021-09-19T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

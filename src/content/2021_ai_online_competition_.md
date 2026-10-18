@@ -2,7 +2,7 @@
 title: '2021 AI 온라인 경진대회 1위 후기 발표'
 author: [Soohwan Kim]
 tags: [presentation]
-image: img/1st_ranked.png
+image: img/shared/1st_ranked.png
 date: '2021-07-15T10:00:00.000Z'
 draft: false
 series: '활동'

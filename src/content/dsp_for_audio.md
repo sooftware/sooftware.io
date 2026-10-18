@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - AI & Speech Processing: DSP for Audio'
 author: [Soohwan Kim]
 tags: [speech, dsp]
-image: img/stft.png
+image: img/dsp_for_audio/stft.png
 date: '2020-04-11T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

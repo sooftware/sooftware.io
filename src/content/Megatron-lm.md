@@ -2,7 +2,7 @@
 title: 'Sooftware NLP -  Megatron LM Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, paper]
-image: img/megatron.png
+image: img/Megatron-lm/megatron.png
 date: '2020-12-03T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

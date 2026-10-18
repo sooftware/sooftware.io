@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - review
-image: img/atomic_habits.png
+image: img/atomic_habits/atomic_habits.png
 date: 2024-01-06T10:01:00.000Z
 draft: false
 series: '독서'

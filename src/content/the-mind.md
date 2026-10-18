@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/the-mind.jpg
+image: img/the-mind/the-mind.jpg
 date: 2023-11-17T10:00:00.000Z
 draft: false
 series: '독서'

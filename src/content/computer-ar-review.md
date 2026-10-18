@@ -2,7 +2,7 @@
 title: 'Computer Architecture Review'
 author: [Soohwan Kim]
 tags: [cs]
-image: img/computer-architecture.png
+image: img/computer-ar-review/computer-architecture.png
 date: '2021-02-05T10:00:00.000Z'
 draft: false
 series: '개발'

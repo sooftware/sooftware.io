@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Fine-grained Post-training for Improving Retrieval-based Dialogue Systems Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/bert_fp.png
+image: img/bert_fp/bert_fp.png
 date: '2021-12-18T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

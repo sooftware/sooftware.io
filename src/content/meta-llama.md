@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - news
-image: img/meta-llama.jpeg
+image: img/meta-llama/meta-llama.jpeg
 date: 2024-01-20T10:00:00.000Z
 draft: false
 series: '뉴스'

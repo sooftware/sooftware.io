@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - STATE-OF-THE-ART SPEECH RECOGNITION WITH SEQUENCE-TO-SEQUENCE MODEL Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/sota_speech.png
+image: img/sota_sr_speech/sota_speech.png
 date: '2020-02-03T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

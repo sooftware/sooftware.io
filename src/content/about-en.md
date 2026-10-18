@@ -4,7 +4,7 @@ layout: page
 permalink: /about/en/
 lang: en
 translation: /about/
-image: img/2026/about-1.png
+image: img/about/about-1.png
 date: '2026-10-18T00:00:00.000Z'
 draft: false
 ---
@@ -81,7 +81,7 @@ I think of myself as an engineer more than a researcher, but my work has natural
 
 In TUNiB's early days, one of my biggest jobs was "bringing in money." I entered national AI competitions that came with commercialization grants and placed in every single one, winning the Minister of Science and ICT Award three times and securing 2.5 billion KRW in commercialization grants.
 
-<img src="img/2026/about-3.png" width="25%"><img src="img/2026/about-2.png" width="25%">
+<img src="img/about/about-3.png" width="25%"><img src="img/about/about-2.png" width="25%">
 
 - 2023 ICT Fund Program, Outstanding Results — Minister of Science and ICT Award (Korean dialogue and commonsense dataset construction)
 - 2022 National AI Grand Challenge (Policy-assisted AI) — **3rd place**, Minister of Science and ICT Award, 2 billion KRW grant

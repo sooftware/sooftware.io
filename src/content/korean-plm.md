@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - 한국어 사전학습 모델 (Korean Pre-trained Language Model)'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/bear.jpeg
+image: img/korean-plm/bear.jpeg
 date: '2022-07-12T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

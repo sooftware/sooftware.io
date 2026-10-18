@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flask
-image: img/flask.png
+image: img/flask/flask.png
 author: [Soohwan Kim]
 date: 2021-12-01T10:00:00.000Z
 tags: [toolkit, web, python, open-source]

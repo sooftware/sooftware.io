@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - record
-image: img/c-lab.jpg
+image: img/c-lab/c-lab.jpg
 date: 2024-02-24T11:00:00.000Z
 draft: false
 series: '활동'

@@ -2,7 +2,7 @@
 title: '광주소프트웨어마이스터고등학교 학생들 튜닙 방문'
 author: [Soohwan Kim]
 tags: [record]
-image: img/soma.png
+image: img/soma/soma.png
 date: '2022-01-11T10:00:00.000Z'
 draft: false
 series: '활동'

@@ -2,7 +2,7 @@
 title: '[REVIEW] 크래프톤웨이 (Krafton Way)'
 author: [Soohwan Kim]
 tags: [book, review]
-image: img/krafton.png
+image: img/krafton/krafton.png
 date: '2021-07-10T10:00:00.000Z'
 draft: false
 series: '독서'

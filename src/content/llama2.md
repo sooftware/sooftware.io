@@ -2,7 +2,7 @@
 title: 'LLaMA2'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/llama2.png
+image: img/llama2/llama2.png
 date: '2023-07-21T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

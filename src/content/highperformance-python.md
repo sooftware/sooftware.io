@@ -2,7 +2,7 @@
 title: '고성능 파이썬 (High Performance Python)'
 author: [Soohwan Kim]
 tags: [book, review]
-image: img/hp.png
+image: img/highperformance-python/hp.png
 date: '2022-01-03T10:00:00.000Z'
 draft: false
 series: '독서'

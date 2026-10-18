@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - 한국어 Tacotron2'
 author: [Soohwan Kim]
 tags: [speech]
-image: img/taco.png
+image: img/korean_tacotron2/taco.png
 date: '2021-10-10T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

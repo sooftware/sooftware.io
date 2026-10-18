@@ -6,7 +6,7 @@ author:
 tags:
   - ai
   - agent
-image: img/next_intelligence/paper.png
+image: img/next_intelligence_explosion/paper.png
 date: 2026-04-06T01:11:55.000Z
 draft: false
 series: '논문 리뷰'
@@ -14,7 +14,7 @@ series: '논문 리뷰'
 
 # Agentic AI and the next intelligence explosion
 
-<img src="img/next_intelligence/paper.png" width=350>
+<img src="img/next_intelligence_explosion/paper.png" width=350>
 
 | https://arxiv.org/abs/2603.20639
   

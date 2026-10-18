@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Large Scale LM (1) Background'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
-image: img/big-model1.png
+image: img/big-model1/big-model1.png
 date: '2021-11-22T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

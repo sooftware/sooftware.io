@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - GPT (Generative Pre-trained Transformer)'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale, lm]
-image: img/gpt.png
+image: img/gpt/gpt.png
 date: '2021-11-23T11:00:00.000Z'
 draft: false
 series: 'AI 개념'

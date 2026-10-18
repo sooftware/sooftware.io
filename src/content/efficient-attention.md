@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Efficient Attention Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/efficient_attention.png
+image: img/efficient-attention/efficient_attention.png
 date: '2021-07-17T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

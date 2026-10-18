@@ -1,11 +1,11 @@
 ---
-title: 'as-an-ai-engineer'
+title: 'AI 엔지니어로서의 나의 무기'
 author: [Soohwan Kim]
 tags: []
-image: img/2026/as-an-ai-engineer-2.png
+image: img/as-an-ai-engineer/as-an-ai-engineer-2.png
 date: '2026-10-17T10:00:00.000Z'
 draft: false
-series: '회고'
+series: 회고
 ---
 
 # 옅어지는 경계에서, AI 엔지니어로서의 나의 무기가 뭘까?

@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/ggs.png
+image: img/guns-germs-and-steel/ggs.png
 date: 2021-11-29T10:00:00.000Z
 draft: false
 series: '독서'

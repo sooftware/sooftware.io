@@ -2,7 +2,7 @@
 title: 'Basic Computer System - 연산 장치'
 author: [Soohwan Kim]
 tags: [cs]
-image: img/computer_architecture.png
+image: img/cs-basic/computer_architecture.png
 date: '2022-01-04T10:00:00.000Z'
 draft: false
 series: '개발'

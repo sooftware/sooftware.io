@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Seq2seq (Sequence to sequence)'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/seq2seq.png
+image: img/seq2seq/seq2seq.png
 date: '2020-01-25T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

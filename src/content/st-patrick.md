@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sooftware NLP - 혐오는 이제 그만! St. Patrick
-image: img/patrick.png
+image: img/st-patrick/patrick.png
 author: [Soohwan Kim]
 date: 2022-07-16T10:00:00.000Z
 tags: [nlp]

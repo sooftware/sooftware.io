@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Uniform Length Batching in PyTorch'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/ulb.png
+image: img/uniform_length_batching/ulb.png
 date: '2021-09-28T10:00:00.000Z'
 draft: false
 series: '개발'

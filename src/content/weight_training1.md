@@ -2,7 +2,7 @@
 title: '[RECORD] 개인 운동 기록 - 2022.09.07'
 author: [Soohwan Kim]
 tags: [record]
-image: img/weight_training.png
+image: img/weight_training1/weight_training.png
 date: '2022-09-07T10:00:00.000Z'
 draft: false
 series: '활동'

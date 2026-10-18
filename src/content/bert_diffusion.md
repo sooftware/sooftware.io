@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BERT는 사실 Diffusion 모델이였다?!
-image: img/bert-diffusion.png
+image: img/bert_diffusion/bert-diffusion.png
 author:
   - Soohwan Kim
 date: 2025-10-21T12:00:00.000Z

@@ -3,7 +3,7 @@ layout: post
 title: 'Sooftware Serving - Kernl'
 author: [Soohwan Kim]
 tags: ['nlp', 'serving']
-image: img/kernl.png
+image: img/kernl/kernl.png
 date: '2022-10-30T15:11:55.000Z'
 draft: false
 series: '개발'

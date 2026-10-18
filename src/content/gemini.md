@@ -2,7 +2,7 @@
 title: 'Welcome to the Gemini Era'
 author: [Soohwan Kim]
 tags: [news]
-image: img/gemini.png
+image: img/gemini/gemini.png
 date: '2023-12-07T10:00:00.000Z'
 draft: false
 series: '뉴스'

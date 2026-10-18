@@ -2,7 +2,7 @@
 title: 'Welcome to sooftware.io'
 author: [Soohwan Kim]
 tags: [welcome]
-image: img/2033/welcome-post-2.png
+image: img/welcome-post/welcome-post-2.png
 date: '2033-12-10T10:00:00.000Z'
 draft: false
 series: '회고'
@@ -31,7 +31,7 @@ series: '회고'
 제 이름은 김수환이고, 현재 당근마켓에서 Machine Learning Engineer로 일하고 있습니다. 이전에는 [튜닙(TUNiB)](https://www.tunib.ai/)이라는 자연어처리 스타트업의 Co-founder이자 AI Lead로 근무했었고 그 이전에는 [카카오브레인](https://www.kakaobrain.com/)이라는 회사에서 Speech & Natural Language Procesing 팀에서 근무했었습니다. 
   
 
-![](img/2033/welcome-post-1.png)
+![](img/welcome-post/welcome-post-1.png)
 
   
 위 이미지는 제 깃허브 프로필을 캡처한 이미지입니다. 지금은 활동이 뜸하지만, 대학생때부터 창업 전까지는 나름 오픈소스 활동을 많이 했었습니다. 튜닙에 있으며 만든 [tunib-electra](https://github.com/tunib-ai/tunib-electra), 카카오브레인 시절 참여한 [pororo](https://github.com/kakaobrain/pororo) 등 회사 소속으로 진행한 프로젝트들도 있고, [openspeech](https://github.com/openspeech-team/openspeech), [kospeech](https://github.com/sooftware/kospeech)와 같이 개인적으로 진행한 프로젝트 등 주로 Speech나 NLP 쪽 프로젝트 위주로 활동을 했습니다.

@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/netflix.jpg
+image: img/no-rules-rules/netflix.jpg
 date: 2024-03-04T22:00:00.000Z
 draft: false
 series: '독서'

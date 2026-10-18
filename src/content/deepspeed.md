@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - DeepSpeed Usage'
 author: [Soohwan Kim]
 tags: [nlp, parallelism, large-scale]
-image: img/deepspeed.png
+image: img/deepspeed/deepspeed.png
 date: '2021-10-30T10:00:00.000Z'
 draft: false
 series: '개발'

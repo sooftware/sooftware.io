@@ -2,7 +2,7 @@
 title: 'GPT-NeoX - DeepSpeed Inference'
 author: [Soohwan Kim]
 tags: [toolkit, environment]
-image: img/neox.png
+image: img/neox_injection/neox.png
 date: '2023-05-24T10:00:00.000Z'
 draft: false
 series: '개발'

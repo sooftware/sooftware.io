@@ -2,7 +2,7 @@
 title: '2022 인공지능 그랜드 챌린지 (정책 지원 AI) 3위'
 author: [Soohwan Kim]
 tags: [record]
-image: img/img_1.png
+image: img/2022_ai_grand_challenge/img_1.png
 date: '2022-12-30T10:00:00.000Z'
 draft: false
 series: '활동'

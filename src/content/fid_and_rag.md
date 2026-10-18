@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Generation with Retrieval'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/fid.png
+image: img/fid_and_rag/fid.png
 date: '2022-01-04T23:00:00.000Z'
 draft: false
 series: '논문 리뷰'

@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Electra Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/electra.png
+image: img/shared/electra.png
 date: '2020-09-23T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

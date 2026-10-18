@@ -3,7 +3,7 @@ layout: post
 title: 'Sooftware NLP - Luna: Linear Unified Nested Attention'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/luna.png
+image: img/luna/luna.png
 date: '2021-07-03T23:46:37.121Z'
 draft: false
 series: '논문 리뷰'

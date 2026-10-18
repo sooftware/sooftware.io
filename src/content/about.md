@@ -3,7 +3,7 @@ title: 'About'
 layout: page
 permalink: /about/
 translation: /about/en/
-image: img/2026/about-1.png
+image: img/about/about-1.png
 date: '2026-10-18T00:00:00.000Z'
 draft: false
 ---
@@ -81,7 +81,7 @@ GPT-3를 보며 느낀 기대감, 그리고 젊을 때 창업으로 크게 성�
 
 튜닙 창업 초기에 제가 맡은 큰 역할 중 하나가 "돈을 벌어오는 것"이었어요. 사업화 지원금이 걸린 대회들에 나가서, 참가한 모든 대회에서 입상했어요. 총 3번의 과학기술정보통신부 장관상 수상과 25억원의 사업화지원금을 유치했어요.
 
-<img src="img/2026/about-3.png" width="25%"><img src="img/2026/about-2.png" width="25%">
+<img src="img/about/about-3.png" width="25%"><img src="img/about/about-2.png" width="25%">
 
 
 - 2023 ICT 기금사업 우수성과 과기정통부 장관상 (한국어 대화·상식 데이터셋 구축)

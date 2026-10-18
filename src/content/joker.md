@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - record
-image: img/joker.png
+image: img/joker/joker.png
 date: 2024-07-10T10:00:00.000Z
 draft: false
 series: '활동'

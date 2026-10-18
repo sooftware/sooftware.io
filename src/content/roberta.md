@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - RoBERTa Paper Review'
 author: [Soohwan Kim]
 tags: [nlp, paper]
-image: img/roberta.png
+image: img/roberta/roberta.png
 date: '2020-10-11T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

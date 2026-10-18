@@ -2,7 +2,7 @@
 title: 'Sooftware ML - BentoML'
 author: [Soohwan Kim]
 tags: [toolkit]
-image: img/bentoml.png
+image: img/bentoml/bentoml.png
 date: '2021-09-28T10:00:00.000Z'
 draft: false
 series: '개발'

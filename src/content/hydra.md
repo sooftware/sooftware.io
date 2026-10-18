@@ -2,7 +2,7 @@
 title: 'Sooftware ML - Hydra'
 author: [Soohwan Kim]
 tags: [toolkit]
-image: img/hydra.png
+image: img/hydra/hydra.png
 date: '2020-12-28T10:00:00.000Z'
 draft: false
 series: '개발'

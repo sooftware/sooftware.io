@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - ClovaCall Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/clovacall.png
+image: img/clovacall/clovacall.png
 date: '2020-03-13T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

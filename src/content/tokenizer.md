@@ -3,7 +3,7 @@ layout: post
 title: 'Sooftware NLP - Tokenizer'
 author: [Soohwan Kim]
 tags: ['nlp']
-image: img/writing.jpg
+image: img/tokenizer/writing.jpg
 date: '2021-09-13T23:46:37.121Z'
 draft: false
 series: 'AI 개념'

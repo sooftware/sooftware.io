@@ -2,7 +2,7 @@
 title: 'Mac iTerm2 + ZSH 세팅'
 author: [Soohwan Kim]
 tags: [software, environment]
-image: img/iterm_zsh.png
+image: img/iterm_zsh/iterm_zsh.png
 date: '2020-12-02T10:00:00.000Z'
 draft: false
 series: '개발'

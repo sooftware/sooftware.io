@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Teacher Forcing (티쳐포싱)'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/teacher_forcing.png
+image: img/teacher_forcing/teacher_forcing.png
 date: '2020-01-25T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

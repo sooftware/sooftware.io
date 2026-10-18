@@ -2,7 +2,7 @@
 title: 'Sooftware Serving - Terminology'
 author: [Soohwan Kim]
 tags: [nlp, serving]
-image: img/term.png
+image: img/serving_term/term.png
 date: '2022-10-04T10:00:00.000Z'
 draft: false
 series: '개발'

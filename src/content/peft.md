@@ -3,7 +3,7 @@ layout: post
 title: 'Huggingface PEFT (Parameter-Efficient Fine-Tuning)'
 author: [Soohwan Kim]
 tags: ['huggingface', 'nlp', 'lora']
-image: img/peft.png
+image: img/peft/peft.png
 date: '2023-03-31T15:11:55.000Z'
 draft: false
 series: '개발'

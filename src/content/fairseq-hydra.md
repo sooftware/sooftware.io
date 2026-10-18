@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Fairseq Hydra'
 author: [Soohwan Kim]
 tags: [toolkit, nlp]
-image: img/fairseq.png
+image: img/fairseq-hydra/fairseq.png
 date: '2020-12-31T10:00:00.000Z'
 draft: false
 series: '개발'

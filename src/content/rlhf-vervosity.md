@@ -6,7 +6,7 @@ author:
 tags:
   - nlp
   - rlhf
-image: img/rlhf-verbose.png
+image: img/rlhf-vervosity/rlhf-verbose.png
 date: 2024-03-13T01:11:55.000Z
 draft: false
 series: '논문 리뷰'

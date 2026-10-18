@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/fastlane.jpg
+image: img/millionaire-fastlane/fastlane.jpg
 date: 2023-11-16T10:00:00.000Z
 draft: false
 series: '독서'

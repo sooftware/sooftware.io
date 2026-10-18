@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - review
-image: img/birdeye.jpeg
+image: img/leaders_perspective/birdeye.jpeg
 date: 2024-01-06T10:00:00.000Z
 draft: false
 series: '독서'

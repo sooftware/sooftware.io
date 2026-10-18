@@ -79,8 +79,8 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'SOOFTWARE',
   description: 'My Learning Journey in AI and Software Engineering',
-  coverImage: 'img/blog-cover.png',
-  logo: 'img/blog_logo.png',
+  coverImage: 'img/shared/blog-cover.png',
+  logo: 'img/site/blog_logo.png',
   lang: 'en',
   siteUrl: 'https://sooftware.github.io',
   facebook: 'https://www.facebook.com/sooftware95',

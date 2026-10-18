@@ -6,7 +6,7 @@ author:
 tags:
   - nlp
   - mixtral
-image: img/moe.png
+image: img/moe/moe.png
 date: 2023-12-22T01:11:55.000Z
 draft: false
 series: 'AI 개념'

@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Pororo: A Deep Learning based Multilingual Natural Language Processing Library'
 author: [Soohwan Kim]
 tags: [nlp, toolkit, record]
-image: img/pororo.png
+image: img/pororo/pororo.png
 date: '2021-02-02T10:00:00.000Z'
 draft: false
 series: '활동'

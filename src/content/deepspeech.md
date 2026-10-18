@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - DeepSpeech Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/deepspeech.png
+image: img/deepspeech/deepspeech.png
 date: '2019-11-11T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

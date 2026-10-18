@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - Conformer Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/conformer.png
+image: img/conformer/conformer.png
 date: '2020-08-30T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

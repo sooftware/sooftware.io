@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/react';
 
-import favicon from '../../src/favicon.ico';
 import { colors, fontStack } from '../styles/colors';
 
 interface IndexProps {
@@ -12,7 +11,9 @@ interface IndexProps {
 const IndexLayout: React.FC<IndexProps> = props => (
   <div className={props.className}>
     <Helmet>
-      <link rel="icon" href={favicon} type="image/x-icon" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"

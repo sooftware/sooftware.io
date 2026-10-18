@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 단 30줄로 ChatGPT 웹페이지 만들기 (Streamlit chat_message)
-image: img/streamlit-chatgpt.png
+image: img/streamlit-chatgpt/streamlit-chatgpt.png
 author:
   - Soohwan Kim
 date: 2024-05-01T10:00:00.000Z

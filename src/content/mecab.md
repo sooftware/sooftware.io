@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sooftware NLP - Mecab 설치 & 사용자 정의 사전 추가
-image: img/mecab.png
+image: img/mecab/mecab.png
 author: [Soohwan Kim]
 date: 2022-08-20T10:00:00.000Z
 tags: [nlp, environment]

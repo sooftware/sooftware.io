@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - MFCC (Mel-Frequency Cepstral Coefficient)'
 author: [Soohwan Kim]
 tags: [dsp, speech]
-image: img/mfcc.png
+image: img/mfcc/mfcc.png
 date: '2019-06-18T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

@@ -2,7 +2,7 @@
 title: '영화 Her의 사만다를 만들려면 어떤 기술이 필요할까?'
 author: [Soohwan Kim]
 tags: [think]
-image: img/speech_chatbot.png
+image: img/speech_chatbot/speech_chatbot.png
 date: '2022-09-06T10:00:00.000Z'
 draft: false
 ---

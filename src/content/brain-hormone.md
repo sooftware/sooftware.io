@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/brain-hormone.png
+image: img/brain-hormone/brain-hormone.png
 date: 2023-12-10T10:00:00.000Z
 draft: false
 series: '독서'

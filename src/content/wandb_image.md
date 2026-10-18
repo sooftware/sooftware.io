@@ -2,7 +2,7 @@
 title: 'Sooftware ML - Wandb Image Log'
 author: [Soohwan Kim]
 tags: [toolkit, logging]
-image: img/wandb_image.png
+image: img/wandb_image/wandb_image.png
 date: '2021-10-13T22:00:00.000Z'
 draft: false
 series: '개발'

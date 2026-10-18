@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/one-thing.png
+image: img/one-thing/one-thing.png
 date: 2023-12-26T10:00:00.000Z
 draft: false
 series: '독서'

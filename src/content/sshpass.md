@@ -2,7 +2,7 @@
 title: 'sshpass'
 author: [Soohwan Kim]
 tags: [toolkit]
-image: img/sshpass.png
+image: img/sshpass/sshpass.png
 date: '2023-05-13T10:00:00.000Z'
 draft: false
 series: '개발'

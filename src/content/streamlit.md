@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Streamlit
-image: img/streamlit.png
+image: img/streamlit/streamlit.png
 author: [Soohwan Kim]
 date: 2021-08-30T10:00:00.000Z
 tags: [toolkit, web]

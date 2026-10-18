@@ -2,7 +2,7 @@
 title: 'Sooftware ML - PyTorch Lightning'
 author: [Soohwan Kim]
 tags: [toolkit]
-image: img/pl.png
+image: img/pytorch_lightning/pl.png
 date: '2021-09-17T10:00:00.000Z'
 draft: false
 series: '개발'

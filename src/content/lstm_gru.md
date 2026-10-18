@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - LSTM & GRU'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/lstm_gru.png
+image: img/lstm_gru/lstm_gru.png
 date: '2020-01-24T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

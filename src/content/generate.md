@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Decoding Strategy (디코딩 전략)'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/decoding.png
+image: img/generate/decoding.png
 date: '2022-01-15T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

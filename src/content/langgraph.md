@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LangGraph로 구현하는 RAG 시스템 실습
-image: img/langgraph.png
+image: img/langgraph/langgraph.png
 author:
   - Soohwan Kim
 date: 2025-10-21T10:00:00.000Z

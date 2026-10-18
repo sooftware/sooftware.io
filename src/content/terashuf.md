@@ -5,7 +5,7 @@ author:
 tags:
   - toolkit
   - environment
-image: img/terashuf.png
+image: img/terashuf/terashuf.png
 date: 2024-03-20T10:00:00.000Z
 draft: false
 series: '개발'

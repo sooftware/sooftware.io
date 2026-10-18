@@ -2,7 +2,7 @@
 title: 'Sooftware Serving - Triton Inference Server'
 author: [Soohwan Kim]
 tags: [nlp, serving]
-image: img/triton.png
+image: img/triton/triton.png
 date: '2022-09-20T10:00:00.000Z'
 draft: false
 series: '개발'

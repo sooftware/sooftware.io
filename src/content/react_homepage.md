@@ -2,7 +2,7 @@
 title: 'React 기반 개인 웹페이지 배포하기 (gatsby)'
 author: [Soohwan Kim]
 tags: [toolkit, web]
-image: img/gatsby.png
+image: img/react_homepage/gatsby.png
 date: '2021-09-22T10:00:00.000Z'
 draft: false
 series: '개발'
@@ -136,7 +136,7 @@ $ npm start
 const config: WebsiteConfig = {
   title: 'Ghost',
   description: 'The professional publishing platform',
-  coverImage: 'img/blog-cover.png',
+  coverImage: 'img/shared/blog-cover.png',
   logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://gatsby-casper.netlify.com',
@@ -322,7 +322,7 @@ import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 title: '2020년 회고'
 author: [Soohwan Kim]
 tags: [retrospect]
-image: img/2020.png
+image: img/shared/2020.png
 date: '2020-12-31T10:00:00.000Z'
 draft: false
 ---

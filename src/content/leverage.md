@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/leverage.jpg
+image: img/leverage/leverage.jpg
 date: 2023-10-31T10:00:00.000Z
 draft: false
 series: '독서'

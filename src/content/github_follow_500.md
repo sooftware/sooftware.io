@@ -4,7 +4,7 @@ author:
   - Soohwan Kim
 tags:
   - record
-image: img/sooftware.png
+image: img/github_follow_500/sooftware.png
 date: 2024-04-15T10:00:00.000Z
 draft: false
 series: '활동'

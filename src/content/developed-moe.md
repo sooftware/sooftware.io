@@ -6,7 +6,7 @@ author:
 tags:
   - nlp
   - mixtral
-image: img/deepseek-moe/deepseek-moe.png
+image: img/developed-moe/deepseek-moe.png
 date: 2026-01-15T01:11:55.000Z
 draft: false
 series: 'AI 개념'
@@ -28,7 +28,7 @@ series: 'AI 개념'
 
 ### Transformer에서 MoE 적용
 
-<img src="img/deepseek-moe/ffn-moe.png" width=500>
+<img src="img/developed-moe/ffn-moe.png" width=500>
 
 전통적인 Transformer의 FFN(Feed-Forward Network) 레이어를 MoE로 교체합니다.
 
@@ -52,7 +52,7 @@ series: 'AI 개념'
 
 #### 해결책 : Expert를 더 여러개로 나누기
 
-<img src="img/deepseek-moe/finegrained-segmentation.jpg" width=500>
+<img src="img/developed-moe/finegrained-segmentation.jpg" width=500>
 
 Expert 수를 늘리고, 선택의 경우의 수도 늘리되, 계산량은 유지:  
   
@@ -96,7 +96,7 @@ Fine-grained로 expert를 잘게 쪼갰더니 새로운 문제 발생:
   
 #### 해결책 : 공통 지식을 따로 빼자!
 
-<img src="img/deepseek-moe/shared-expert.png" width=500>
+<img src="img/developed-moe/shared-expert.png" width=500>
 
 **Shared Expert**
 
@@ -133,7 +133,7 @@ Expert 7: 범용적 (다양한 토큰)
   
 ## 6. Load Balancing
 
-<img src="img/deepseek-moe/load-balancing.png" width=500>
+<img src="img/developed-moe/load-balancing.png" width=500>
 
 #### 문제 인식
 
@@ -182,7 +182,7 @@ total_loss = main_loss + λ * aux_loss = "정답 맞추기" + "골고루 쓰기"
 
 매 N-step마다 expert들의 사용량을 체크하고, 상대적으로 많이 사용되는 expert의 bias는 -하고, 적게 사용되는 expert의 bias는 +하는 방식으로 컨트롤합니다.  
   
-<img src="img/deepseek-moe/auxiliary-loss-free.jpg" width=500>
+<img src="img/developed-moe/auxiliary-loss-free.jpg" width=500>
   
 이 단순한 방식으로 DeepSeek은 load balancing 문제를 풀었습니다.   
 

@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - EMNLP Paper Review: Speech'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/2020-emnlp.png
+image: img/2020-EMNLP-Speech-Paper-Review/2020-emnlp.png
 date: '2020-12-08T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

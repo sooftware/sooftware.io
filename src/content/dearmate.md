@@ -2,7 +2,7 @@
 title: '자체 LLM으로 제작한 챗봇 서비스, Dearmate'
 author: [Soohwan Kim]
 tags: [tunib]
-image: img/dearmate.png
+image: img/dearmate/dearmate.png
 date: '2023-07-22T12:00:00.000Z'
 draft: false
 series: '활동'

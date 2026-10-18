@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - Listen, Attend and Spell Paper Review'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/las.png
+image: img/las/las.png
 date: '2019-09-20T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

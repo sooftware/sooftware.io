@@ -2,7 +2,7 @@
 title: 'Findings of EMNLP 2023 Accept'
 author: [Soohwan Kim]
 tags: [nlp, record]
-image: img/emnlp_2023.png
+image: img/emnlp_2023/emnlp_2023.png
 date: '2023-10-11T12:00:00.000Z'
 draft: false
 series: '활동'

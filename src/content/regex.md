@@ -2,7 +2,7 @@
 title: '정규표현식 (regex)'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/regex.png
+image: img/regex/regex.png
 date: '2021-09-08T10:00:00.000Z'
 draft: false
 series: '개발'

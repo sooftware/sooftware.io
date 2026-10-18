@@ -5,7 +5,7 @@ author:
 tags:
   - book
   - review
-image: img/last-winner.png
+image: img/game-theory/last-winner.png
 date: 2023-10-31T10:00:00.000Z
 draft: false
 series: '독서'

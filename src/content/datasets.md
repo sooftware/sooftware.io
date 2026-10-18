@@ -2,7 +2,7 @@
 title: 'Sooftware NLP - Huggingface Datasets Methods'
 author: [Soohwan Kim]
 tags: [nlp]
-image: img/datasets.png
+image: img/datasets/datasets.png
 date: '2022-02-17T10:00:00.000Z'
 draft: false
 series: '개발'

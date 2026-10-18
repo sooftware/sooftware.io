@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - AI & Speech Processing: Application-2'
 author: [Soohwan Kim]
 tags: [speech]
-image: img/audio_app2.png
+image: img/audio_app2/audio_app2.png
 date: '2020-04-17T10:00:00.000Z'
 draft: false
 series: 'AI 개념'

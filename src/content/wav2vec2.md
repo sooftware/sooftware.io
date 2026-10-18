@@ -2,7 +2,7 @@
 title: 'Sooftware Speech - Wav2vec 2.0 : A Framework for Self-Supervised Learning of Speech Representations'
 author: [Soohwan Kim]
 tags: [speech, paper]
-image: img/wav2vec2.png
+image: img/wav2vec2/wav2vec2.png
 date: '2020-09-12T10:00:00.000Z'
 draft: false
 series: '논문 리뷰'

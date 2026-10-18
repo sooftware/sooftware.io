@@ -2,7 +2,7 @@
 title: '네이버 2019 해커톤 - Speech 결선진출'
 author: [Soohwan Kim]
 tags: [record]
-image: img/2019_hackathon.png
+image: img/naver_2019_hackathon/2019_hackathon.png
 date: '2019-11-21T10:00:00.000Z'
 draft: false
 series: '활동'
